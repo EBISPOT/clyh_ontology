@@ -1,10 +1,1989 @@
 format-version: 1.2
-data-version: releases/2017-11-14
-remark: chem
-ontology: chem
-owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(Class(<http://purl.obolibrary.org/obo/CHEM_00000000>))\n############################\n#   Classes\n############################\n\n# Class: <http://purl.obolibrary.org/obo/CHEM_00000000> (chem)\n\nSubClassOf(<http://purl.obolibrary.org/obo/CHEM_00000000> owl:Thing)\n\n\n)
+data-version: chem/releases/2017-11-15/chem.owl
+remark: Clytia hemisphaerica ontology
+ontology: chem/chem
 
 [Term]
-id: CHEM:00000000
-name: chem
+id: CHEM:0000001
+name: gametogenesis
+def: "phase of sexual reproduction in which certain cells of a female or male individual (parent) are transformed into specialized reproductive cells (gametes) that will initiate development of a progeny individual (offspring) upon fertilization." []
+
+[Term]
+id: CHEM:0000002
+name: spermatogenesis
+relationship: BFO:0000050 CHEM:0000001 ! part of gametogenesis
+
+[Term]
+id: CHEM:0000003
+name: oogenesis
+relationship: BFO:0000050 CHEM:0000001 ! part of gametogenesis
+
+[Term]
+id: CHEM:0000004
+name: previtellogenic stage
+def: "Entered into meiosis, DNA replicated, no yolk accumulation." []
+is_a: UBERON:0000105 ! life cycle stage
+relationship: BFO:0000050 CHEM:0000003 ! part of oogenesis
+
+[Term]
+id: CHEM:0000005
+name: oocyte growth
+relationship: BFO:0000050 CHEM:0000003 ! part of oogenesis
+
+[Term]
+id: CHEM:0000006
+name: stage I oocyte growth
+def: "Meiotic Prophase I arrest, GV in centre, diameter x" []
+relationship: BFO:0000050 CHEM:0000005 ! part of oocyte growth
+relationship: RO:0002087 CHEM:0000004 ! immediately preceded by previtellogenic stage
+property_value: IAO:0000301 "Amiel and Houliston Dev. Biol (2009)" xsd:string
+
+[Term]
+id: CHEM:0000007
+name: stage II oocyte growth
+def: "Meiotic Prophase I arrest, GV off centre, diameter x" []
+relationship: BFO:0000050 CHEM:0000005 ! part of oocyte growth
+relationship: RO:0002087 CHEM:0000006 ! immediately preceded by stage I oocyte growth
+property_value: IAO:0000301 "Amiel and Houliston Dev. Biol (2009)" xsd:string
+
+[Term]
+id: CHEM:0000008
+name: stage III oocyte growth
+def: "Meiotic Prophase I arrest, GV off centre, diameter x" []
+relationship: BFO:0000050 CHEM:0000005 ! part of oocyte growth
+relationship: RO:0002087 CHEM:0000007 ! immediately preceded by stage II oocyte growth
+property_value: IAO:0000301 "Amiel and Houliston Dev. Biol (2009)" xsd:string
+
+[Term]
+id: CHEM:0000009
+name: oocyte meiotic maturation
+def: "oocyte undergoing meiosis completion from prophase I to G0  of first meiotic cycle" []
+relationship: BFO:0000050 CHEM:0000001 ! part of gametogenesis
+relationship: RO:0002087 CHEM:0000008 ! immediately preceded by stage III oocyte growth
+property_value: IAO:0000301 "Amiel and Houliston Dev. Biol (2009)" xsd:string
+
+[Term]
+id: CHEM:0000010
+name: gamete stage
+relationship: RO:0002087 CHEM:0000001 ! immediately preceded by gametogenesis
+
+[Term]
+id: CHEM:0000011
+name: unfertilized egg stage
+def: "matture female germ cell. not yet fertilized. Meiotic divisions complete. Spawned egg with female pronucleus." []
+relationship: BFO:0000050 CHEM:0000010 ! part of gamete stage
+relationship: RO:0002087 CHEM:0000009 ! immediately preceded by oocyte meiotic maturation
+property_value: IAO:0000301 "Amiel and Houliston Dev. Biol (2009)" xsd:string
+
+[Term]
+id: CHEM:0000012
+name: spermatozoid stage
+def: "mature male germ cell. " []
+relationship: BFO:0000050 CHEM:0000010 ! part of gamete stage
+relationship: RO:0002087 CHEM:0000002 ! immediately preceded by spermatogenesis
+
+[Term]
+id: CHEM:0000013
+name: embryonic development
+is_a: UBERON:0000105 ! life cycle stage
+relationship: RO:0002087 CHEM:0000010 ! immediately preceded by gamete stage
+
+[Term]
+id: CHEM:0000014
+name: cleavage stage
+is_a: UBERON:0000105 ! life cycle stage
+relationship: BFO:0000050 CHEM:0000013 ! part of embryonic development
+relationship: RO:0002087 CHEM:0000010 ! immediately preceded by gamete stage
+
+[Term]
+id: CHEM:0000015
+name: blastula stage
+is_a: UBERON:0000105 ! life cycle stage
+relationship: BFO:0000050 CHEM:0000013 ! part of embryonic development
+relationship: RO:0002087 CHEM:0000014 ! immediately preceded by cleavage stage
+
+[Term]
+id: CHEM:0000016
+name: gastrula stage
+is_a: UBERON:0000105 ! life cycle stage
+relationship: BFO:0000050 CHEM:0000013 ! part of embryonic development
+relationship: RO:0002087 CHEM:0000015 ! immediately preceded by blastula stage
+
+[Term]
+id: CHEM:0000017
+name: planula stage
+synonym: "larval development" EXACT []
+is_a: UBERON:0000105 ! life cycle stage
+relationship: RO:0002087 CHEM:0000013 ! immediately preceded by embryonic development
+
+[Term]
+id: CHEM:0000018
+name: colony stage
+def: "colony containing  mature or developing gonozoids , gastrozoids and stolons." []
+is_a: UBERON:0000105 ! life cycle stage
+relationship: RO:0002087 CHEM:0000019 ! immediately preceded by metamorphosis
+
+[Term]
+id: CHEM:0000019
+name: metamorphosis
+is_a: UBERON:0000105 ! life cycle stage
+relationship: RO:0002087 CHEM:0000017 ! immediately preceded by planula stage
+
+[Term]
+id: CHEM:0000020
+name: gastrozoid development
+relationship: BFO:0000050 CHEM:0000018 ! part of colony stage
+
+[Term]
+id: CHEM:0000021
+name: gonozoid development
+def: "Non feeding polyp specialized in budding medusae " []
+relationship: BFO:0000050 CHEM:0000018 ! part of colony stage
+
+[Term]
+id: CHEM:0000022
+name: medusa stage
+is_a: UBERON:0000105 ! life cycle stage
+relationship: RO:0002087 CHEM:0000021 ! immediately preceded by gonozoid development
+
+[Term]
+id: CHEM:0000023
+name: medusa budding
+relationship: BFO:0000050 CHEM:0000022 ! part of medusa stage
+relationship: RO:0002087 CHEM:0000021 ! immediately preceded by gonozoid development
+
+[Term]
+id: CHEM:0000024
+name: medusa growth
+relationship: BFO:0000050 CHEM:0000022 ! part of medusa stage
+relationship: RO:0002087 CHEM:0000023 ! immediately preceded by medusa budding
+
+[Term]
+id: CHEM:0000025
+name: one cell stage
+def: "Zygote fertilized egg, zygote nucleus forms at animal pole (about 0-50 min post fertilization at 18°C)." []
+synonym: " fertilised egg" EXACT []
+synonym: "zygote " EXACT []
+is_a: UBERON:0000105 ! life cycle stage
+relationship: BFO:0000050 CHEM:0000014 ! part of cleavage stage
+relationship: RO:0002087 CHEM:0000010 ! immediately preceded by gamete stage
+property_value: IAO:0000301 "Y. Kraus et al in preparation?" xsd:string
+
+[Term]
+id: CHEM:0000026
+name: 2-cell stage
+def: "Two cell-stage embryo. First cleaveages unipolar and start at the animal pole (about 50-80 min post fertilization at 18°C)." []
+is_a: UBERON:0000105 ! life cycle stage
+relationship: BFO:0000050 CHEM:0000014 ! part of cleavage stage
+relationship: RO:0002087 CHEM:0000025 ! immediately preceded by one cell stage
+property_value: IAO:0000301 "Y. Kraus et al in preparation?" xsd:string
+
+[Term]
+id: CHEM:0000027
+name: 4-cell stage
+def: "Four cell-stage embryo. Second cleaveages unipolar and start at the animal pole (about 80-110 min post fertilization at 18°C). " []
+is_a: UBERON:0000105 ! life cycle stage
+relationship: BFO:0000050 CHEM:0000014 ! part of cleavage stage
+relationship: RO:0002087 CHEM:0000026 ! immediately preceded by 2-cell stage
+
+[Term]
+id: CHEM:0000028
+name: 8-cell stage
+def: "Eight cell-stage embryo (about 2h post fertilization at 18°C)." []
+is_a: UBERON:0000105 ! life cycle stage
+relationship: BFO:0000050 CHEM:0000014 ! part of cleavage stage
+relationship: RO:0002087 CHEM:0000027 ! immediately preceded by 4-cell stage
+
+[Term]
+id: CHEM:0000029
+name: 16-cell stage
+def: "Sixteen cell-stage embryo (about 2.5h post fertilization at 18°C)." []
+relationship: BFO:0000050 CHEM:0000014 ! part of cleavage stage
+relationship: RO:0002087 CHEM:0000028 ! immediately preceded by 8-cell stage
+
+[Term]
+id: CHEM:0000030
+name: 32-cell stage
+def: "thirty two cell-stage embryo (about 3h post fertilization at 18°C)." []
+relationship: BFO:0000050 CHEM:0000014 ! part of cleavage stage
+relationship: RO:0002087 CHEM:0000029 ! immediately preceded by 16-cell stage
+
+[Term]
+id: CHEM:0000031
+name: 64-cell stage
+def: "sixty four cell-stage embryo (about 3h post fertilization at 18°C)." []
+relationship: BFO:0000050 CHEM:0000014 ! part of cleavage stage
+relationship: RO:0002087 CHEM:0000030 ! immediately preceded by 32-cell stage
+
+[Term]
+id: CHEM:0000032
+name: early blastula stage
+def: "Cells rounded and loosely adhered, Nuclei central  (5-6h post fertilization at 18°C)." []
+relationship: BFO:0000050 CHEM:0000015 ! part of blastula stage
+relationship: RO:0002087 CHEM:0000031 ! immediately preceded by 64-cell stage
+
+[Term]
+id: CHEM:0000033
+name: mid blastula stage
+def: "Cell contacts extended, cells polarised, nuclei apical (8h post fertilization at 18°C)." []
+relationship: BFO:0000050 CHEM:0000015 ! part of blastula stage
+relationship: RO:0002087 CHEM:0000032 ! immediately preceded by early blastula stage
+
+[Term]
+id: CHEM:0000034
+name: late blastula stage
+def: "Cell polarized and columnar, nuclei apical (9- 10h post fertilization at 18°C)." []
+relationship: BFO:0000050 CHEM:0000015 ! part of blastula stage
+relationship: RO:0002087 CHEM:0000033 ! immediately preceded by mid blastula stage
+
+[Term]
+id: CHEM:0000035
+name: very early gastrula stage
+def: "Visible pointed oral pole but no cell ingression, ciliogenesis starting (12-13h post fertilization at 18°C). " []
+relationship: BFO:0000050 CHEM:0000016 ! part of gastrula stage
+relationship: RO:0002087 CHEM:0000035 ! immediately preceded by very early gastrula stage
+
+[Term]
+id: CHEM:0000036
+name: early gastrula stage
+def: "A few cells ingressed at pointed oral pole, swimming started  (14-16h post fertilization at 18°C)." []
+relationship: BFO:0000050 CHEM:0000016 ! part of gastrula stage
+relationship: RO:0002087 CHEM:0000037 ! immediately preceded by mid gastrula stage
+
+[Term]
+id: CHEM:0000037
+name: mid gastrula stage
+def: "Ingression to fill balastotocoel half completed (17- 18h post fertilization at 18°C)" []
+relationship: BFO:0000050 CHEM:0000016 ! part of gastrula stage
+relationship: RO:0002087 CHEM:0000036 ! immediately preceded by early gastrula stage
+
+[Term]
+id: CHEM:0000038
+name: late gastrula stage
+def: "Blastocoel full, no epithelisation of internal cells (20h post fertilization at18°C" []
+relationship: BFO:0000050 CHEM:0000016 ! part of gastrula stage
+relationship: RO:0002087 CHEM:0000037 ! immediately preceded by mid gastrula stage
+
+[Term]
+id: CHEM:0000039
+name: planula P1 stage
+def: "Epithelisation beginning at aboral pole (as seen at 24h post fertilization at 18°C)" []
+relationship: BFO:0000050 CHEM:0000017 ! part of planula stage
+relationship: RO:0002087 CHEM:0000038 ! immediately preceded by late gastrula stage
+
+[Term]
+id: CHEM:0000040
+name: planula P2 stage
+def: "Visible central cavity (as seen at 48h post fertilization at 18°C)" []
+relationship: BFO:0000050 CHEM:0000017 ! part of planula stage
+relationship: RO:0002087 CHEM:0000039 ! immediately preceded by planula P1 stage
+
+[Term]
+id: CHEM:0000041
+name: planula P3 stage
+def: "Competent to metamorphose as (72h post fertilization at 18°C)" []
+relationship: BFO:0000050 CHEM:0000017 ! part of planula stage
+relationship: RO:0002087 CHEM:0000040 ! immediately preceded by planula P2 stage
+
+[Term]
+id: CHEM:0000042
+name: aged planula stage
+def: "Aged planula (> 3 days post fertilization at 18°C) but not received metamporphosis signal." []
+relationship: BFO:0000050 CHEM:0000017 ! part of planula stage
+relationship: RO:0002087 CHEM:0000041 ! immediately preceded by planula P3 stage
+
+[Term]
+id: CHEM:0000043
+name: settled planula stage
+def: "torpedo shape planula that stopped swimming" []
+relationship: BFO:0000050 CHEM:0000019 ! part of metamorphosis
+relationship: RO:0002087 CHEM:0000017 ! immediately preceded by planula stage
+
+[Term]
+id: CHEM:0000044
+name: blob stage
+def: "irregularly shaped metamorphosing planula attached to substrate, not yet flattened" []
+relationship: BFO:0000050 CHEM:0000019 ! part of metamorphosis
+relationship: RO:0002087 CHEM:0000043 ! immediately preceded by settled planula stage
+
+[Term]
+id: CHEM:0000045
+name: disc stage
+def: "metamorphosing planula attached to the substrate and in shape of a flattened disc" []
+relationship: BFO:0000050 CHEM:0000019 ! part of metamorphosis
+relationship: RO:0002087 CHEM:0000044 ! immediately preceded by blob stage
+
+[Term]
+id: CHEM:0000046
+name: sculpted disc stage
+def: "metamorphosing planula attached to the substrate and in shape of a flattened disc with sculpted indentations" []
+relationship: BFO:0000050 CHEM:0000019 ! part of metamorphosis
+relationship: RO:0002087 CHEM:0000045 ! immediately preceded by disc stage
+
+[Term]
+id: CHEM:0000047
+name: primary polyp stalk extension stage
+def: "uniform extension emerging from the sculpted disc" []
+relationship: BFO:0000050 CHEM:0000019 ! part of metamorphosis
+relationship: RO:0002087 CHEM:0000046 ! immediately preceded by sculpted disc stage
+
+[Term]
+id: CHEM:0000048
+name: primary polyp developing head stage
+def: "swollen distal extremity developing into a functional primary polyp head" []
+relationship: BFO:0000050 CHEM:0000019 ! part of metamorphosis
+relationship: RO:0002087 CHEM:0000047 ! immediately preceded by primary polyp stalk extension stage
+
+[Term]
+id: CHEM:0000049
+name: functional primary polyp stage
+def: "theca of the primary polyp open on the oral side and mouth open" []
+relationship: BFO:0000050 CHEM:0000019 ! part of metamorphosis
+relationship: RO:0002087 CHEM:0000048 ! immediately preceded by primary polyp developing head stage
+
+[Term]
+id: CHEM:0000050
+name: stalk extenstion stage
+def: "uniform extension emerging from the stolon as first stage of gastrozoid development" []
+relationship: BFO:0000050 CHEM:0000020 ! part of gastrozoid development
+
+[Term]
+id: CHEM:0000051
+name: developing head stage
+def: "swollen distal extremity developing into a complete gastrozoid head" []
+relationship: BFO:0000050 CHEM:0000020 ! part of gastrozoid development
+relationship: RO:0002087 CHEM:0000050 ! immediately preceded by stalk extenstion stage
+
+[Term]
+id: CHEM:0000052
+name: functional gastrozoid stage
+def: "complete and functional gastrozoid with open hydrotheca and mouth" []
+relationship: BFO:0000050 CHEM:0000020 ! part of gastrozoid development
+relationship: RO:0002087 CHEM:0000051 ! immediately preceded by developing head stage
+
+[Term]
+id: CHEM:0000053
+name: growing gonozoid stage
+def: "growing and developing gonozoid" []
+relationship: BFO:0000050 CHEM:0000021 ! part of gonozoid development
+
+[Term]
+id: CHEM:0000054
+name: budding gonozoid stage
+def: "mature gonozoid budding medusae" []
+relationship: BFO:0000050 CHEM:0000021 ! part of gonozoid development
+relationship: RO:0002087 CHEM:0000053 ! immediately preceded by growing gonozoid stage
+
+[Term]
+id: CHEM:0000055
+name: non-budding gonozoid stage
+def: "mature gonozoid not containing any medusa bud only central tube and disc-shaped cap" []
+relationship: BFO:0000050 CHEM:0000021 ! part of gonozoid development
+relationship: RO:0002087 CHEM:0000053 ! immediately preceded by growing gonozoid stage
+
+[Term]
+id: CHEM:0000056
+name: early medusa bud stage
+def: "medusa bud with visible ectoderm, endoderm and entocodon" []
+relationship: BFO:0000050 CHEM:0000023 ! part of medusa budding
+relationship: RO:0002087 CHEM:0000054 ! immediately preceded by budding gonozoid stage
+
+[Term]
+id: CHEM:0000057
+name: mid medusa bud stage
+def: "medusa bud with forming subumbrella cavity" []
+relationship: BFO:0000050 CHEM:0000023 ! part of medusa budding
+relationship: RO:0002087 CHEM:0000056 ! immediately preceded by early medusa bud stage
+
+[Term]
+id: CHEM:0000058
+name: late medusa bud stage
+def: "medusa bud with with folding umbrella" []
+relationship: BFO:0000050 CHEM:0000023 ! part of medusa budding
+relationship: RO:0002087 CHEM:0000057 ! immediately preceded by mid medusa bud stage
+
+[Term]
+id: CHEM:0000059
+name: 4-bulb medusa stage
+def: "period of medusa growth between release medusa from gonozoid  until appearance of secondary tentacles. Only  4 tentacle bulbs present " []
+synonym: "baby medusa stage" EXACT []
+relationship: BFO:0000050 CHEM:0000024 ! part of medusa growth
+relationship: RO:0002087 CHEM:0000058 ! immediately preceded by late medusa bud stage
+
+[Term]
+id: CHEM:0000060
+name: 8-bulb medusa stage
+def: "period of medusa growth when only 8 tentacles are present " []
+relationship: BFO:0000050 CHEM:0000024 ! part of medusa growth
+relationship: RO:0002087 CHEM:0000059 ! immediately preceded by 4-bulb medusa stage
+
+[Term]
+id: CHEM:0000061
+name: 12-bulb medusa stage
+def: "period of medusa growth when only 12 tentacles are present " []
+synonym: "young medusa stage" EXACT []
+relationship: BFO:0000050 CHEM:0000024 ! part of medusa growth
+relationship: RO:0002087 CHEM:0000060 ! immediately preceded by 8-bulb medusa stage
+
+[Term]
+id: CHEM:0000062
+name: 16-bulb immature medusa stage
+def: "period of medusa growth when only 16 tentacles are present. No mature gametes (eg 5mm diameter) " []
+relationship: BFO:0000050 CHEM:0000024 ! part of medusa growth
+relationship: RO:0002087 CHEM:0000061 ! immediately preceded by 12-bulb medusa stage
+
+[Term]
+id: CHEM:0000063
+name: mature adult medusa stage
+def: "period of medusa growth when only 16 tentacles are present. Gonads contain mature gametes. (eg 10mm diameter)" []
+relationship: BFO:0000050 CHEM:0000024 ! part of medusa growth
+relationship: RO:0002087 CHEM:0000062 ! immediately preceded by 16-bulb immature medusa stage
+
+[Term]
+id: CHEM:1000001
+name: organism subdivision
+
+[Term]
+id: CHEM:1000002
+name: egg cell
+def: "A female gamete where meiosis is complete and is able to participate in fertilization." []
+synonym: "female gamete" EXACT []
+is_a: CHEM:1000008 ! gamete
+relationship: RO:0002202 CHEM:1000182 ! develops from fully grown oocyte
+
+[Term]
+id: CHEM:1000007
+name: multicellular organism
+
+[Term]
+id: CHEM:1000008
+name: gamete
+def: "A mature sexual reproductive cell having a single set of unpaired chromosomes." []
+is_a: CL:0000000 ! cell
+
+[Term]
+id: CHEM:1000009
+name: germ layer
+is_a: UBERON:0000061 ! anatomical structure
+
+[Term]
+id: CHEM:1000010
+name: embryo
+def: "Anatomical entity that comprises the organism in the early stages of growth and differentiation that are characterized by cleavage, the laying down of fundamental tissues," []
+is_a: CHEM:1000007 ! multicellular organism
+relationship: RO:0002488 CHEM:0000025 ! existence starts during one cell stage
+relationship: RO:0002492 CHEM:0000038 ! existence ends during late gastrula stage
+
+[Term]
+id: CHEM:1000011
+name: cleaving embryo
+def: "Organism at the cleavage stage" []
+is_a: CHEM:1000010 ! embryo
+relationship: RO:0002492 CHEM:0000031 ! existence ends during 64-cell stage
+
+[Term]
+id: CHEM:1000012
+name: fertilized egg
+def: "cell formed by fusion of a mature female reproductive cell and a mature  male reproductive cell at fertilization" []
+is_a: CL:0000000 ! cell
+relationship: RO:0002202 CHEM:1000008 ! develops from gamete
+relationship: RO:0002488 CHEM:0000025 ! existence starts during one cell stage
+relationship: RO:0002492 CHEM:0000025 ! existence ends during one cell stage
+
+[Term]
+id: CHEM:1000013
+name: 2-cell embryo
+def: "Organism at the cleavage stage  after the first  cell division" []
+is_a: CHEM:1000010 ! embryo
+relationship: RO:0002202 CHEM:1000012 ! develops from fertilized egg
+relationship: RO:0002488 CHEM:0000026 ! existence starts during 2-cell stage
+relationship: RO:0002492 CHEM:0000026 ! existence ends during 2-cell stage
+
+[Term]
+id: CHEM:1000014
+name: 4-cell embryo
+def: "Organism at the cleavage stage after two division cycles" []
+is_a: CHEM:1000010 ! embryo
+relationship: RO:0002202 CHEM:1000013 ! develops from 2-cell embryo
+relationship: RO:0002488 CHEM:0000027 ! existence starts during 4-cell stage
+relationship: RO:0002492 CHEM:0000027 ! existence ends during 4-cell stage
+
+[Term]
+id: CHEM:1000015
+name: 8-cell embryo
+def: "Organism at the cleavage stage after three division cycles" []
+is_a: CHEM:1000010 ! embryo
+relationship: RO:0002202 CHEM:1000014 ! develops from 4-cell embryo
+relationship: RO:0002488 CHEM:0000028 ! existence starts during 8-cell stage
+relationship: RO:0002492 CHEM:0000028 ! existence ends during 8-cell stage
+
+[Term]
+id: CHEM:1000016
+name: 16-cell embryo
+def: "Organism at the cleavage stage after four division cycles" []
+is_a: CHEM:1000010 ! embryo
+relationship: RO:0002202 CHEM:1000015 ! develops from 8-cell embryo
+relationship: RO:0002488 CHEM:0000029 ! existence starts during 16-cell stage
+relationship: RO:0002492 CHEM:0000029 ! existence ends during 16-cell stage
+
+[Term]
+id: CHEM:1000017
+name: 32-cell embryo
+def: "Organism at the cleavage stage after five division cycles" []
+is_a: CHEM:1000010 ! embryo
+relationship: RO:0002202 CHEM:1000016 ! develops from 16-cell embryo
+relationship: RO:0002488 CHEM:0000030 ! existence starts during 32-cell stage
+relationship: RO:0002492 CHEM:0000030 ! existence ends during 32-cell stage
+
+[Term]
+id: CHEM:1000018
+name: 64-cell embryo
+def: "Organism at the cleavage stage after six division cycles" []
+is_a: CHEM:1000010 ! embryo
+relationship: RO:0002202 CHEM:1000017 ! develops from 32-cell embryo
+relationship: RO:0002488 CHEM:0000031 ! existence starts during 64-cell stage
+relationship: RO:0002492 CHEM:0000031 ! existence ends during 64-cell stage
+
+[Term]
+id: CHEM:1000019
+name: blastula
+def: "Organism at the blastula stage - an early stage of embryonic development in animals. It is produced by cleavage of a fertilized ovum and consists of a spherical layer of around 128 cells surrounding a central fluid-filled cavity called the blastocoel." []
+is_a: CHEM:1000010 ! embryo
+relationship: RO:0002202 CHEM:1000018 ! develops from 64-cell embryo
+relationship: RO:0002488 CHEM:0000032 ! existence starts during early blastula stage
+relationship: RO:0002492 CHEM:0000034 ! existence ends during late blastula stage
+
+[Term]
+id: CHEM:1000020
+name: early blastula
+def: "blastula stage embryo before epithelisation. " []
+is_a: CHEM:1000010 ! embryo
+relationship: RO:0002202 CHEM:1000018 ! develops from 64-cell embryo
+relationship: RO:0002488 CHEM:0000032 ! existence starts during early blastula stage
+relationship: RO:0002492 CHEM:0000032 ! existence ends during early blastula stage
+
+[Term]
+id: CHEM:1000021
+name: mid blastula
+def: "blastula stage embryo with polarised epithelial cells" []
+is_a: CHEM:1000010 ! embryo
+relationship: RO:0002202 CHEM:1000020 ! develops from early blastula
+relationship: RO:0002488 CHEM:0000033 ! existence starts during mid blastula stage
+relationship: RO:0002492 CHEM:0000033 ! existence ends during mid blastula stage
+
+[Term]
+id: CHEM:1000022
+name: late blasutla
+def: "blastula stage embryo with polarised and columnar epithelial cells" []
+is_a: CHEM:1000010 ! embryo
+relationship: RO:0002202 CHEM:1000021 ! develops from mid blastula
+relationship: RO:0002488 CHEM:0000034 ! existence starts during late blastula stage
+relationship: RO:0002492 CHEM:0000034 ! existence ends during late blastula stage
+
+[Term]
+id: CHEM:1000023
+name: gastrula
+def: "Organism at the gastrula stage." []
+is_a: CHEM:1000010 ! embryo
+relationship: RO:0002202 CHEM:1000022 ! develops from late blasutla
+relationship: RO:0002488 CHEM:0000035 ! existence starts during very early gastrula stage
+
+[Term]
+id: CHEM:1000024
+name: very early gastrula
+def: "Visible pointed oral pole but no cell ingression, Ciliogenesis starting." []
+is_a: CHEM:1000010 ! embryo
+relationship: RO:0002202 CHEM:1000022 ! develops from late blasutla
+relationship: RO:0002488 CHEM:0000035 ! existence starts during very early gastrula stage
+relationship: RO:0002492 CHEM:0000035 ! existence ends during very early gastrula stage
+
+[Term]
+id: CHEM:1000025
+name: early gastrula
+def: "gastrula with a few cells ingressed at pointed oral pole.  Swimming ." []
+is_a: CHEM:1000010 ! embryo
+relationship: RO:0002202 CHEM:1000024 ! develops from very early gastrula
+relationship: RO:0002488 CHEM:0000036 ! existence starts during early gastrula stage
+relationship: RO:0002492 CHEM:0000036 ! existence ends during early gastrula stage
+
+[Term]
+id: CHEM:1000026
+name: mid gastrula
+def: "gastrula in which blastotocoel is half filled with ingressing cells . " []
+is_a: CHEM:1000010 ! embryo
+relationship: RO:0002202 CHEM:1000025 ! develops from early gastrula
+relationship: RO:0002488 CHEM:0000037 ! existence starts during mid gastrula stage
+relationship: RO:0002492 CHEM:0000037 ! existence ends during mid gastrula stage
+
+[Term]
+id: CHEM:1000027
+name: late gastrula
+def: "gastrula in which Blastocoel is full but no epithelisation of internal cells " []
+is_a: CHEM:1000010 ! embryo
+relationship: RO:0002202 CHEM:1000026 ! develops from mid gastrula
+relationship: RO:0002488 CHEM:0000038 ! existence starts during late gastrula stage
+
+[Term]
+id: CHEM:1000028
+name: planula larva
+def: "A distinct juvenile form before metamorphosis  with elongated shape and cilliated ectoderm. Ectoderm and endoderm separated by basement membrane" []
+relationship: RO:0002202 CHEM:1000027 ! develops from late gastrula
+relationship: RO:0002488 CHEM:0000039 ! existence starts during planula P1 stage
+relationship: RO:0002492 CHEM:0000043 ! existence ends during settled planula stage
+
+[Term]
+id: CHEM:1000029
+name: planula P1
+def: "Planula larva showing epithelisation of gastrodermal cells at aboral pole but not orally" []
+is_a: CHEM:1000028 ! planula larva
+relationship: RO:0002492 CHEM:0000039 ! existence ends during planula P1 stage
+
+[Term]
+id: CHEM:1000030
+name: planula P2
+def: "Planula larva with visible central cavity in gastrodermis, incompetent to metamorphose" []
+is_a: CHEM:1000028 ! planula larva
+relationship: RO:0002202 CHEM:1000029 ! develops from planula P1
+relationship: RO:0002488 CHEM:0000040 ! existence starts during planula P2 stage
+relationship: RO:0002492 CHEM:0000040 ! existence ends during planula P2 stage
+
+[Term]
+id: CHEM:1000031
+name: planula P3 
+def: "Planula larva with all cell types diffrerntiated and  competent to metamorphose" []
+is_a: CHEM:1000028 ! planula larva
+relationship: RO:0002202 CHEM:1000030 ! develops from planula P2
+relationship: RO:0002488 CHEM:0000041 ! existence starts during planula P3 stage
+relationship: RO:0002492 CHEM:0000041 ! existence ends during planula P3 stage
+
+[Term]
+id: CHEM:1000032
+name: aged planula
+def: "elongated planula competent to metamorphose , thinner than P3 planula" []
+is_a: CHEM:1000028 ! planula larva
+relationship: RO:0002202 CHEM:1000031 ! develops from planula P3
+relationship: RO:0002488 CHEM:0000042 ! existence starts during aged planula stage
+relationship: RO:0002492 CHEM:0000042 ! existence ends during aged planula stage
+
+[Term]
+id: CHEM:1000033
+name: metamorphosing planula
+def: "planula larva that has stopped swimming and is transforming into a polyp" []
+relationship: RO:0002202 CHEM:1000028 ! develops from planula larva
+relationship: RO:0002488 CHEM:0000043 ! existence starts during settled planula stage
+relationship: RO:0002492 CHEM:0000046 ! existence ends during sculpted disc stage
+
+[Term]
+id: CHEM:1000034
+name: settled planula
+def: "planula larva that has stopped swimming  and fixed to substrate" []
+is_a: CHEM:1000033 ! metamorphosing planula
+relationship: RO:0002492 CHEM:0000043 ! existence ends during settled planula stage
+
+[Term]
+id: CHEM:1000035
+name: blob
+def: "metamorphosing larva that has a pear shape " []
+is_a: CHEM:1000033 ! metamorphosing planula
+relationship: RO:0002202 CHEM:1000034 ! develops from settled planula
+relationship: RO:0002488 CHEM:0000044 ! existence starts during blob stage
+relationship: RO:0002492 CHEM:0000044 ! existence ends during blob stage
+
+[Term]
+id: CHEM:1000036
+name: disc
+def: "transitory form of planula undergoing metamorphosis a flattened circular form attached to the substrate" []
+is_a: CHEM:1000033 ! metamorphosing planula
+relationship: RO:0002202 CHEM:1000035 ! develops from blob
+relationship: RO:0002488 CHEM:0000045 ! existence starts during disc stage
+relationship: RO:0002492 CHEM:0000045 ! existence ends during disc stage
+
+[Term]
+id: CHEM:1000037
+name: sculpted disc
+def: "transitory form of planula undergoing metamorphosis a flattened form attached to the substrate showing irregular indentations  and with small stalk emerging" []
+is_a: CHEM:1000033 ! metamorphosing planula
+relationship: RO:0002202 CHEM:1000036 ! develops from disc
+relationship: RO:0002488 CHEM:0000046 ! existence starts during sculpted disc stage
+
+[Term]
+id: CHEM:1000039
+name: blastomere
+def: "single cell of a cleavage cel embryo" []
+is_a: CL:0000000 ! cell
+relationship: BFO:0000050 CHEM:1000011 ! part of cleaving embryo
+relationship: RO:0002488 CHEM:0000026 ! existence starts during 2-cell stage
+relationship: RO:0002492 CHEM:0000031 ! existence ends during 64-cell stage
+
+[Term]
+id: CHEM:1000040
+name: cytoplasm
+
+[Term]
+id: CHEM:1000041
+name: oral cytoplasm
+is_a: CHEM:1000040 ! cytoplasm
+
+[Term]
+id: CHEM:1000042
+name: aboral cytoplasm
+is_a: CHEM:1000040 ! cytoplasm
+
+[Term]
+id: CHEM:1000043
+name: oral cortex 
+def: "region inheriting the peripheral region of the egg around the animal pole" []
+is_a: GO:0005938 ! cell cortex
+relationship: RO:0002488 CHEM:0000008 ! existence starts during stage III oocyte growth
+relationship: RO:0002492 CHEM:0000014 ! existence ends during cleavage stage
+
+[Term]
+id: CHEM:1000044
+name: oral cortex of oocyte
+is_a: CHEM:1000043 ! oral cortex
+relationship: BFO:0000050 CHEM:1000180 ! part of oocyte
+
+[Term]
+id: CHEM:1000045
+name: oral cortex of egg cell
+is_a: CHEM:1000043 ! oral cortex
+relationship: BFO:0000050 CHEM:1000002 ! part of egg cell
+relationship: RO:0002202 CHEM:1000044 ! develops from oral cortex of oocyte
+
+[Term]
+id: CHEM:1000046
+name: aboral cortex
+def: "region inheriting the peripheral region of the egg around the vegetal pole" []
+is_a: GO:0005938 ! cell cortex
+relationship: RO:0002492 CHEM:0000014 ! existence ends during cleavage stage
+
+[Term]
+id: CHEM:1000047
+name: aboral cortex of oocyte
+def: "region of a stage III oocyte cortex close to the oocyte nucleus" []
+is_a: CHEM:1000043 ! oral cortex
+relationship: BFO:0000050 CHEM:1000180 ! part of oocyte
+relationship: RO:0002492 CHEM:0000008 ! existence ends during stage III oocyte growth
+
+[Term]
+id: CHEM:1000048
+name: oral cytoplasm of oocyte
+def: "region of cytoplasm in a stage III oocyte  in the same hemishere as the nucleus" []
+is_a: CHEM:1000041 ! oral cytoplasm
+relationship: BFO:0000050 CHEM:1000180 ! part of oocyte
+relationship: RO:0002488 CHEM:0000008 ! existence starts during stage III oocyte growth
+relationship: RO:0002492 CHEM:0000008 ! existence ends during stage III oocyte growth
+
+[Term]
+id: CHEM:1000049
+name: aboral cortex of egg
+def: "egg cortex region containing the site of polar body formation" []
+is_a: CHEM:1000042 ! aboral cytoplasm
+relationship: BFO:0000050 CHEM:1000002 ! part of egg cell
+relationship: RO:0002202 CHEM:1000047 ! develops from aboral cortex of oocyte
+
+[Term]
+id: CHEM:1000050
+name: oral cytoplasm of egg
+def: "cytoplasm  in egg hemisphere containing site of polar body formation" []
+is_a: CHEM:1000041 ! oral cytoplasm
+relationship: BFO:0000050 CHEM:1000002 ! part of egg cell
+relationship: RO:0002202 CHEM:1000048 ! develops from oral cytoplasm of oocyte
+
+[Term]
+id: CHEM:1000051
+name: aboral cytoplasm of oocyte
+is_a: CHEM:1000042 ! aboral cytoplasm
+relationship: BFO:0000050 CHEM:1000180 ! part of oocyte
+relationship: RO:0002488 CHEM:0000008 ! existence starts during stage III oocyte growth
+relationship: RO:0002492 CHEM:0000008 ! existence ends during stage III oocyte growth
+
+[Term]
+id: CHEM:1000052
+name: aboral cytoplasm of egg
+is_a: CHEM:1000042 ! aboral cytoplasm
+relationship: BFO:0000050 CHEM:1000002 ! part of egg cell
+relationship: RO:0002202 CHEM:1000051 ! develops from aboral cytoplasm of oocyte
+
+[Term]
+id: CHEM:1000053
+name: spindle-associated
+def: "region of the cell closely surrounding the mitotoc spindle" []
+is_a: GO:0005575 ! cellular component
+relationship: BFO:0000050 CHEM:1000039 ! part of blastomere
+relationship: RO:0002488 CHEM:0000026 ! existence starts during 2-cell stage
+relationship: RO:0002492 CHEM:0000031 ! existence ends during 64-cell stage
+
+[Term]
+id: CHEM:1000054
+name: oral territory
+is_a: CHEM:1000001 ! organism subdivision
+relationship: RO:0002488 CHEM:0000026 ! existence starts during 2-cell stage
+relationship: RO:0002492 CHEM:0000038 ! existence ends during late gastrula stage
+
+[Term]
+id: CHEM:1000055
+name: aboral territory 
+is_a: CHEM:1000001 ! organism subdivision
+relationship: RO:0002488 CHEM:0000026 ! existence starts during 2-cell stage
+relationship: RO:0002492 CHEM:0000038 ! existence ends during late gastrula stage
+
+[Term]
+id: CHEM:1000056
+name: oral pole of embryo
+is_a: CHEM:1000054 ! oral territory
+relationship: BFO:0000050 CHEM:1000010 ! part of embryo
+
+[Term]
+id: CHEM:1000057
+name: aboral pole of embryo
+is_a: CHEM:1000055 ! aboral territory
+relationship: BFO:0000050 CHEM:1000010 ! part of embryo
+
+[Term]
+id: CHEM:1000058
+name: oral pole of planula larva
+is_a: CHEM:1000054 ! oral territory
+relationship: BFO:0000050 CHEM:1000028 ! part of planula larva
+relationship: RO:0002202 CHEM:1000056 ! develops from oral pole of embryo
+relationship: RO:0002488 CHEM:0000039 ! existence starts during planula P1 stage
+relationship: RO:0002492 CHEM:0000043 ! existence ends during settled planula stage
+
+[Term]
+id: CHEM:1000059
+name: aboral pole of planula larva
+is_a: CHEM:1000055 ! aboral territory
+relationship: BFO:0000050 CHEM:1000028 ! part of planula larva
+relationship: RO:0002202 CHEM:1000057 ! develops from aboral pole of embryo
+relationship: RO:0002488 CHEM:0000039 ! existence starts during planula P1 stage
+relationship: RO:0002492 CHEM:0000043 ! existence ends during settled planula stage
+
+[Term]
+id: CHEM:1000060
+name: oral pole blastomeres
+is_a: CHEM:1000054 ! oral territory
+relationship: BFO:0000050 CHEM:1000011 ! part of cleaving embryo
+relationship: RO:0002488 CHEM:0000028 ! existence starts during 8-cell stage
+relationship: RO:0002492 CHEM:0000031 ! existence ends during 64-cell stage
+
+[Term]
+id: CHEM:1000061
+name: aboral pole blastomeres
+is_a: CHEM:1000055 ! aboral territory
+relationship: BFO:0000050 CHEM:1000011 ! part of cleaving embryo
+relationship: RO:0002488 CHEM:0000028 ! existence starts during 8-cell stage
+relationship: RO:0002492 CHEM:0000031 ! existence ends during 64-cell stage
+
+[Term]
+id: CHEM:1000062
+name: oral pole of blastula
+is_a: CHEM:1000054 ! oral territory
+relationship: BFO:0000050 CHEM:1000019 ! part of blastula
+relationship: RO:0002202 CHEM:1000060 ! develops from oral pole blastomeres
+
+[Term]
+id: CHEM:1000063
+name: aboral pole of blastula
+is_a: CHEM:1000055 ! aboral territory
+relationship: BFO:0000050 CHEM:1000019 ! part of blastula
+relationship: RO:0002202 CHEM:1000061 ! develops from aboral pole blastomeres
+
+[Term]
+id: CHEM:1000064
+name: oral pole of gastrula
+is_a: CHEM:1000054 ! oral territory
+relationship: BFO:0000050 CHEM:1000023 ! part of gastrula
+
+[Term]
+id: CHEM:1000065
+name: aboral pole of gastrula
+is_a: CHEM:1000055 ! aboral territory
+relationship: BFO:0000050 CHEM:1000023 ! part of gastrula
+
+[Term]
+id: CHEM:1000066
+name: ectoderm
+synonym: "epidermis" EXACT []
+is_a: CHEM:1000009 ! germ layer
+
+[Term]
+id: CHEM:1000067
+name: endoderm
+synonym: "gastrodermis" EXACT []
+is_a: CHEM:1000009 ! germ layer
+
+[Term]
+id: CHEM:1000068
+name: gastrula outer layer
+is_a: CHEM:1000066 ! ectoderm
+relationship: BFO:0000050 CHEM:1000023 ! part of gastrula
+relationship: RO:0002202 CHEM:1000063 ! develops from aboral pole of blastula
+relationship: RO:0002488 CHEM:0000035 ! existence starts during very early gastrula stage
+relationship: RO:0002492 CHEM:0000038 ! existence ends during late gastrula stage
+
+[Term]
+id: CHEM:1000069
+name: gastrula ingressing cells
+is_a: CHEM:1000067 ! endoderm
+relationship: BFO:0000050 CHEM:1000023 ! part of gastrula
+relationship: RO:0002202 CHEM:1000062 ! develops from oral pole of blastula
+relationship: RO:0002488 CHEM:0000035 ! existence starts during very early gastrula stage
+relationship: RO:0002492 CHEM:0000038 ! existence ends during late gastrula stage
+
+[Term]
+id: CHEM:1000070
+name: oral gastrula outer layer
+is_a: CHEM:1000001 ! organism subdivision
+relationship: BFO:0000050 CHEM:1000023 ! part of gastrula
+relationship: RO:0002202 CHEM:1000062 ! develops from oral pole of blastula
+relationship: RO:0002488 CHEM:0000035 ! existence starts during very early gastrula stage
+relationship: RO:0002492 CHEM:0000038 ! existence ends during late gastrula stage
+
+[Term]
+id: CHEM:1000071
+name: lateral gastrula outer layer
+is_a: CHEM:1000001 ! organism subdivision
+relationship: BFO:0000050 CHEM:1000023 ! part of gastrula
+relationship: RO:0002202 CHEM:1000019 ! develops from blastula
+relationship: RO:0002488 CHEM:0000035 ! existence starts during very early gastrula stage
+relationship: RO:0002492 CHEM:0000038 ! existence ends during late gastrula stage
+
+[Term]
+id: CHEM:1000072
+name: aboral gastrula outer layer
+is_a: CHEM:1000001 ! organism subdivision
+relationship: BFO:0000050 CHEM:1000023 ! part of gastrula
+relationship: RO:0002202 CHEM:1000063 ! develops from aboral pole of blastula
+relationship: RO:0002488 CHEM:0000035 ! existence starts during very early gastrula stage
+relationship: RO:0002492 CHEM:0000038 ! existence ends during late gastrula stage
+
+[Term]
+id: CHEM:1000073
+name: aboral gastrula ingressing cells
+is_a: CHEM:1000001 ! organism subdivision
+relationship: BFO:0000050 CHEM:1000023 ! part of gastrula
+relationship: RO:0002202 CHEM:1000019 ! develops from blastula
+relationship: RO:0002488 CHEM:0000037 ! existence starts during mid gastrula stage
+
+[Term]
+id: CHEM:1000074
+name: oral gastrula ingressing cells
+is_a: CHEM:1000001 ! organism subdivision
+relationship: BFO:0000050 CHEM:1000023 ! part of gastrula
+relationship: RO:0002202 CHEM:1000019 ! develops from blastula
+relationship: RO:0002488 CHEM:0000037 ! existence starts during mid gastrula stage
+
+[Term]
+id: CHEM:1000075
+name: blastocoel roof cell
+is_a: CL:0000000 ! cell
+relationship: BFO:0000050 CHEM:1000023 ! part of gastrula
+relationship: RO:0002202 CHEM:1000019 ! develops from blastula
+relationship: RO:0002488 CHEM:0000035 ! existence starts during very early gastrula stage
+
+[Term]
+id: CHEM:1000076
+name: planula endoderm
+def: "endoderm of the planula" []
+is_a: CHEM:1000067 ! endoderm
+relationship: BFO:0000050 CHEM:1000028 ! part of planula larva
+relationship: RO:0002202 CHEM:1000023 ! develops from gastrula
+relationship: RO:0002488 CHEM:0000039 ! existence starts during planula P1 stage
+
+[Term]
+id: CHEM:1000077
+name: planula ectoderm
+def: "ectoderm of the planula" []
+is_a: CHEM:1000066 ! ectoderm
+relationship: BFO:0000050 CHEM:1000028 ! part of planula larva
+relationship: RO:0002202 CHEM:1000023 ! develops from gastrula
+relationship: RO:0002488 CHEM:0000039 ! existence starts during planula P1 stage
+
+[Term]
+id: CHEM:1000078
+name: aboral planula endoderm
+is_a: CHEM:1000076 ! planula endoderm
+
+[Term]
+id: CHEM:1000079
+name: aboral planula ectoderm
+is_a: CHEM:1000077 ! planula ectoderm
+
+[Term]
+id: CHEM:1000080
+name: oral planula endoderm
+is_a: CHEM:1000076 ! planula endoderm
+
+[Term]
+id: CHEM:1000081
+name: oral planula ectoderm
+is_a: CHEM:1000077 ! planula ectoderm
+
+[Term]
+id: CHEM:1000082
+name: planula lateral neural cells
+is_a: CHEM:1000090 ! planula neural cell
+relationship: RO:0002202 CHEM:1000023 ! develops from gastrula
+relationship: RO:0002488 CHEM:0000039 ! existence starts during planula P1 stage
+
+[Term]
+id: CHEM:1000083
+name: plaunula aboral ectoderm neural cells
+is_a: CHEM:1000090 ! planula neural cell
+relationship: RO:0002202 CHEM:1000023 ! develops from gastrula
+relationship: RO:0002488 CHEM:0000039 ! existence starts during planula P1 stage
+
+[Term]
+id: CHEM:1000084
+name: planula aboral gland cells
+is_a: CHEM:1000091 ! gland cell
+relationship: BFO:0000050 CHEM:1000028 ! part of planula larva
+relationship: RO:0002488 CHEM:0000039 ! existence starts during planula P1 stage
+
+[Term]
+id: CHEM:1000085
+name: endodermal gland cells
+is_a: CHEM:1000091 ! gland cell
+relationship: BFO:0000050 CHEM:1000028 ! part of planula larva
+relationship: RO:0002488 CHEM:0000039 ! existence starts during planula P1 stage
+
+[Term]
+id: CHEM:1000086
+name: interstitial cell
+is_a: CL:0000000 ! cell
+
+[Term]
+id: CHEM:1000087
+name: nematocyte
+def: "specialized cell containing one giant explosive secretory organelle called nematocyst used for prey capture and defense from predators" []
+is_a: CL:0000000 ! cell
+
+[Term]
+id: CHEM:1000088
+name: mesoglea
+def: "jelly-like layer between epithelial layer. The mesoglea is mostly acellular and composed of extracellular matrix" []
+is_a: UBERON:0000061 ! anatomical structure
+
+[Term]
+id: CHEM:1000089
+name: neural cell
+def: "a cell that is part of the nervous system" []
+is_a: CL:0000000 ! cell
+
+[Term]
+id: CHEM:1000090
+name: planula neural cell
+is_a: CHEM:1000089 ! neural cell
+relationship: BFO:0000050 CHEM:1000028 ! part of planula larva
+
+[Term]
+id: CHEM:1000091
+name: gland cell
+def: "specialized cell participating in mucus secretion " []
+is_a: CL:0000000 ! cell
+
+[Term]
+id: CHEM:1000092
+name: smooth muscle cell
+is_a: CL:0000000 ! cell
+
+[Term]
+id: CHEM:1000093
+name: striated muscle cell
+is_a: CL:0000000 ! cell
+
+[Term]
+id: CHEM:1000094
+name: nematoblast
+is_a: CL:0000000 ! cell
+
+[Term]
+id: CHEM:1000095
+name: mouth
+is_a: UBERON:0000061 ! anatomical structure
+
+[Term]
+id: CHEM:1000096
+name: polyp colony
+def: "connected system of gastrozoid and gonozoid polyps, propagating vegetatively " []
+is_a: UBERON:0000061 ! anatomical structure
+relationship: RO:0002202 CHEM:1000028 ! develops from planula larva
+relationship: RO:0002488 CHEM:0000018 ! existence starts during colony stage
+relationship: RO:0002492 CHEM:0000022 ! existence ends during medusa stage
+
+[Term]
+id: CHEM:1000097
+name: stolon
+def: "tubular structure  comprising endoderm and ectodermal layers adhering to the substrate , connecting the bases of the polyps" []
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 CHEM:1000096 ! part of polyp colony
+relationship: RO:0002202 CHEM:1000096 ! develops from polyp colony
+relationship: RO:0002488 CHEM:0000018 ! existence starts during colony stage
+relationship: RO:0002492 CHEM:0000022 ! existence ends during medusa stage
+
+[Term]
+id: CHEM:1000098
+name: stolon growth tip
+def: "growing tip of a stolon" []
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 CHEM:1000097 ! part of stolon
+relationship: RO:0002202 CHEM:1000096 ! develops from polyp colony
+relationship: RO:0002488 CHEM:0000018 ! existence starts during colony stage
+relationship: RO:0002492 CHEM:0000022 ! existence ends during medusa stage
+
+[Term]
+id: CHEM:1000099
+name: stolon mesoglea
+def: "mesoglea layer between the endoderm and ectoderm layers of the stolon" []
+is_a: CHEM:1000088 ! mesoglea
+relationship: BFO:0000050 CHEM:1000097 ! part of stolon
+relationship: RO:0002202 CHEM:1000096 ! develops from polyp colony
+relationship: RO:0002488 CHEM:0000018 ! existence starts during colony stage
+relationship: RO:0002492 CHEM:0000022 ! existence ends during medusa stage
+
+[Term]
+id: CHEM:1000100
+name: stolon body
+def: "segments of the stolon between the bases of the polyps, excluding the growing tip" []
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 CHEM:1000097 ! part of stolon
+relationship: RO:0002202 CHEM:1000096 ! develops from polyp colony
+relationship: RO:0002488 CHEM:0000018 ! existence starts during colony stage
+relationship: RO:0002492 CHEM:0000022 ! existence ends during medusa stage
+
+[Term]
+id: CHEM:1000101
+name: stolon ectoderm
+def: "ectodermal layer within the stolon" []
+is_a: CHEM:1000066 ! ectoderm
+relationship: BFO:0000050 CHEM:1000097 ! part of stolon
+relationship: RO:0002202 CHEM:1000096 ! develops from polyp colony
+relationship: RO:0002488 CHEM:0000018 ! existence starts during colony stage
+relationship: RO:0002492 CHEM:0000022 ! existence ends during medusa stage
+
+[Term]
+id: CHEM:1000102
+name: stolon endoderm
+def: "endodermal layer within the stolon" []
+is_a: CHEM:1000067 ! endoderm
+relationship: BFO:0000050 CHEM:1000097 ! part of stolon
+relationship: RO:0002202 CHEM:1000096 ! develops from polyp colony
+relationship: RO:0002488 CHEM:0000018 ! existence starts during colony stage
+relationship: RO:0002492 CHEM:0000022 ! existence ends during medusa stage
+
+[Term]
+id: CHEM:1000103
+name: stolon interstitial cell
+def: "interstitial cell in the stolon" []
+is_a: CHEM:1000086 ! interstitial cell
+relationship: BFO:0000050 CHEM:1000097 ! part of stolon
+relationship: RO:0002202 CHEM:1000028 ! develops from planula larva
+relationship: RO:0002488 CHEM:0000018 ! existence starts during colony stage
+relationship: RO:0002492 CHEM:0000022 ! existence ends during medusa stage
+
+[Term]
+id: CHEM:1000104
+name: stolon nematoblast
+def: "nematoblast in the stolon" []
+is_a: CHEM:1000094 ! nematoblast
+relationship: BFO:0000050 CHEM:1000097 ! part of stolon
+relationship: RO:0002202 CHEM:1000028 ! develops from planula larva
+relationship: RO:0002488 CHEM:0000018 ! existence starts during colony stage
+relationship: RO:0002492 CHEM:0000022 ! existence ends during medusa stage
+
+[Term]
+id: CHEM:1000105
+name: gonozoid
+def: "polyp specialised for production of medusa by budding" []
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 CHEM:1000096 ! part of polyp colony
+relationship: RO:0002202 CHEM:1000097 ! develops from stolon
+relationship: RO:0002488 CHEM:0000018 ! existence starts during colony stage
+relationship: RO:0002492 CHEM:0000022 ! existence ends during medusa stage
+
+[Term]
+id: CHEM:1000106
+name: gonozoid cap
+def: "structure that closes the distal end of the gonozoid" []
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 CHEM:1000105 ! part of gonozoid
+relationship: RO:0002202 CHEM:1000096 ! develops from polyp colony
+relationship: RO:0002488 CHEM:0000018 ! existence starts during colony stage
+relationship: RO:0002492 CHEM:0000022 ! existence ends during medusa stage
+
+[Term]
+id: CHEM:1000107
+name: gonozoid central tube
+def: "tubular structure comprising endoderm and ectodermal layers at the centre of the gonozoid" []
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 CHEM:1000105 ! part of gonozoid
+relationship: RO:0002202 CHEM:1000096 ! develops from polyp colony
+relationship: RO:0002488 CHEM:0000018 ! existence starts during colony stage
+relationship: RO:0002492 CHEM:0000022 ! existence ends during medusa stage
+
+[Term]
+id: CHEM:1000108
+name: gonozoid mesoglea
+def: "mesoglea layer between the endoderm and ectoderm layers of the gonozoid central tube" []
+is_a: CHEM:1000088 ! mesoglea
+relationship: BFO:0000050 CHEM:1000105 ! part of gonozoid
+relationship: RO:0002202 CHEM:1000096 ! develops from polyp colony
+relationship: RO:0002488 CHEM:0000018 ! existence starts during colony stage
+relationship: RO:0002492 CHEM:0000022 ! existence ends during medusa stage
+
+[Term]
+id: CHEM:1000109
+name: gonozoid ectoderm
+def: "ectodermal layer of the gonozoid including central tube and developing buds" []
+is_a: CHEM:1000066 ! ectoderm
+relationship: BFO:0000050 CHEM:1000105 ! part of gonozoid
+relationship: RO:0002202 CHEM:1000096 ! develops from polyp colony
+relationship: RO:0002488 CHEM:0000018 ! existence starts during colony stage
+relationship: RO:0002492 CHEM:0000022 ! existence ends during medusa stage
+
+[Term]
+id: CHEM:1000110
+name: gonozoid endoderm
+def: "endodermal layer of the gonozoid including central tube and developing buds" []
+is_a: CHEM:1000067 ! endoderm
+relationship: BFO:0000050 CHEM:1000105 ! part of gonozoid
+relationship: RO:0002202 CHEM:1000096 ! develops from polyp colony
+relationship: RO:0002488 CHEM:0000018 ! existence starts during colony stage
+relationship: RO:0002492 CHEM:0000022 ! existence ends during medusa stage
+
+[Term]
+id: CHEM:1000111
+name: medusa bud
+def: "outgrowth of the gonozoid central tube, within which medusa structures develop" []
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 CHEM:1000105 ! part of gonozoid
+relationship: RO:0002202 CHEM:1000096 ! develops from polyp colony
+relationship: RO:0002488 CHEM:0000018 ! existence starts during colony stage
+relationship: RO:0002492 CHEM:0000022 ! existence ends during medusa stage
+
+[Term]
+id: CHEM:1000112
+name: gonozoid interstitial cell
+def: "interstitial cell within the gonozoid" []
+is_a: CHEM:1000086 ! interstitial cell
+relationship: BFO:0000050 CHEM:1000105 ! part of gonozoid
+relationship: RO:0002202 CHEM:1000096 ! develops from polyp colony
+relationship: RO:0002488 CHEM:0000018 ! existence starts during colony stage
+relationship: RO:0002492 CHEM:0000022 ! existence ends during medusa stage
+
+[Term]
+id: CHEM:1000113
+name: epithelium covering buds
+def: "epithelial cell layer positioned between the developing medusa buds and the theca f the gonozoid" []
+is_a: CHEM:1000066 ! ectoderm
+relationship: BFO:0000050 CHEM:1000105 ! part of gonozoid
+relationship: RO:0002202 CHEM:1000096 ! develops from polyp colony
+relationship: RO:0002488 CHEM:0000018 ! existence starts during colony stage
+relationship: RO:0002492 CHEM:0000022 ! existence ends during medusa stage
+
+[Term]
+id: CHEM:1000114
+name: early medusa bud
+def: "outgrowth of the gonozoid central tube, comprising  endoderm layer, ectoderm layers and entocodon " []
+is_a: CHEM:1000111 ! medusa bud
+
+[Term]
+id: CHEM:1000115
+name: mid medusa bud
+def: "bud  on the side of the gonozoid central tube, in which all medusa structures are present but not yet expanded to final proportions" []
+is_a: CHEM:1000111 ! medusa bud
+
+[Term]
+id: CHEM:1000116
+name: late medusa bud
+def: "bud on the side of the gonozoid central tube, containing medusa structures with same proportions as newlyreleased medusa" []
+is_a: CHEM:1000111 ! medusa bud
+
+[Term]
+id: CHEM:1000117
+name: entocodon
+def: "group of cells between the endoderm and ectodderm of the early medusa bud" []
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 CHEM:1000111 ! part of medusa bud
+relationship: RO:0002202 CHEM:1000096 ! develops from polyp colony
+relationship: RO:0002488 CHEM:0000018 ! existence starts during colony stage
+relationship: RO:0002492 CHEM:0000022 ! existence ends during medusa stage
+
+[Term]
+id: CHEM:1000118
+name: developing manubrium
+def: "developing manubrium  within the medusa bud" []
+is_a: CHEM:1000144 ! manubrium
+relationship: BFO:0000050 CHEM:1000111 ! part of medusa bud
+relationship: RO:0002202 CHEM:1000096 ! develops from polyp colony
+relationship: RO:0002488 CHEM:0000018 ! existence starts during colony stage
+relationship: RO:0002492 CHEM:0000022 ! existence ends during medusa stage
+
+[Term]
+id: CHEM:1000119
+name: developing tentacle bulbs
+def: "developing tentacle bud within the medusa bud" []
+is_a: CHEM:1000138 ! medusa tentacle system
+relationship: BFO:0000050 CHEM:1000111 ! part of medusa bud
+relationship: RO:0002202 CHEM:1000096 ! develops from polyp colony
+relationship: RO:0002488 CHEM:0000018 ! existence starts during colony stage
+relationship: RO:0002492 CHEM:0000022 ! existence ends during medusa stage
+
+[Term]
+id: CHEM:1000120
+name: developing radial canal
+def: "developing radial canal within the medusa bud" []
+is_a: CHEM:1000140 ! radial canal
+relationship: BFO:0000050 CHEM:1000111 ! part of medusa bud
+relationship: RO:0002202 CHEM:1000096 ! develops from polyp colony
+relationship: RO:0002488 CHEM:0000018 ! existence starts during colony stage
+relationship: RO:0002492 CHEM:0000022 ! existence ends during medusa stage
+
+[Term]
+id: CHEM:1000121
+name: developing striated muscle
+def: "developing striated muscle within the medusa bud" []
+is_a: CHEM:1000093 ! striated muscle cell
+relationship: BFO:0000050 CHEM:1000111 ! part of medusa bud
+relationship: RO:0002202 CHEM:1000096 ! develops from polyp colony
+relationship: RO:0002488 CHEM:0000018 ! existence starts during colony stage
+relationship: RO:0002492 CHEM:0000022 ! existence ends during medusa stage
+
+[Term]
+id: CHEM:1000122
+name: developing circular canal
+def: "developing circular canal  within the medusa bud" []
+is_a: CHEM:1000141 ! circular canal
+relationship: BFO:0000050 CHEM:1000111 ! part of medusa bud
+relationship: RO:0002202 CHEM:1000096 ! develops from polyp colony
+relationship: RO:0002488 CHEM:0000018 ! existence starts during colony stage
+relationship: RO:0002492 CHEM:0000022 ! existence ends during medusa stage
+
+[Term]
+id: CHEM:1000123
+name: gastrozoid
+def: "polyp specialised for catching prey and digesting" []
+synonym: "hydranth" EXACT []
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 CHEM:1000096 ! part of polyp colony
+relationship: RO:0002202 CHEM:1000097 ! develops from stolon
+relationship: RO:0002488 CHEM:0000018 ! existence starts during colony stage
+relationship: RO:0002492 CHEM:0000022 ! existence ends during medusa stage
+
+[Term]
+id: CHEM:1000124
+name: theca
+def: "chitinous acellular layer surronding and protecting the polyps" []
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 CHEM:1000096 ! part of polyp colony
+relationship: RO:0002488 CHEM:0000018 ! existence starts during colony stage
+relationship: RO:0002492 CHEM:0000022 ! existence ends during medusa stage
+
+[Term]
+id: CHEM:1000125
+name: gastrozoid tentacle
+def: "tentacle surrounding the polyp mouth" []
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 CHEM:1000123 ! part of gastrozoid
+relationship: RO:0002488 CHEM:0000018 ! existence starts during colony stage
+relationship: RO:0002492 CHEM:0000022 ! existence ends during medusa stage
+
+[Term]
+id: CHEM:1000126
+name: gastrozoid mouth
+def: "mouth of the gastrozoid" []
+is_a: CHEM:1000095 ! mouth
+relationship: BFO:0000050 CHEM:1000123 ! part of gastrozoid
+
+[Term]
+id: CHEM:1000127
+name: gastrozoid tentacle nematocyte
+def: "nematocyte located on the tentacle" []
+is_a: CHEM:1000087 ! nematocyte
+relationship: BFO:0000050 CHEM:1000125 ! part of gastrozoid tentacle
+
+[Term]
+id: CHEM:1000128
+name: gastrozoid gland cell
+def: "gland cell of the gastrozoid" []
+is_a: CHEM:1000091 ! gland cell
+relationship: BFO:0000050 CHEM:1000123 ! part of gastrozoid
+
+[Term]
+id: CHEM:1000129
+name: gonotheca
+def: "theca of the gonozoid" []
+is_a: CHEM:1000124 ! theca
+relationship: BFO:0000050 CHEM:1000105 ! part of gonozoid
+
+[Term]
+id: CHEM:1000130
+name: stolon perisarc
+def: "chitinous acellular layer surronding the stolon" []
+is_a: CHEM:1000124 ! theca
+relationship: BFO:0000050 CHEM:1000097 ! part of stolon
+
+[Term]
+id: CHEM:1000131
+name: hydrotheca
+def: "theca of the hydrozoid" []
+is_a: CHEM:1000124 ! theca
+relationship: BFO:0000050 CHEM:1000123 ! part of gastrozoid
+
+[Term]
+id: CHEM:1000132
+name: medusa
+def: "swimming pelagic stage of the C. hemisphaerica life cycle" []
+is_a: UBERON:0000061 ! anatomical structure
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000133
+name: umbrella
+def: "dome-shaped part of the medusa stage" []
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 CHEM:1000132 ! part of medusa
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000134
+name: exumbrella
+def: "outlayer of the umbrella" []
+is_a: CHEM:1000133 ! umbrella
+
+[Term]
+id: CHEM:1000135
+name: subumbrella
+def: "inner layer of the umbrella" []
+is_a: CHEM:1000133 ! umbrella
+
+[Term]
+id: CHEM:1000136
+name: bell margin
+def: "outer border of the umbrella" []
+is_a: CHEM:1000133 ! umbrella
+
+[Term]
+id: CHEM:1000137
+name: statocyst
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 CHEM:1000136 ! part of bell margin
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000138
+name: medusa tentacle system
+def: "medusa tentacle system comprising tentacles, tentacle bulbs and tentacle buds" []
+synonym: "denker et al. 2008" EXACT []
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 CHEM:1000136 ! part of bell margin
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000139
+name: velum
+def: "A muscular flap of tissue surrounding the margin of the bell" []
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 CHEM:1000136 ! part of bell margin
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000140
+name: radial canal
+def: "endodermal canal connecting the manubrium with the bell margin" []
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 CHEM:1000132 ! part of medusa
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000141
+name: circular canal
+def: "endodermal canoal running along the bell margin" []
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 CHEM:1000136 ! part of bell margin
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000142
+name: nerve ring
+def: "concentration of nerve cell bodies and projections running around the margin of the bell" []
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 CHEM:1000136 ! part of bell margin
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000143
+name: gonad
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 CHEM:1000132 ! part of medusa
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000144
+name: manubrium
+def: "central structure of the medusa bearing the mouth and performing extracellular digestion" []
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 CHEM:1000132 ! part of medusa
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000145
+name: nerve cells of the radial canal
+def: "nerve cells of the radial canal" []
+is_a: CHEM:1000089 ! neural cell
+relationship: BFO:0000050 CHEM:1000140 ! part of radial canal
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000146
+name: nerve cells of the circular canal
+def: "nerve cells of the circular canal" []
+is_a: CHEM:1000089 ! neural cell
+relationship: BFO:0000050 CHEM:1000141 ! part of circular canal
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000147
+name: inner nerve ring
+def: "nerve ring located closest to the centre of the medusa" []
+is_a: CHEM:1000089 ! neural cell
+relationship: BFO:0000050 CHEM:1000142 ! part of nerve ring
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000148
+name: outer nerve ring
+def: "nerve ring located farest to the centre of the medusa" []
+is_a: CHEM:1000089 ! neural cell
+relationship: BFO:0000050 CHEM:1000142 ! part of nerve ring
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000149
+name: subumbrella endodermal plate
+def: "endodermal plate of the subumbrella" []
+is_a: CHEM:1000067 ! endoderm
+relationship: BFO:0000050 CHEM:1000135 ! part of subumbrella
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000150
+name: subumbrella striated muscle
+def: "striated muscle of the subumbrella" []
+is_a: CHEM:1000093 ! striated muscle cell
+relationship: BFO:0000050 CHEM:1000135 ! part of subumbrella
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000151
+name: subumbrella smooth muscle
+def: "smooth muscle of the subumbrella" []
+is_a: CHEM:1000092 ! smooth muscle cell
+relationship: BFO:0000050 CHEM:1000135 ! part of subumbrella
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000152
+name: subumbrella nervous cell
+def: "nervous cells of the subumbrella" []
+is_a: CHEM:1000089 ! neural cell
+relationship: BFO:0000050 CHEM:1000135 ! part of subumbrella
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000153
+name: inner layer of the velum
+def: "inner layer of the velum" []
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 CHEM:1000139 ! part of velum
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000154
+name: outerlater of the velum
+def: "outerlater of the velum" []
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 CHEM:1000139 ! part of velum
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000155
+name: striated muscle of the velum
+def: "striated muscle of the velum" []
+is_a: CHEM:1000093 ! striated muscle cell
+relationship: BFO:0000050 CHEM:1000139 ! part of velum
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000156
+name: smooth muscle of the velum
+def: "smooth muscle of the velum" []
+is_a: CHEM:1000092 ! smooth muscle cell
+relationship: BFO:0000050 CHEM:1000139 ! part of velum
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000157
+name: medusa mouth
+def: "medusa mouth as part of the manubrium" []
+is_a: CHEM:1000095 ! mouth
+relationship: BFO:0000050 CHEM:1000144 ! part of manubrium
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000158
+name: manubrium roof
+def: "endoderm layer of the manubrium opposite to the mouth and in direct contact with the thick mesoglea layer of the medusa" []
+is_a: CHEM:1000067 ! endoderm
+relationship: BFO:0000050 CHEM:1000144 ! part of manubrium
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000159
+name: manubrium ectoderm
+def: "ectoderm of the manubrium" []
+is_a: CHEM:1000066 ! ectoderm
+relationship: BFO:0000050 CHEM:1000144 ! part of manubrium
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000160
+name: manubrium endoderm
+def: "endoderm of the manubrium" []
+is_a: CHEM:1000067 ! endoderm
+relationship: BFO:0000050 CHEM:1000144 ! part of manubrium
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000161
+name: manubrium interstital cell
+def: "interstital cell of the manubrium" []
+is_a: CHEM:1000086 ! interstitial cell
+relationship: BFO:0000050 CHEM:1000144 ! part of manubrium
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000162
+name: manubrium gland cell
+def: "gland cell of the manubrium" []
+is_a: CHEM:1000091 ! gland cell
+relationship: BFO:0000050 CHEM:1000144 ! part of manubrium
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000163
+name: manubrium nematoblast
+def: "nematoblast of the manubrium" []
+is_a: CHEM:1000094 ! nematoblast
+relationship: BFO:0000050 CHEM:1000144 ! part of manubrium
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000164
+name: manubrium nematocyte
+def: "nematocyte located on the manubrium" []
+is_a: CHEM:1000087 ! nematocyte
+relationship: BFO:0000050 CHEM:1000144 ! part of manubrium
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000165
+name: thick mesoglea layer of the umbrella
+def: "thick mesoglea layer of the umbrella forming the bulk of the umbrella" []
+is_a: CHEM:1000088 ! mesoglea
+relationship: BFO:0000050 CHEM:1000132 ! part of medusa
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000166
+name: medusa tentacle bud
+def: "initial stage of tentacle bulb formation" []
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 CHEM:1000138 ! part of medusa tentacle system
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000167
+name: medusa tentacle bulb
+def: "swollen structure producing the tentacle and connecting the bell margin to the tentacle" []
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 CHEM:1000138 ! part of medusa tentacle system
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000168
+name: nematogenic ectoderm of the bulb
+def: "cresent-shaped nematogenic ectodermal area of the tentacle bulb, located on the oral side of the bulb" []
+is_a: CHEM:1000066 ! ectoderm
+relationship: BFO:0000050 CHEM:1000167 ! part of medusa tentacle bulb
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000169
+name: tentacle bulb nemtoblast
+def: "nematoblast of the tentacle bulb" []
+is_a: CHEM:1000094 ! nematoblast
+relationship: BFO:0000050 CHEM:1000168 ! part of nematogenic ectoderm of the bulb
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000170
+name: non-nematogenic ectoderm of the bulb
+def: "V-shaped non-nematogenic ectodermal area of the tentacle bulb, located on the aboral side of the bulb" []
+is_a: CHEM:1000066 ! ectoderm
+relationship: BFO:0000050 CHEM:1000167 ! part of medusa tentacle bulb
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000171
+name: nerve cell of the tentacle bulb
+def: "nerve cell of the medusa tentacle bulb" []
+is_a: CHEM:1000089 ! neural cell
+relationship: BFO:0000050 CHEM:1000167 ! part of medusa tentacle bulb
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000172
+name: tentacle bulb endoderm
+def: "endodermal latyer of the medusa tentacle bulb" []
+is_a: CHEM:1000067 ! endoderm
+relationship: BFO:0000050 CHEM:1000167 ! part of medusa tentacle bulb
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000173
+name: medusa tentacle
+def: "tentacle of the medusa not including the tentacle bulb" []
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 CHEM:1000138 ! part of medusa tentacle system
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000174
+name: medusa tentacle endoderm 
+def: "endoderm of the medusa tentacle" []
+is_a: CHEM:1000067 ! endoderm
+relationship: BFO:0000050 CHEM:1000173 ! part of medusa tentacle
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000175
+name: medusa tentacle ectoderm
+def: "ectoderm of the medusa tentacle" []
+is_a: CHEM:1000066 ! ectoderm
+relationship: BFO:0000050 CHEM:1000173 ! part of medusa tentacle
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000176
+name: medusa tentacle nematocyte
+def: "nematocyte of the medusa tentacle" []
+is_a: CHEM:1000087 ! nematocyte
+relationship: BFO:0000050 CHEM:1000173 ! part of medusa tentacle
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000177
+name: primary medusa tentacle
+def: "four first medusa tentacles of the newly hatched medusa, connected to both radial and circular canals " []
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 CHEM:1000138 ! part of medusa tentacle system
+relationship: RO:0002202 CHEM:1000111 ! develops from medusa bud
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000178
+name: secondary medusa tentacle
+def: "medusa tentacle generated after medusa hatching and connected to the circular but not to the radial canal" []
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 CHEM:1000138 ! part of medusa tentacle system
+relationship: RO:0002202 CHEM:1000132 ! develops from medusa
+relationship: RO:0002488 CHEM:0000060 ! existence starts during 8-bulb medusa stage
+
+[Term]
+id: CHEM:1000179
+name: oogonium
+def: "an undifferentiated germ cell that proliferates rapidly and gives rise to oocytes" []
+is_a: CHEM:1000190 ! female germ cell
+relationship: BFO:0000050 CHEM:1000132 ! part of medusa
+
+[Term]
+id: CHEM:1000180
+name: oocyte
+def: "A female germ cell that has entered meiosis." []
+is_a: CHEM:1000190 ! female germ cell
+relationship: BFO:0000050 CHEM:1000132 ! part of medusa
+relationship: RO:0002202 CHEM:1000179 ! develops from oogonium
+
+[Term]
+id: CHEM:1000181
+name: growing oocyte
+def: "oocyte incorporating yolk " []
+is_a: CHEM:1000180 ! oocyte
+relationship: RO:0002488 CHEM:0000060 ! existence starts during 8-bulb medusa stage
+
+[Term]
+id: CHEM:1000182
+name: fully grown oocyte
+def: "oocyte greater than 150µm in diameter competent to undergo meiotic maturation" []
+is_a: CHEM:1000180 ! oocyte
+relationship: RO:0002202 CHEM:1000181 ! develops from growing oocyte
+relationship: RO:0002488 CHEM:0000006 ! existence starts during stage I oocyte growth
+relationship: RO:0002492 CHEM:0000008 ! existence ends during stage III oocyte growth
+
+[Term]
+id: CHEM:1000183
+name: spermatogonium
+def: "An undeveloped male germ cell. Spermatogonia develop into primary spermatocytes" []
+is_a: CHEM:1000189 ! male germ cell
+relationship: BFO:0000050 CHEM:1000132 ! part of medusa
+relationship: RO:0002202 CHEM:1000086 ! develops from interstitial cell
+
+[Term]
+id: CHEM:1000184
+name: spermatid
+def: "A male germ cell that develops from the haploid secondary spermatocytes. Without further division, spermatids undergo structural changes and give rise to spermatozoa." []
+is_a: CHEM:1000189 ! male germ cell
+relationship: BFO:0000050 CHEM:1000132 ! part of medusa
+relationship: RO:0002202 CHEM:1000184 ! develops from spermatid
+relationship: RO:0002488 CHEM:0000060 ! existence starts during 8-bulb medusa stage
+
+[Term]
+id: CHEM:1000185
+name: spermatozoid
+def: "A mature male germ cell that develops from a spermatid" []
+synonym: "sperm" EXACT []
+is_a: CHEM:1000008 ! gamete
+relationship: BFO:0000050 CHEM:1000132 ! part of medusa
+relationship: RO:0002202 CHEM:1000184 ! develops from spermatid
+relationship: RO:0002488 CHEM:0000061 ! existence starts during 12-bulb medusa stage
+
+[Term]
+id: CHEM:1000186
+name: gonad ectoderm
+def: "Ectodermal layer of the gonad" []
+is_a: CHEM:1000066 ! ectoderm
+relationship: BFO:0000050 CHEM:1000143 ! part of gonad
+relationship: RO:0002202 CHEM:1000132 ! develops from medusa
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000187
+name: nerve cells of the gonad ectoderm
+def: "nerve cells located in the ectoderm of hydrozoan gonad" []
+is_a: CHEM:1000089 ! neural cell
+relationship: BFO:0000050 CHEM:1000143 ! part of gonad
+relationship: RO:0002202 CHEM:1000132 ! develops from medusa
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000188
+name: gonad endoderm
+def: "Ectodermal layer of the gonad" []
+is_a: CHEM:1000067 ! endoderm
+relationship: BFO:0000050 CHEM:1000143 ! part of gonad
+relationship: RO:0002202 CHEM:1000132 ! develops from medusa
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CHEM:1000189
+name: male germ cell
+is_a: CHEM:1000191 ! germ cell
+
+[Term]
+id: CHEM:1000190
+name: female germ cell
+is_a: CHEM:1000191 ! germ cell
+
+[Term]
+id: CHEM:1000191
+name: germ cell
+is_a: CL:0000000 ! cell
+relationship: BFO:0000050 CHEM:1000143 ! part of gonad
+relationship: RO:0002202 CHEM:1000132 ! develops from medusa
+relationship: RO:0002488 CHEM:0000059 ! existence starts during 4-bulb medusa stage
+
+[Term]
+id: CL:0000000
+name: cell
+def: "A material entity of anatomical origin (part of or deriving from an organism) that has as its parts a maximally connected cell compartment surrounded by a plasma membrane." []
+
+[Term]
+id: GO:0005575
+name: cellular component
+relationship: BFO:0000050 CL:0000000 ! part of cell
+
+[Term]
+id: GO:0005938
+name: cell cortex
+
+[Term]
+id: UBERON:0000061
+name: anatomical structure
+
+[Term]
+id: UBERON:0000105
+name: life cycle stage
+
+[Typedef]
+id: BFO:0000050
+name: part of
+
+[Typedef]
+id: RO:0002087
+name: immediately preceded by
+
+[Typedef]
+id: RO:0002202
+name: develops from
+
+[Typedef]
+id: RO:0002488
+name: existence starts during
+
+[Typedef]
+id: RO:0002492
+name: existence ends during
 
