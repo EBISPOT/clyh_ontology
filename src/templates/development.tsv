@@ -1,0 +1,65 @@
+ID	Stage	part of stage	stage preceded by 	dev stage	Synonyms	Reference	Definition	uberon (xref)
+ID	A rdfs:label	C 'part of' some %	C 'immediately preceded by' some %	C %	A oboInOwl:hasExactSynonym SPLIT=|	A obo:IAO_0000301	A obo:IAO_0000115	
+CHEM:0000001	gametogenesis						phase of sexual reproduction in which certain cells of a female or male individual (parent) are transformed into specialized reproductive cells (gametes) that will initiate development of a progeny individual (offspring) upon fertilization.	
+CHEM:0000002	spermatogenesis	gametogenesis						
+CHEM:0000003	oogenesis	gametogenesis						
+CHEM:0000004	previtellogenic stage	oogenesis		obo:UBERON_0000105			Entered into meiosis, DNA replicated, no yolk accumulation.	obo:UBERON_0000105
+CHEM:0000005	oocyte growth	oogenesis						
+CHEM:0000006	stage I oocyte growth	oocyte growth	previtellogenic stage			Amiel and Houliston Dev. Biol (2009)	Meiotic Prophase I arrest, GV in centre, diameter x	
+CHEM:0000007	stage II oocyte growth	oocyte growth	stage I oocyte growth			Amiel and Houliston Dev. Biol (2009)	Meiotic Prophase I arrest, GV off centre, diameter x	
+CHEM:0000008	stage III oocyte growth	oocyte growth	stage II oocyte growth			Amiel and Houliston Dev. Biol (2009)	Meiotic Prophase I arrest, GV off centre, diameter x	
+CHEM:0000009	oocyte meiotic maturation	gametogenesis	stage III oocyte growth			Amiel and Houliston Dev. Biol (2009)	oocyte undergoing meiosis completion from prophase I to G0  of first meiotic cycle	
+CHEM:0000010	gamete stage		gametogenesis					
+CHEM:0000011	unfertilized egg stage	gamete stage	oocyte meiotic maturation			Amiel and Houliston Dev. Biol (2009)	matture female germ cell. not yet fertilized. Meiotic divisions complete. Spawned egg with female pronucleus.	
+CHEM:0000012	spermatozoid stage	gamete stage	spermatogenesis				mature male germ cell. 	
+CHEM:0000013	embryonic development		gamete stage	obo:UBERON_0000105				obo:UBERON_0000105
+CHEM:0000014	cleavage stage	embryonic development	gamete stage	obo:UBERON_0000105				obo:UBERON_0000107
+CHEM:0000015	blastula stage	embryonic development	cleavage stage	obo:UBERON_0000105				obo:UBERON_0000108
+CHEM:0000016	gastrula stage	embryonic development	blastula stage	obo:UBERON_0000105				obo:UBERON_0000109
+CHEM:0000017	planula stage		embryonic development	obo:UBERON_0000105	larval development			obo:UBERON:0000069
+CHEM:0000018	colony stage		metamorphosis	obo:UBERON_0000105			colony containing  mature or developing gonozoids , gastrozoids and stolons.	obo:UBERON_0000105
+CHEM:0000019	metamorphosis		planula stage	obo:UBERON_0000105				obo:UBERON_0000105
+CHEM:0000020	gastrozoid development	colony stage						
+CHEM:0000021	gonozoid development	colony stage					Non feeding polyp specialized in budding medusae 	
+CHEM:0000022	medusa stage		gonozoid development	obo:UBERON_0000105				obo:UBERON_0000105
+CHEM:0000023	medusa budding	medusa stage	gonozoid development					
+CHEM:0000024	medusa growth	medusa stage	medusa budding					
+CHEM:0000025	one cell stage	cleavage stage	gamete stage	obo:UBERON_0000105	zygote | fertilised egg	Y. Kraus et al in preparation?	Zygote fertilized egg, zygote nucleus forms at animal pole (about 0-50 min post fertilization at 18°C).	obo:UBERON_0000106
+CHEM:0000026	2-cell stage	cleavage stage	one cell stage	obo:UBERON_0000105		Y. Kraus et al in preparation?	Two cell-stage embryo. First cleaveages unipolar and start at the animal pole (about 50-80 min post fertilization at 18°C).	obo:UBERON_0007232
+CHEM:0000027	4-cell stage	cleavage stage	2-cell stage	obo:UBERON_0000105			Four cell-stage embryo. Second cleaveages unipolar and start at the animal pole (about 80-110 min post fertilization at 18°C). 	obo:UBERON_0007233
+CHEM:0000028	8-cell stage	cleavage stage	4-cell stage	obo:UBERON_0000105			Eight cell-stage embryo (about 2h post fertilization at 18°C).	obo:UBERON_0007236
+CHEM:0000029	16-cell stage	cleavage stage	8-cell stage				Sixteen cell-stage embryo (about 2.5h post fertilization at 18°C).	
+CHEM:0000030	32-cell stage	cleavage stage	16-cell stage				thirty two cell-stage embryo (about 3h post fertilization at 18°C).	
+CHEM:0000031	64-cell stage	cleavage stage	32-cell stage				sixty four cell-stage embryo (about 3h post fertilization at 18°C).	
+CHEM:0000032	early blastula stage	blastula stage	64-cell stage				Cells rounded and loosely adhered, Nuclei central  (5-6h post fertilization at 18°C).	
+CHEM:0000033	mid blastula stage	blastula stage	early blastula stage				Cell contacts extended, cells polarised, nuclei apical (8h post fertilization at 18°C).	
+CHEM:0000034	late blastula stage	blastula stage	mid blastula stage				Cell polarized and columnar, nuclei apical (9- 10h post fertilization at 18°C).	
+CHEM:0000035	very early gastrula stage	gastrula stage	very early gastrula stage				Visible pointed oral pole but no cell ingression, ciliogenesis starting (12-13h post fertilization at 18°C). 	
+CHEM:0000036	early gastrula stage	gastrula stage	mid gastrula stage				A few cells ingressed at pointed oral pole, swimming started  (14-16h post fertilization at 18°C).	
+CHEM:0000037	mid gastrula stage	gastrula stage	early gastrula stage				Ingression to fill balastotocoel half completed (17- 18h post fertilization at 18°C)	
+CHEM:0000038	late gastrula stage	gastrula stage	mid gastrula stage				Blastocoel full, no epithelisation of internal cells (20h post fertilization at18°C	
+CHEM:0000039	planula P1 stage	planula stage	late gastrula stage				Epithelisation beginning at aboral pole (as seen at 24h post fertilization at 18°C)	
+CHEM:0000040	planula P2 stage	planula stage	planula P1 stage				Visible central cavity (as seen at 48h post fertilization at 18°C)	
+CHEM:0000041	planula P3 stage	planula stage	planula P2 stage				Competent to metamorphose as (72h post fertilization at 18°C)	
+CHEM:0000042	aged planula stage	planula stage	planula P3 stage				Aged planula (> 3 days post fertilization at 18°C) but not received metamporphosis signal.	
+CHEM:0000043	settled planula stage	metamorphosis	planula stage				torpedo shape planula that stopped swimming	
+CHEM:0000044	blob stage	metamorphosis	settled planula stage				irregularly shaped metamorphosing planula attached to substrate, not yet flattened	
+CHEM:0000045	disc stage	metamorphosis	blob stage				metamorphosing planula attached to the substrate and in shape of a flattened disc	
+CHEM:0000046	sculpted disc stage	metamorphosis	disc stage				metamorphosing planula attached to the substrate and in shape of a flattened disc with sculpted indentations	
+CHEM:0000047	primary polyp stalk extension stage	metamorphosis	sculpted disc stage				uniform extension emerging from the sculpted disc	
+CHEM:0000048	primary polyp developing head stage	metamorphosis	primary polyp stalk extension stage				swollen distal extremity developing into a functional primary polyp head	
+CHEM:0000049	functional primary polyp stage	metamorphosis	primary polyp developing head stage				theca of the primary polyp open on the oral side and mouth open	
+CHEM:0000050	stalk extenstion stage	gastrozoid development					uniform extension emerging from the stolon as first stage of gastrozoid development	
+CHEM:0000051	developing head stage	gastrozoid development	stalk extenstion stage				swollen distal extremity developing into a complete gastrozoid head	
+CHEM:0000052	functional gastrozoid stage	gastrozoid development	developing head stage				complete and functional gastrozoid with open hydrotheca and mouth	
+CHEM:0000053	growing gonozoid stage	gonozoid development					growing and developing gonozoid	
+CHEM:0000054	budding gonozoid stage	gonozoid development	growing gonozoid stage				mature gonozoid budding medusae	
+CHEM:0000055	non-budding gonozoid stage	gonozoid development	growing gonozoid stage				mature gonozoid not containing any medusa bud only central tube and disc-shaped cap	
+CHEM:0000056	early medusa bud stage	medusa budding	budding gonozoid stage				medusa bud with visible ectoderm, endoderm and entocodon	
+CHEM:0000057	mid medusa bud stage	medusa budding	early medusa bud stage				medusa bud with forming subumbrella cavity	
+CHEM:0000058	late medusa bud stage	medusa budding	mid medusa bud stage				medusa bud with with folding umbrella	
+CHEM:0000059	4-bulb medusa stage	medusa growth	late medusa bud stage		baby medusa stage		period of medusa growth between release medusa from gonozoid  until appearance of secondary tentacles. Only  4 tentacle bulbs present 	
+CHEM:0000060	8-bulb medusa stage	medusa growth	4-bulb medusa stage				period of medusa growth when only 8 tentacles are present 	
+CHEM:0000061	12-bulb medusa stage	medusa growth	8-bulb medusa stage		young medusa stage		period of medusa growth when only 12 tentacles are present 	
+CHEM:0000062	16-bulb immature medusa stage	medusa growth	12-bulb medusa stage				period of medusa growth when only 16 tentacles are present. No mature gametes (eg 5mm diameter) 	
+CHEM:0000063	mature adult medusa stage	medusa growth	16-bulb immature medusa stage				period of medusa growth when only 16 tentacles are present. Gonads contain mature gametes. (eg 10mm diameter)	
