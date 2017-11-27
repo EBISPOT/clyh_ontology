@@ -84,7 +84,7 @@ CHEM:1000191	germ cell	cell	gonad	medusa	4-bulb medusa stage						CL:0000586
 CHEM:1000189	male germ cell	germ cell	gonad	medusa	4-bulb medusa stage						CL:0000015			
 CHEM:1000183	spermatogonium	male germ cell	gonad	interstitial cell	4-bulb medusa stage		An undeveloped male germ cell. Spermatogonia develop into primary spermatocytes				CL:0000020			
 CHEM:1000184	spermatid	male germ cell	gonad	spermatogonium	8-bulb medusa stage		A male germ cell that develops from the haploid secondary spermatocytes. Without further division, spermatids undergo structural changes and give rise to spermatozoa.				CL:0000018			
-CHEM:1000185	spermatozoid	gamete | male germ cell	gonad	spermatid	12-bulb medusa stage		A mature male germ cell that develops from a spermatid	sperm			CL:0000019			
+CHEM:1000185	spermatozoid	male germ cell	gonad	spermatid	12-bulb medusa stage		A mature male germ cell that develops from a spermatid	sperm			CL:0000019			
 CHEM:1000190	female germ cell	germ cell	gonad	medusa	4-bulb medusa stage						CL:0000021			
 CHEM:1000179	oogonium	female germ cell	gonad	medusa	4-bulb medusa stage		an undifferentiated germ cell that proliferates rapidly and gives rise to oocytes							
 CHEM:1000180	oocyte	female germ cell	gonad	oogonium	4-bulb medusa stage		A female germ cell that has entered meiosis.				CL:0000023			
