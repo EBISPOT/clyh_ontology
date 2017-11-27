@@ -12,7 +12,7 @@ CHEM:0000009	oocyte meiotic maturation	oogenesis period	stage III oocyte growth 
 CHEM:0000010	spermatogenesis period	gametogenesis period		obo:UBERON_0000105				
 CHEM:0000011	spermatogonium stage	spermatogenesis period						
 CHEM:0000012	spermatid stage	spermatogenesis period	spermatogonium stage					
-CHEM:0000013	embryonic development		gametogensis	obo:UBERON_0000105				obo:UBERON_0000105
+CHEM:0000013	embryonic development		gametogenesis	obo:UBERON_0000105				obo:UBERON_0000105
 CHEM:0000014	gamete period	embryonic development	gametogenesis period	obo:UBERON_0000105				
 CHEM:0000015	unfertilized egg stage	gamete period	oocyte meiotic maturation			Amiel and Houliston Dev. Biol (2009)	matture female germ cell. not yet fertilized. Meiotic divisions complete. Spawned egg with female pronucleus.	
 CHEM:0000016	spermatozoid stage	gamete period	spermatid stage				mature male germ cell. 	
