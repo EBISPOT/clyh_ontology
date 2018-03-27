@@ -1,0 +1,16 @@
+
+"@context":
+
+ontologies:
+
+## CHEM
+
+  - id: chem
+    preferredPrefix: CHEM
+    title: Clytia ontology
+    uri: http://purl.obolibrary.org/obo/chem.owl
+    base_uri:
+      - http://purl.obolibrary.org/obo/CHEM_
+    reasoner: EL
+    oboSlims: false
+    ontology_purl : file:///opt/ols/ontologies/chem.owl
