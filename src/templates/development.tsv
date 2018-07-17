@@ -1,6 +1,7 @@
-ID	Stage	part of stage	stage preceded by 	dev stage	Synonyms	Reference	Definition	uberon (xref)
+ID	Stage	part of stage	stage preceded by 	dev stage (is-a)	Synonyms	Reference	Definition	uberon (xref)
 ID	A rdfs:label	C 'part of' some %	C 'immediately preceded by' some %	C %	A oboInOwl:hasExactSynonym SPLIT=|	A obo:IAO_0000301	A obo:IAO_0000115	
-CHEM:0000001	gametogenesis							
+UBERON:0000105	life cycle stage							
+CHEM:0000001	gametogenesis			obo:UBERON_0000105				
 CHEM:0000002	gametogenesis period	gametogenesis		obo:UBERON_0000105			phase of sexual reproduction in which certain cells of a female or male individual (parent) are transformed into specialized reproductive cells (gametes) that will initiate development of a progeny individual (offspring) upon fertilization.	
 CHEM:0000003	oogenesis period	gametogenesis period		obo:UBERON_0000105				
 CHEM:0000004	previtellogenic stage	oogenesis period					Entered into meiosis, DNA replicated, no yolk accumulation.	obo:UBERON_0000105
@@ -38,8 +39,7 @@ CHEM:0000035	planula P1 stage	planula period	late gastrula stage				Epithelisati
 CHEM:0000036	planula P2 stage	planula period	planula P1 stage				Visible central cavity (as seen at 48h post fertilization at 18°C)	
 CHEM:0000037	planula P3 stage	planula period	planula P2 stage				Competent to metamorphose as (72h post fertilization at 18°C)	
 CHEM:0000038	aged planula stage	planula period	planula P3 stage				Aged planula (> 3 days post fertilization at 18°C) but not received metamporphosis signal.	
-CHEM:0000039	metamorphosis cycle		embryonic development					
-CHEM:0000040	metamorphosis period	gametogenesis	planula period	obo:UBERON_0000105				obo:UBERON_0000105
+CHEM:0000040	metamorphosis period		planula period	obo:UBERON_0000105				obo:UBERON_0000105
 CHEM:0000041	settled planula stage	metamorphosis period	planula period				torpedo shape planula that stopped swimming	
 CHEM:0000042	blob stage	metamorphosis period	settled planula stage				irregularly shaped metamorphosing planula attached to substrate, not yet flattened	
 CHEM:0000043	disc stage	metamorphosis period	blob stage				metamorphosing planula attached to the substrate and in shape of a flattened disc	
@@ -47,23 +47,21 @@ CHEM:0000044	sculpted disc stage	metamorphosis period	disc stage				metamorphosi
 CHEM:0000045	primary polyp stalk extension stage	metamorphosis period	sculpted disc stage				uniform extension emerging from the sculpted disc	
 CHEM:0000046	primary polyp developing head stage	metamorphosis period	primary polyp stalk extension stage				swollen distal extremity developing into a functional primary polyp head	
 CHEM:0000047	functional primary polyp stage	metamorphosis period	primary polyp developing head stage				theca of the primary polyp open on the oral side and mouth open	
-CHEM:0000048	colony phase							
-CHEM:0000049	colony period	colony phase	metamorphosis period	obo:UBERON_0000105			colony containing  mature or developing gonozoids , gastrozoids and stolons.	obo:UBERON_0000105
-CHEM:0000050	gastrozoid development	colony period						
+CHEM:0000049	colony phase		metamorphosis period	obo:UBERON_0000105			colony containing  mature or developing gonozoids , gastrozoids and stolons.	obo:UBERON_0000105
+CHEM:0000050	gastrozoid development	colony phase						
 CHEM:0000051	stalk extenstion stage	gastrozoid development					uniform extension emerging from the stolon as first stage of gastrozoid development	
 CHEM:0000052	developing head stage	gastrozoid development	stalk extenstion stage				swollen distal extremity developing into a complete gastrozoid head	
 CHEM:0000053	functional gastrozoid stage	gastrozoid development	developing head stage				complete and functional gastrozoid with open hydrotheca and mouth	
-CHEM:0000054	gonozoid development	colony period					Non feeding polyp specialized in budding medusae	
+CHEM:0000054	gonozoid development	colony phase					Non feeding polyp specialized in budding medusae	
 CHEM:0000055	growing gonozoid stage	gonozoid development					growing and developing gonozoid	
 CHEM:0000056	budding gonozoid stage	gonozoid development	growing gonozoid stage				mature gonozoid budding medusae	
 CHEM:0000057	non-budding gonozoid stage	gonozoid development	growing gonozoid stage				mature gonozoid not containing any medusa bud only central tube and disc-shaped cap	
-CHEM:0000058	medusa phase							
-CHEM:0000059	medusa period	medusa phase	gonozoid development	obo:UBERON_0000105				obo:UBERON_0000105
-CHEM:0000060	medusa budding	medusa period	gonozoid development					
+CHEM:0000059	medusa phase		gonozoid development	obo:UBERON_0000105				obo:UBERON_0000105
+CHEM:0000060	medusa budding	medusa phase	gonozoid development					
 CHEM:0000061	early medusa bud stage	medusa budding	budding gonozoid stage				medusa bud with visible ectoderm, endoderm and entocodon	
 CHEM:0000062	mid medusa bud stage	medusa budding	early medusa bud stage				medusa bud with forming subumbrella cavity	
 CHEM:0000063	late medusa bud stage	medusa budding	mid medusa bud stage				medusa bud with with folding umbrella	
-CHEM:0000064	medusa growth	medusa period	medusa budding					
+CHEM:0000064	medusa growth	medusa phase	medusa budding					
 CHEM:0000065	4-bulb medusa stage	medusa growth	late medusa bud stage		baby medusa stage		period of medusa growth between release medusa from gonozoid  until appearance of secondary tentacles. Only  4 tentacle bulbs present 	
 CHEM:0000066	8-bulb medusa stage	medusa growth	4-bulb medusa stage				period of medusa growth when only 8 tentacles are present 	
 CHEM:0000067	12-bulb medusa stage	medusa growth	8-bulb medusa stage		young medusa stage		period of medusa growth when only 12 tentacles are present 	

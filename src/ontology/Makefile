@@ -21,7 +21,6 @@ all: sparql_test all_imports $(ONT).owl $(ONT).obo development-generated.owl ana
 test: sparql_test all
 prepare_release: all
 	cp $(ONT).owl $(ONT).obo $(RELEASEDIR) &&\
-	mkdir -p $(RELEASEDIR)/imports &&\
 	echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on github"
 
 # ----------------------------------------
@@ -77,7 +76,7 @@ mirror/%.owl: $(SRC)
 # ----------------------------------------
 # copy from staging area (this directory) to top-level
 release: $(ONT).owl $(ONT).obo
-	cp $^ $(RELEASEDIR) && cp imports/* $(RELEASEDIR)/imports
+	cp $^ $(RELEASEDIR) 
 
 # ----------------------------------------
 # Sparql queries: Q/C

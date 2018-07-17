@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/chem/chem.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/chem/releases/2017-11-27/chem.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/chem/releases/2018-07-17/chem.owl"/>
         <rdfs:comment>Clytia hemisphaerica ontology</rdfs:comment>
     </owl:Ontology>
     
@@ -119,6 +119,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEM_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEM_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gametogenesis</rdfs:label>
     </owl:Class>
     
@@ -870,30 +871,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CHEM_0000039 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEM_0000039">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000013"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">metamorphosis cycle</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/CHEM_0000040 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEM_0000040">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
@@ -1052,24 +1033,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CHEM_0000048 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEM_0000048">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">colony phase</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/CHEM_0000049 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEM_0000049">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000048"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
@@ -1077,7 +1044,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">colony containing  mature or developing gonozoids , gastrozoids and stolons.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">colony period</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">colony phase</rdfs:label>
     </owl:Class>
     
 
@@ -1225,31 +1192,17 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CHEM_0000058 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEM_0000058">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medusa phase</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/CHEM_0000059 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEM_0000059">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000058"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000054"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medusa period</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medusa phase</rdfs:label>
     </owl:Class>
     
 
@@ -3495,13 +3448,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000048"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000049"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000058"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interstitial cell in the stolon</obo:IAO_0000115>
@@ -3556,13 +3509,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000048"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000049"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000058"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interstitial cell within the gonozoid</obo:IAO_0000115>
@@ -3627,13 +3580,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000048"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000049"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000058"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nematoblast in the stolon</obo:IAO_0000115>
@@ -4148,13 +4101,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000048"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000049"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000058"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">connected system of gastrozoid and gonozoid polyps, propagating vegetatively </obo:IAO_0000115>
@@ -4181,13 +4134,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000048"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000049"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000058"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tubular structure  comprising endoderm and ectodermal layers adhering to the substrate , connecting the bases of the polyps</obo:IAO_0000115>
@@ -4214,13 +4167,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000048"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000049"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000058"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">growing tip of a stolon</obo:IAO_0000115>
@@ -4248,13 +4201,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000048"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000049"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000058"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mesoglea layer between the endoderm and ectoderm layers of the stolon</obo:IAO_0000115>
@@ -4281,13 +4234,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000048"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000049"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000058"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">segments of the stolon between the bases of the polyps, excluding the growing tip</obo:IAO_0000115>
@@ -4315,13 +4268,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000048"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000049"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000058"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ectodermal layer within the stolon</obo:IAO_0000115>
@@ -4349,13 +4302,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000048"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000049"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000058"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endodermal layer within the stolon</obo:IAO_0000115>
@@ -4382,13 +4335,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000048"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000049"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000058"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polyp specialised for production of medusa by budding</obo:IAO_0000115>
@@ -4415,13 +4368,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000048"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000049"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000058"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">structure that closes the distal end of the gonozoid</obo:IAO_0000115>
@@ -4448,13 +4401,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000048"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000049"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000058"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tubular structure comprising endoderm and ectodermal layers at the centre of the gonozoid</obo:IAO_0000115>
@@ -4482,13 +4435,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000048"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000049"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000058"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ectodermal layer of the gonozoid including central tube and developing buds</obo:IAO_0000115>
@@ -4516,13 +4469,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000048"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000049"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000058"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endodermal layer of the gonozoid including central tube and developing buds</obo:IAO_0000115>
@@ -4550,13 +4503,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000048"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000049"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000058"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epithelial cell layer positioned between the developing medusa buds and the theca f the gonozoid</obo:IAO_0000115>
@@ -4583,13 +4536,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000048"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000049"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000058"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">outgrowth of the gonozoid central tube, within which medusa structures develop</obo:IAO_0000115>
@@ -4646,13 +4599,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000048"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000049"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000058"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">group of cells between the endoderm and ectodderm of the early medusa bud</obo:IAO_0000115>
@@ -4680,13 +4633,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000048"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000049"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000058"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">developing manubrium  within the medusa bud</obo:IAO_0000115>
@@ -4714,13 +4667,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000048"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000049"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000058"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">developing tentacle bud within the medusa bud</obo:IAO_0000115>
@@ -4748,13 +4701,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000048"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000049"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000058"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">developing radial canal within the medusa bud</obo:IAO_0000115>
@@ -4782,13 +4735,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000048"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000049"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000058"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">developing striated muscle within the medusa bud</obo:IAO_0000115>
@@ -4816,13 +4769,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000048"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000049"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000058"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">developing circular canal  within the medusa bud</obo:IAO_0000115>
@@ -4849,13 +4802,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000048"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000049"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000058"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polyp specialised for catching prey and digesting</obo:IAO_0000115>
@@ -4878,13 +4831,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000048"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000049"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000058"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tentacle surrounding the polyp mouth</obo:IAO_0000115>
@@ -4912,6 +4865,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEM_1000153 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEM_1000153">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">matrix</rdfs:label>
     </owl:Class>
     
@@ -4930,13 +4884,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000048"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000049"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000058"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chitinous acellular layer surronding and protecting the polyps</obo:IAO_0000115>
@@ -5022,13 +4976,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000048"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000049"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000058"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEM_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mesoglea layer between the endoderm and ectoderm layers of the gonozoid central tube</obo:IAO_0000115>

@@ -1,11 +1,12 @@
 format-version: 1.2
-data-version: chem/releases/2017-11-27/chem.owl
+data-version: chem/releases/2018-07-17/chem.owl
 remark: Clytia hemisphaerica ontology
 ontology: chem/chem
 
 [Term]
 id: CHEM:0000001
 name: gametogenesis
+is_a: UBERON:0000105 ! life cycle stage
 
 [Term]
 id: CHEM:0000002
@@ -266,15 +267,9 @@ relationship: BFO:0000050 CHEM:0000034 ! part of planula period
 relationship: RO:0002087 CHEM:0000037 ! immediately preceded by planula P3 stage
 
 [Term]
-id: CHEM:0000039
-name: metamorphosis cycle
-relationship: RO:0002087 CHEM:0000013 ! immediately preceded by embryonic development
-
-[Term]
 id: CHEM:0000040
 name: metamorphosis period
 is_a: UBERON:0000105 ! life cycle stage
-relationship: BFO:0000050 CHEM:0000001 ! part of gametogenesis
 relationship: RO:0002087 CHEM:0000034 ! immediately preceded by planula period
 
 [Term]
@@ -327,21 +322,16 @@ relationship: BFO:0000050 CHEM:0000040 ! part of metamorphosis period
 relationship: RO:0002087 CHEM:0000046 ! immediately preceded by primary polyp developing head stage
 
 [Term]
-id: CHEM:0000048
-name: colony phase
-
-[Term]
 id: CHEM:0000049
-name: colony period
+name: colony phase
 def: "colony containing  mature or developing gonozoids , gastrozoids and stolons." []
 is_a: UBERON:0000105 ! life cycle stage
-relationship: BFO:0000050 CHEM:0000048 ! part of colony phase
 relationship: RO:0002087 CHEM:0000040 ! immediately preceded by metamorphosis period
 
 [Term]
 id: CHEM:0000050
 name: gastrozoid development
-relationship: BFO:0000050 CHEM:0000049 ! part of colony period
+relationship: BFO:0000050 CHEM:0000049 ! part of colony phase
 
 [Term]
 id: CHEM:0000051
@@ -367,7 +357,7 @@ relationship: RO:0002087 CHEM:0000052 ! immediately preceded by developing head 
 id: CHEM:0000054
 name: gonozoid development
 def: "Non feeding polyp specialized in budding medusae" []
-relationship: BFO:0000050 CHEM:0000049 ! part of colony period
+relationship: BFO:0000050 CHEM:0000049 ! part of colony phase
 
 [Term]
 id: CHEM:0000055
@@ -390,20 +380,15 @@ relationship: BFO:0000050 CHEM:0000054 ! part of gonozoid development
 relationship: RO:0002087 CHEM:0000055 ! immediately preceded by growing gonozoid stage
 
 [Term]
-id: CHEM:0000058
-name: medusa phase
-
-[Term]
 id: CHEM:0000059
-name: medusa period
+name: medusa phase
 is_a: UBERON:0000105 ! life cycle stage
-relationship: BFO:0000050 CHEM:0000058 ! part of medusa phase
 relationship: RO:0002087 CHEM:0000054 ! immediately preceded by gonozoid development
 
 [Term]
 id: CHEM:0000060
 name: medusa budding
-relationship: BFO:0000050 CHEM:0000059 ! part of medusa period
+relationship: BFO:0000050 CHEM:0000059 ! part of medusa phase
 relationship: RO:0002087 CHEM:0000054 ! immediately preceded by gonozoid development
 
 [Term]
@@ -430,7 +415,7 @@ relationship: RO:0002087 CHEM:0000062 ! immediately preceded by mid medusa bud s
 [Term]
 id: CHEM:0000064
 name: medusa growth
-relationship: BFO:0000050 CHEM:0000059 ! part of medusa period
+relationship: BFO:0000050 CHEM:0000059 ! part of medusa phase
 relationship: RO:0002087 CHEM:0000060 ! immediately preceded by medusa budding
 
 [Term]
@@ -1184,8 +1169,8 @@ def: "interstitial cell in the stolon" []
 is_a: CHEM:1000095 ! interstitial cell
 relationship: BFO:0000050 CHEM:1000128 ! part of stolon
 relationship: RO:0002202 CHEM:1000040 ! develops from planula larva
-relationship: RO:0002488 CHEM:0000048 ! existence starts during colony phase
-relationship: RO:0002492 CHEM:0000058 ! existence ends during medusa phase
+relationship: RO:0002488 CHEM:0000049 ! existence starts during colony phase
+relationship: RO:0002492 CHEM:0000059 ! existence ends during medusa phase
 
 [Term]
 id: CHEM:1000097
@@ -1209,8 +1194,8 @@ def: "interstitial cell within the gonozoid" []
 is_a: CHEM:1000095 ! interstitial cell
 relationship: BFO:0000050 CHEM:1000134 ! part of gonozoid
 relationship: RO:0002202 CHEM:1000127 ! develops from polyp colony
-relationship: RO:0002488 CHEM:0000048 ! existence starts during colony phase
-relationship: RO:0002492 CHEM:0000058 ! existence ends during medusa phase
+relationship: RO:0002488 CHEM:0000049 ! existence starts during colony phase
+relationship: RO:0002492 CHEM:0000059 ! existence ends during medusa phase
 
 [Term]
 id: CHEM:1000101
@@ -1233,8 +1218,8 @@ def: "nematoblast in the stolon" []
 is_a: CHEM:1000102 ! nematoblast
 relationship: BFO:0000050 CHEM:1000128 ! part of stolon
 relationship: RO:0002202 CHEM:1000040 ! develops from planula larva
-relationship: RO:0002488 CHEM:0000048 ! existence starts during colony phase
-relationship: RO:0002492 CHEM:0000058 ! existence ends during medusa phase
+relationship: RO:0002488 CHEM:0000049 ! existence starts during colony phase
+relationship: RO:0002492 CHEM:0000059 ! existence ends during medusa phase
 
 [Term]
 id: CHEM:1000104
@@ -1418,8 +1403,8 @@ name: polyp colony
 def: "connected system of gastrozoid and gonozoid polyps, propagating vegetatively " []
 is_a: CHEM:1000001 ! multicellular organism
 relationship: RO:0002202 CHEM:1000040 ! develops from planula larva
-relationship: RO:0002488 CHEM:0000048 ! existence starts during colony phase
-relationship: RO:0002492 CHEM:0000058 ! existence ends during medusa phase
+relationship: RO:0002488 CHEM:0000049 ! existence starts during colony phase
+relationship: RO:0002492 CHEM:0000059 ! existence ends during medusa phase
 
 [Term]
 id: CHEM:1000128
@@ -1427,8 +1412,8 @@ name: stolon
 def: "tubular structure  comprising endoderm and ectodermal layers adhering to the substrate , connecting the bases of the polyps" []
 relationship: BFO:0000050 CHEM:1000127 ! part of polyp colony
 relationship: RO:0002202 CHEM:1000127 ! develops from polyp colony
-relationship: RO:0002488 CHEM:0000048 ! existence starts during colony phase
-relationship: RO:0002492 CHEM:0000058 ! existence ends during medusa phase
+relationship: RO:0002488 CHEM:0000049 ! existence starts during colony phase
+relationship: RO:0002492 CHEM:0000059 ! existence ends during medusa phase
 
 [Term]
 id: CHEM:1000129
@@ -1436,8 +1421,8 @@ name: stolon growth tip
 def: "growing tip of a stolon" []
 relationship: BFO:0000050 CHEM:1000128 ! part of stolon
 relationship: RO:0002202 CHEM:1000127 ! develops from polyp colony
-relationship: RO:0002488 CHEM:0000048 ! existence starts during colony phase
-relationship: RO:0002492 CHEM:0000058 ! existence ends during medusa phase
+relationship: RO:0002488 CHEM:0000049 ! existence starts during colony phase
+relationship: RO:0002492 CHEM:0000059 ! existence ends during medusa phase
 
 [Term]
 id: CHEM:1000130
@@ -1446,8 +1431,8 @@ def: "mesoglea layer between the endoderm and ectoderm layers of the stolon" []
 is_a: CHEM:1000158 ! mesoglea
 relationship: BFO:0000050 CHEM:1000128 ! part of stolon
 relationship: RO:0002202 CHEM:1000127 ! develops from polyp colony
-relationship: RO:0002488 CHEM:0000048 ! existence starts during colony phase
-relationship: RO:0002492 CHEM:0000058 ! existence ends during medusa phase
+relationship: RO:0002488 CHEM:0000049 ! existence starts during colony phase
+relationship: RO:0002492 CHEM:0000059 ! existence ends during medusa phase
 
 [Term]
 id: CHEM:1000131
@@ -1455,8 +1440,8 @@ name: stolon body
 def: "segments of the stolon between the bases of the polyps, excluding the growing tip" []
 relationship: BFO:0000050 CHEM:1000128 ! part of stolon
 relationship: RO:0002202 CHEM:1000127 ! develops from polyp colony
-relationship: RO:0002488 CHEM:0000048 ! existence starts during colony phase
-relationship: RO:0002492 CHEM:0000058 ! existence ends during medusa phase
+relationship: RO:0002488 CHEM:0000049 ! existence starts during colony phase
+relationship: RO:0002492 CHEM:0000059 ! existence ends during medusa phase
 
 [Term]
 id: CHEM:1000132
@@ -1465,8 +1450,8 @@ def: "ectodermal layer within the stolon" []
 is_a: CHEM:1000007 ! ectoderm
 relationship: BFO:0000050 CHEM:1000128 ! part of stolon
 relationship: RO:0002202 CHEM:1000127 ! develops from polyp colony
-relationship: RO:0002488 CHEM:0000048 ! existence starts during colony phase
-relationship: RO:0002492 CHEM:0000058 ! existence ends during medusa phase
+relationship: RO:0002488 CHEM:0000049 ! existence starts during colony phase
+relationship: RO:0002492 CHEM:0000059 ! existence ends during medusa phase
 
 [Term]
 id: CHEM:1000133
@@ -1475,8 +1460,8 @@ def: "endodermal layer within the stolon" []
 is_a: CHEM:1000015 ! endoderm
 relationship: BFO:0000050 CHEM:1000128 ! part of stolon
 relationship: RO:0002202 CHEM:1000127 ! develops from polyp colony
-relationship: RO:0002488 CHEM:0000048 ! existence starts during colony phase
-relationship: RO:0002492 CHEM:0000058 ! existence ends during medusa phase
+relationship: RO:0002488 CHEM:0000049 ! existence starts during colony phase
+relationship: RO:0002492 CHEM:0000059 ! existence ends during medusa phase
 
 [Term]
 id: CHEM:1000134
@@ -1484,8 +1469,8 @@ name: gonozoid
 def: "polyp specialised for production of medusa by budding" []
 relationship: BFO:0000050 CHEM:1000127 ! part of polyp colony
 relationship: RO:0002202 CHEM:1000128 ! develops from stolon
-relationship: RO:0002488 CHEM:0000048 ! existence starts during colony phase
-relationship: RO:0002492 CHEM:0000058 ! existence ends during medusa phase
+relationship: RO:0002488 CHEM:0000049 ! existence starts during colony phase
+relationship: RO:0002492 CHEM:0000059 ! existence ends during medusa phase
 
 [Term]
 id: CHEM:1000135
@@ -1493,8 +1478,8 @@ name: gonozoid cap
 def: "structure that closes the distal end of the gonozoid" []
 relationship: BFO:0000050 CHEM:1000134 ! part of gonozoid
 relationship: RO:0002202 CHEM:1000127 ! develops from polyp colony
-relationship: RO:0002488 CHEM:0000048 ! existence starts during colony phase
-relationship: RO:0002492 CHEM:0000058 ! existence ends during medusa phase
+relationship: RO:0002488 CHEM:0000049 ! existence starts during colony phase
+relationship: RO:0002492 CHEM:0000059 ! existence ends during medusa phase
 
 [Term]
 id: CHEM:1000136
@@ -1502,8 +1487,8 @@ name: gonozoid central tube
 def: "tubular structure comprising endoderm and ectodermal layers at the centre of the gonozoid" []
 relationship: BFO:0000050 CHEM:1000134 ! part of gonozoid
 relationship: RO:0002202 CHEM:1000127 ! develops from polyp colony
-relationship: RO:0002488 CHEM:0000048 ! existence starts during colony phase
-relationship: RO:0002492 CHEM:0000058 ! existence ends during medusa phase
+relationship: RO:0002488 CHEM:0000049 ! existence starts during colony phase
+relationship: RO:0002492 CHEM:0000059 ! existence ends during medusa phase
 
 [Term]
 id: CHEM:1000137
@@ -1512,8 +1497,8 @@ def: "ectodermal layer of the gonozoid including central tube and developing bud
 is_a: CHEM:1000007 ! ectoderm
 relationship: BFO:0000050 CHEM:1000134 ! part of gonozoid
 relationship: RO:0002202 CHEM:1000127 ! develops from polyp colony
-relationship: RO:0002488 CHEM:0000048 ! existence starts during colony phase
-relationship: RO:0002492 CHEM:0000058 ! existence ends during medusa phase
+relationship: RO:0002488 CHEM:0000049 ! existence starts during colony phase
+relationship: RO:0002492 CHEM:0000059 ! existence ends during medusa phase
 
 [Term]
 id: CHEM:1000138
@@ -1522,8 +1507,8 @@ def: "endodermal layer of the gonozoid including central tube and developing bud
 is_a: CHEM:1000015 ! endoderm
 relationship: BFO:0000050 CHEM:1000134 ! part of gonozoid
 relationship: RO:0002202 CHEM:1000127 ! develops from polyp colony
-relationship: RO:0002488 CHEM:0000048 ! existence starts during colony phase
-relationship: RO:0002492 CHEM:0000058 ! existence ends during medusa phase
+relationship: RO:0002488 CHEM:0000049 ! existence starts during colony phase
+relationship: RO:0002492 CHEM:0000059 ! existence ends during medusa phase
 
 [Term]
 id: CHEM:1000139
@@ -1532,8 +1517,8 @@ def: "epithelial cell layer positioned between the developing medusa buds and th
 is_a: CHEM:1000007 ! ectoderm
 relationship: BFO:0000050 CHEM:1000134 ! part of gonozoid
 relationship: RO:0002202 CHEM:1000127 ! develops from polyp colony
-relationship: RO:0002488 CHEM:0000048 ! existence starts during colony phase
-relationship: RO:0002492 CHEM:0000058 ! existence ends during medusa phase
+relationship: RO:0002488 CHEM:0000049 ! existence starts during colony phase
+relationship: RO:0002492 CHEM:0000059 ! existence ends during medusa phase
 
 [Term]
 id: CHEM:1000140
@@ -1541,8 +1526,8 @@ name: medusa bud
 def: "outgrowth of the gonozoid central tube, within which medusa structures develop" []
 relationship: BFO:0000050 CHEM:1000134 ! part of gonozoid
 relationship: RO:0002202 CHEM:1000127 ! develops from polyp colony
-relationship: RO:0002488 CHEM:0000048 ! existence starts during colony phase
-relationship: RO:0002492 CHEM:0000058 ! existence ends during medusa phase
+relationship: RO:0002488 CHEM:0000049 ! existence starts during colony phase
+relationship: RO:0002492 CHEM:0000059 ! existence ends during medusa phase
 
 [Term]
 id: CHEM:1000141
@@ -1568,8 +1553,8 @@ name: entocodon
 def: "group of cells between the endoderm and ectodderm of the early medusa bud" []
 relationship: BFO:0000050 CHEM:1000140 ! part of medusa bud
 relationship: RO:0002202 CHEM:1000127 ! develops from polyp colony
-relationship: RO:0002488 CHEM:0000048 ! existence starts during colony phase
-relationship: RO:0002492 CHEM:0000058 ! existence ends during medusa phase
+relationship: RO:0002488 CHEM:0000049 ! existence starts during colony phase
+relationship: RO:0002492 CHEM:0000059 ! existence ends during medusa phase
 
 [Term]
 id: CHEM:1000145
@@ -1578,8 +1563,8 @@ def: "developing manubrium  within the medusa bud" []
 is_a: CHEM:1000187 ! manubrium
 relationship: BFO:0000050 CHEM:1000140 ! part of medusa bud
 relationship: RO:0002202 CHEM:1000127 ! develops from polyp colony
-relationship: RO:0002488 CHEM:0000048 ! existence starts during colony phase
-relationship: RO:0002492 CHEM:0000058 ! existence ends during medusa phase
+relationship: RO:0002488 CHEM:0000049 ! existence starts during colony phase
+relationship: RO:0002492 CHEM:0000059 ! existence ends during medusa phase
 
 [Term]
 id: CHEM:1000146
@@ -1588,8 +1573,8 @@ def: "developing tentacle bud within the medusa bud" []
 is_a: CHEM:1000168 ! medusa tentacle system
 relationship: BFO:0000050 CHEM:1000140 ! part of medusa bud
 relationship: RO:0002202 CHEM:1000127 ! develops from polyp colony
-relationship: RO:0002488 CHEM:0000048 ! existence starts during colony phase
-relationship: RO:0002492 CHEM:0000058 ! existence ends during medusa phase
+relationship: RO:0002488 CHEM:0000049 ! existence starts during colony phase
+relationship: RO:0002492 CHEM:0000059 ! existence ends during medusa phase
 
 [Term]
 id: CHEM:1000147
@@ -1598,8 +1583,8 @@ def: "developing radial canal within the medusa bud" []
 is_a: CHEM:1000182 ! radial canal
 relationship: BFO:0000050 CHEM:1000140 ! part of medusa bud
 relationship: RO:0002202 CHEM:1000127 ! develops from polyp colony
-relationship: RO:0002488 CHEM:0000048 ! existence starts during colony phase
-relationship: RO:0002492 CHEM:0000058 ! existence ends during medusa phase
+relationship: RO:0002488 CHEM:0000049 ! existence starts during colony phase
+relationship: RO:0002492 CHEM:0000059 ! existence ends during medusa phase
 
 [Term]
 id: CHEM:1000148
@@ -1608,8 +1593,8 @@ def: "developing striated muscle within the medusa bud" []
 is_a: CHEM:1000124 ! striated muscle cell
 relationship: BFO:0000050 CHEM:1000140 ! part of medusa bud
 relationship: RO:0002202 CHEM:1000127 ! develops from polyp colony
-relationship: RO:0002488 CHEM:0000048 ! existence starts during colony phase
-relationship: RO:0002492 CHEM:0000058 ! existence ends during medusa phase
+relationship: RO:0002488 CHEM:0000049 ! existence starts during colony phase
+relationship: RO:0002492 CHEM:0000059 ! existence ends during medusa phase
 
 [Term]
 id: CHEM:1000149
@@ -1618,8 +1603,8 @@ def: "developing circular canal  within the medusa bud" []
 is_a: CHEM:1000183 ! circular canal
 relationship: BFO:0000050 CHEM:1000140 ! part of medusa bud
 relationship: RO:0002202 CHEM:1000127 ! develops from polyp colony
-relationship: RO:0002488 CHEM:0000048 ! existence starts during colony phase
-relationship: RO:0002492 CHEM:0000058 ! existence ends during medusa phase
+relationship: RO:0002488 CHEM:0000049 ! existence starts during colony phase
+relationship: RO:0002492 CHEM:0000059 ! existence ends during medusa phase
 
 [Term]
 id: CHEM:1000150
@@ -1628,8 +1613,8 @@ def: "polyp specialised for catching prey and digesting" []
 synonym: "hydranth" EXACT []
 relationship: BFO:0000050 CHEM:1000127 ! part of polyp colony
 relationship: RO:0002202 CHEM:1000128 ! develops from stolon
-relationship: RO:0002488 CHEM:0000048 ! existence starts during colony phase
-relationship: RO:0002492 CHEM:0000058 ! existence ends during medusa phase
+relationship: RO:0002488 CHEM:0000049 ! existence starts during colony phase
+relationship: RO:0002492 CHEM:0000059 ! existence ends during medusa phase
 
 [Term]
 id: CHEM:1000151
@@ -1637,8 +1622,8 @@ name: gastrozoid tentacle
 def: "tentacle surrounding the polyp mouth" []
 is_a: CHEM:1000005 ! tentacle
 relationship: BFO:0000050 CHEM:1000150 ! part of gastrozoid
-relationship: RO:0002488 CHEM:0000048 ! existence starts during colony phase
-relationship: RO:0002492 CHEM:0000058 ! existence ends during medusa phase
+relationship: RO:0002488 CHEM:0000049 ! existence starts during colony phase
+relationship: RO:0002492 CHEM:0000059 ! existence ends during medusa phase
 
 [Term]
 id: CHEM:1000152
@@ -1650,6 +1635,7 @@ relationship: BFO:0000050 CHEM:1000150 ! part of gastrozoid
 [Term]
 id: CHEM:1000153
 name: matrix
+is_a: UBERON:0000061 ! anatomical structure
 
 [Term]
 id: CHEM:1000154
@@ -1657,8 +1643,8 @@ name: theca
 def: "chitinous acellular layer surronding and protecting the polyps" []
 is_a: CHEM:1000153 ! matrix
 relationship: BFO:0000050 CHEM:1000127 ! part of polyp colony
-relationship: RO:0002488 CHEM:0000048 ! existence starts during colony phase
-relationship: RO:0002492 CHEM:0000058 ! existence ends during medusa phase
+relationship: RO:0002488 CHEM:0000049 ! existence starts during colony phase
+relationship: RO:0002492 CHEM:0000059 ! existence ends during medusa phase
 
 [Term]
 id: CHEM:1000155
@@ -1694,8 +1680,8 @@ def: "mesoglea layer between the endoderm and ectoderm layers of the gonozoid ce
 is_a: CHEM:1000158 ! mesoglea
 relationship: BFO:0000050 CHEM:1000134 ! part of gonozoid
 relationship: RO:0002202 CHEM:1000127 ! develops from polyp colony
-relationship: RO:0002488 CHEM:0000048 ! existence starts during colony phase
-relationship: RO:0002492 CHEM:0000058 ! existence ends during medusa phase
+relationship: RO:0002488 CHEM:0000049 ! existence starts during colony phase
+relationship: RO:0002492 CHEM:0000059 ! existence ends during medusa phase
 
 [Term]
 id: CHEM:1000160

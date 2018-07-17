@@ -156,7 +156,7 @@ CHEM:1000149	developing circular canal	circular canal	medusa bud	polyp colony	co
 CHEM:1000150	gastrozoid		polyp colony	stolon	colony phase	medusa phase	polyp specialised for catching prey and digesting	hydranth						
 CHEM:1000151	gastrozoid tentacle	tentacle	gastrozoid		colony phase	medusa phase	tentacle surrounding the polyp mouth							
 CHEM:1000152	gastrozoid mouth	mouth	gastrozoid				mouth of the gastrozoid							
-CHEM:1000153	matrix													
+CHEM:1000153	matrix	anatomical structure							UBERON:0000061					
 CHEM:1000154	theca	matrix	polyp colony		colony phase	medusa phase	chitinous acellular layer surronding and protecting the polyps							
 CHEM:1000155	gonotheca	theca	gonozoid		colony phase	medusa phase	theca of the gonozoid							
 CHEM:1000156	stolon perisarc	theca	stolon		colony phase	medusa phase	chitinous acellular layer surronding the stolon							
