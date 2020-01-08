@@ -8,7 +8,7 @@ ONT=chem
 BASE=$(OBO)/$(ONT)
 SRC=$(ONT)-edit.owl
 RELEASEDIR=../..
-ROBOT= ../../bin/robot
+ROBOT=  ../../bin/robot 
 OWLTOOLS= ../../bin/owltools
 USECAT= --use-catalog
 SPARQLDIR = ../sparql
@@ -51,7 +51,7 @@ development-generated.owl: ../templates/development.tsv
 # These live in the imports/ folder
 # These can be regenerated with make all_imports
 
-IMPORTS = 
+IMPORTS =
 IMPORTS_OWL = $(patsubst %, imports/%_import.owl,$(IMPORTS)) $(patsubst %, imports/%_import.obo,$(IMPORTS))
 
 # Make this target to regenerate ALL
@@ -76,7 +76,7 @@ mirror/%.owl: $(SRC)
 # ----------------------------------------
 # copy from staging area (this directory) to top-level
 release: $(ONT).owl $(ONT).obo
-	cp $^ $(RELEASEDIR) 
+	cp $^ $(RELEASEDIR)
 
 # ----------------------------------------
 # Sparql queries: Q/C
