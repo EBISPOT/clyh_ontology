@@ -1,14 +1,22 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/upper.owl#"
-     xml:base="http://purl.obolibrary.org/obo/upper.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/clth/clth.owl#"
+     xml:base="http://purl.obolibrary.org/obo/clth/clth.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/upper.owl"/>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/clth/clth.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/clth/releases/2020-03-26/clth.owl"/>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ontology for the development and anatomy of Clytia hemisphaerica.</dc:description>
+        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clytia hemisphaerica Development and Anatomy Ontology (CLTH)</dc:title>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/3.0/"/>
+        <rdfs:comment>Clytia hemisphaerica Development and Anatomy Ontology</rdfs:comment>
+    </owl:Ontology>
     
 
 
@@ -1648,24 +1656,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLTH_1000013">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000012"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000040"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000035"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_0000035"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oral planula ectoderm</rdfs:label>
     </owl:Class>
     
@@ -1675,24 +1665,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLTH_1000014">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000012"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000040"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000035"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_0000035"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aboral planula ectoderm</rdfs:label>
     </owl:Class>
     
@@ -1826,24 +1798,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLTH_1000020">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000019"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000040"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000035"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_0000035"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aboral planula endoderm</rdfs:label>
     </owl:Class>
     
@@ -1853,24 +1807,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLTH_1000021">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000019"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000040"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000035"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_0000035"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oral planula endoderm</rdfs:label>
     </owl:Class>
     
@@ -1938,18 +1874,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000023"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000022"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_0000018"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_0000024"/>
             </owl:Restriction>
@@ -1964,12 +1888,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLTH_1000025">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000024"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000022"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
@@ -2116,12 +2034,6 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_0000024"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_0000024"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism at the cleavage stage after six division cycles</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">64-cell embryo</rdfs:label>
     </owl:Class>
@@ -2160,18 +2072,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLTH_1000032">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000031"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000030"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_0000026"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
@@ -2228,12 +2128,6 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_0000028"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_0000028"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blastula stage embryo with polarised and columnar epithelial cells</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">late blasutla</rdfs:label>
     </owl:Class>
@@ -2256,12 +2150,6 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_0000030"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_0000033"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism at the gastrula stage.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gastrula</rdfs:label>
     </owl:Class>
@@ -2272,18 +2160,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLTH_1000036">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000035"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000034"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_0000030"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
@@ -2368,12 +2244,6 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_0000033"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_0000033"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gastrula in which Blastocoel is full but no epithelisation of internal cells </obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">late gastrula</rdfs:label>
     </owl:Class>
@@ -2412,18 +2282,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLTH_1000041">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000040"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000039"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_0000035"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
@@ -2554,18 +2412,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000045"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000040"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_0000041"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_0000041"/>
             </owl:Restriction>
@@ -2645,12 +2491,6 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_0000044"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_0000044"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2843,12 +2683,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLTH_1000058">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000057"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0005575"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">animal cytoplasm</rdfs:label>
     </owl:Class>
     
@@ -2908,12 +2742,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLTH_1000061">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000057"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0005575"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vegetal cytoplasm</rdfs:label>
     </owl:Class>
     
@@ -3302,24 +3130,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLTH_1000078">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000077"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000192"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000160"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_0000065"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">male germ cell</rdfs:label>
     </owl:Class>
     
@@ -3331,20 +3141,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000078"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000192"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000095"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An undeveloped male germ cell. Spermatogonia develop into primary spermatocytes</obo:IAO_0000115>
@@ -3357,12 +3155,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLTH_1000080">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000078"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000192"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
@@ -3387,12 +3179,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000078"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000192"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000080"/>
             </owl:Restriction>
@@ -3414,24 +3200,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLTH_1000082">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000077"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000192"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000160"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_0000065"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">female germ cell</rdfs:label>
     </owl:Class>
     
@@ -3441,24 +3209,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLTH_1000083">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000082"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000192"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000160"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_0000065"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">an undifferentiated germ cell that proliferates rapidly and gives rise to oocytes</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oogonium</rdfs:label>
     </owl:Class>
@@ -3471,20 +3221,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000082"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000192"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000083"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A female germ cell that has entered meiosis.</obo:IAO_0000115>
@@ -3497,18 +3235,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLTH_1000085">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000084"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000192"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000083"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
@@ -3525,12 +3251,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLTH_1000086">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000084"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000192"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
@@ -4067,12 +3787,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000113"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000040"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000035"/>
             </owl:Restriction>
@@ -4092,12 +3806,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLTH_1000115">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000113"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000040"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
@@ -4852,30 +4560,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLTH_1000141">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000140"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000134"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000127"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_0000049"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_0000059"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">outgrowth of the gonozoid central tube, comprising  endoderm layer, ectoderm layers and entocodon </obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">early medusa bud</rdfs:label>
     </owl:Class>
@@ -4886,30 +4570,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLTH_1000142">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000140"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000134"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000127"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_0000049"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_0000059"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bud  on the side of the gonozoid central tube, in which all medusa structures are present but not yet expanded to final proportions</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mid medusa bud</rdfs:label>
     </owl:Class>
@@ -4920,30 +4580,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLTH_1000143">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000140"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000134"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000127"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_0000049"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_0000059"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bud on the side of the gonozoid central tube, containing medusa structures with same proportions as newlyreleased medusa</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">late medusa bud</rdfs:label>
     </owl:Class>
@@ -5278,18 +4914,6 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000134"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_0000049"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_0000059"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">theca of the gonozoid</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gonotheca</rdfs:label>
     </owl:Class>
@@ -5306,18 +4930,6 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000128"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_0000049"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_0000059"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chitinous acellular layer surronding the stolon</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stolon perisarc</rdfs:label>
     </owl:Class>
@@ -5332,18 +4944,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000150"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_0000049"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002492"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">theca of the hydrozoid</obo:IAO_0000115>
@@ -5806,24 +5406,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLTH_1000175">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000174"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000168"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000140"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_0000065"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">four first medusa tentacles of the newly hatched medusa, connected to both radial and circular canals </obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary medusa tentacle</rdfs:label>
     </owl:Class>
@@ -5834,12 +5416,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLTH_1000176">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000174"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLTH_1000168"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
@@ -6378,12 +5954,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0005938">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0005575"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell cortex</rdfs:label>
     </owl:Class>
     

@@ -4,7 +4,7 @@
 # these can be overwritten on the command line
 
 OBO=http://purl.obolibrary.org/obo
-ONT=chem
+ONT=clth
 BASE=$(OBO)/$(ONT)
 SRC=$(ONT)-edit.owl
 RELEASEDIR=../..
@@ -39,10 +39,10 @@ $(ONT).obo: $(ONT).owl
 # ----------------------------------------
 
 anatomy-generated.owl:../templates/anatomy.tsv development-generated.owl
-	$(ROBOT) merge --input ../../imports/upper.owl --input $(SRC) --input development-generated.owl template --merge-before --prefix "CHEM: http://purl.obolibrary.org/obo/CHEM_" --template ../templates/anatomy.tsv --output $@
+	$(ROBOT) merge --input ../../imports/upper.owl --input $(SRC) --input development-generated.owl template --merge-before --prefix "CLTH: http://purl.obolibrary.org/obo/CLTH_" --template ../templates/anatomy.tsv --output $@
 
 development-generated.owl: ../templates/development.tsv
-	$(ROBOT) merge --input ../../imports/upper.owl --input $(SRC) template --merge-before --prefix "CHEM: http://purl.obolibrary.org/obo/CHEM_" --template ../templates/development.tsv --output $@
+	$(ROBOT) merge --input ../../imports/upper.owl --input $(SRC) template --merge-before --prefix "CLTH: http://purl.obolibrary.org/obo/CLTH_" --template ../templates/development.tsv --output $@
 
 # ----------------------------------------
 # Import modules
