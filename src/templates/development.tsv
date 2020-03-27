@@ -1,69 +1,69 @@
 ID	Stage	part of stage	stage preceded by 	dev stage (is-a)	Synonyms	Reference	Definition	uberon (xref)
 ID	A rdfs:label	C 'part of' some %	C 'immediately preceded by' some %	C %	A oboInOwl:hasExactSynonym SPLIT=|	A obo:IAO_0000301	A obo:IAO_0000115	
 UBERON:0000105	life cycle stage							
-CLTH:0000001	gametogenesis			obo:UBERON_0000105				
-CLTH:0000002	gametogenesis period	gametogenesis		obo:UBERON_0000105			phase of sexual reproduction in which certain cells of a female or male individual (parent) are transformed into specialized reproductive cells (gametes) that will initiate development of a progeny individual (offspring) upon fertilization.	
-CLTH:0000003	oogenesis period	gametogenesis period		obo:UBERON_0000105				
-CLTH:0000004	previtellogenic stage	oogenesis period					Entered into meiosis, DNA replicated, no yolk accumulation.	obo:UBERON_0000105
-CLTH:0000005	oocyte growth period	oogenesis period	previtellogenic stage					
-CLTH:0000006	stage I oocyte growth stage	oocyte growth period	previtellogenic stage			Amiel and Houliston Dev. Biol (2009)	Meiotic Prophase I arrest, GV in centre, diameter x	
-CLTH:0000007	stage II oocyte growth stage	oocyte growth period	stage I oocyte growth stage			Amiel and Houliston Dev. Biol (2009)	Meiotic Prophase I arrest, GV off centre, diameter x	
-CLTH:0000008	stage III oocyte growth stage	oocyte growth period	stage II oocyte growth stage			Amiel and Houliston Dev. Biol (2009)	Meiotic Prophase I arrest, GV off centre, diameter x	
-CLTH:0000009	oocyte meiotic maturation	oogenesis period	stage III oocyte growth stage			Amiel and Houliston Dev. Biol (2009)	oocyte undergoing meiosis completion from prophase I to G0  of first meiotic cycle	
-CLTH:0000010	spermatogenesis period	gametogenesis period		obo:UBERON_0000105				
-CLTH:0000011	spermatogonium stage	spermatogenesis period						
-CLTH:0000012	spermatid stage	spermatogenesis period	spermatogonium stage					
-CLTH:0000013	embryonic development		gametogenesis	obo:UBERON_0000105				obo:UBERON_0000105
-CLTH:0000014	gamete period	embryonic development	gametogenesis period	obo:UBERON_0000105				
-CLTH:0000015	unfertilized egg stage	gamete period	oocyte meiotic maturation			Amiel and Houliston Dev. Biol (2009)	matture female germ cell. not yet fertilized. Meiotic divisions complete. Spawned egg with female pronucleus.	
-CLTH:0000016	spermatozoid stage	gamete period	spermatid stage				mature male germ cell. 	
-CLTH:0000017	cleavage period	embryonic development	gamete period					obo:UBERON_0000107
-CLTH:0000018	one cell stage	cleavage period	gamete period		zygote | fertilised egg	Y. Kraus et al in preparation?	Zygote fertilized egg, zygote nucleus forms at animal pole (about 0-50 min post fertilization at 18°C).	obo:UBERON_0000106
-CLTH:0000019	2-cell stage	cleavage period	one cell stage			Y. Kraus et al in preparation?	Two cell-stage embryo. First cleaveages unipolar and start at the animal pole (about 50-80 min post fertilization at 18°C).	obo:UBERON_0007232
-CLTH:0000020	4-cell stage	cleavage period	2-cell stage				Four cell-stage embryo. Second cleaveages unipolar and start at the animal pole (about 80-110 min post fertilization at 18°C). 	obo:UBERON_0007233
-CLTH:0000021	8-cell stage	cleavage period	4-cell stage				Eight cell-stage embryo (about 2h post fertilization at 18°C).	obo:UBERON_0007236
-CLTH:0000022	16-cell stage	cleavage period	8-cell stage				Sixteen cell-stage embryo (about 2.5h post fertilization at 18°C).	
-CLTH:0000023	32-cell stage	cleavage period	16-cell stage				thirty two cell-stage embryo (about 3h post fertilization at 18°C).	
-CLTH:0000024	64-cell stage	cleavage period	32-cell stage				sixty four cell-stage embryo (about 3h post fertilization at 18°C).	
-CLTH:0000025	blastula period	embryonic development	cleavage period					obo:UBERON_0000108
-CLTH:0000026	early blastula stage	blastula period	64-cell stage				Cells rounded and loosely adhered, Nuclei central  (5-6h post fertilization at 18°C).	
-CLTH:0000027	mid blastula stage	blastula period	early blastula stage				Cell contacts extended, cells polarised, nuclei apical (8h post fertilization at 18°C).	
-CLTH:0000028	late blastula stage	blastula period	mid blastula stage				Cell polarized and columnar, nuclei apical (9- 10h post fertilization at 18°C).	
-CLTH:0000029	gastrula period	embryonic development	blastula period					obo:UBERON_0000109
-CLTH:0000030	very early gastrula stage	blastula period	very early gastrula stage				Visible pointed oral pole but no cell ingression, ciliogenesis starting (12-13h post fertilization at 18°C). 	
-CLTH:0000031	early gastrula stage	blastula period	mid gastrula stage				A few cells ingressed at pointed oral pole, swimming started  (14-16h post fertilization at 18°C).	
-CLTH:0000032	mid gastrula stage	blastula period	early gastrula stage				Ingression to fill balastotocoel half completed (17- 18h post fertilization at 18°C)	
-CLTH:0000033	late gastrula stage	blastula period	mid gastrula stage				Blastocoel full, no epithelisation of internal cells (20h post fertilization at18°C	
-CLTH:0000034	planula period	embryonic development	gastrula period	obo:UBERON_0000105	larval development			obo:UBERON:0000069
-CLTH:0000035	planula P1 stage	planula period	late gastrula stage				Epithelisation beginning at aboral pole (as seen at 24h post fertilization at 18°C)	
-CLTH:0000036	planula P2 stage	planula period	planula P1 stage				Visible central cavity (as seen at 48h post fertilization at 18°C)	
-CLTH:0000037	planula P3 stage	planula period	planula P2 stage				Competent to metamorphose as (72h post fertilization at 18°C)	
-CLTH:0000038	aged planula stage	planula period	planula P3 stage				Aged planula (> 3 days post fertilization at 18°C) but not received metamporphosis signal.	
-CLTH:0000040	metamorphosis period		planula period	obo:UBERON_0000105				obo:UBERON_0000105
-CLTH:0000041	settled planula stage	metamorphosis period	planula period				torpedo shape planula that stopped swimming	
-CLTH:0000042	blob stage	metamorphosis period	settled planula stage				irregularly shaped metamorphosing planula attached to substrate, not yet flattened	
-CLTH:0000043	disc stage	metamorphosis period	blob stage				metamorphosing planula attached to the substrate and in shape of a flattened disc	
-CLTH:0000044	sculpted disc stage	metamorphosis period	disc stage				metamorphosing planula attached to the substrate and in shape of a flattened disc with sculpted indentations	
-CLTH:0000045	primary polyp stalk extension stage	metamorphosis period	sculpted disc stage				uniform extension emerging from the sculpted disc	
-CLTH:0000046	primary polyp developing head stage	metamorphosis period	primary polyp stalk extension stage				swollen distal extremity developing into a functional primary polyp head	
-CLTH:0000047	functional primary polyp stage	metamorphosis period	primary polyp developing head stage				theca of the primary polyp open on the oral side and mouth open	
-CLTH:0000049	colony phase		metamorphosis period	obo:UBERON_0000105			colony containing  mature or developing gonozoids , gastrozoids and stolons.	obo:UBERON_0000105
-CLTH:0000050	gastrozoid development	colony phase						
-CLTH:0000051	stalk extenstion stage	gastrozoid development					uniform extension emerging from the stolon as first stage of gastrozoid development	
-CLTH:0000052	developing head stage	gastrozoid development	stalk extenstion stage				swollen distal extremity developing into a complete gastrozoid head	
-CLTH:0000053	functional gastrozoid stage	gastrozoid development	developing head stage				complete and functional gastrozoid with open hydrotheca and mouth	
-CLTH:0000054	gonozoid development	colony phase					Non feeding polyp specialized in budding medusae	
-CLTH:0000055	growing gonozoid stage	gonozoid development					growing and developing gonozoid	
-CLTH:0000056	budding gonozoid stage	gonozoid development	growing gonozoid stage				mature gonozoid budding medusae	
-CLTH:0000057	non-budding gonozoid stage	gonozoid development	growing gonozoid stage				mature gonozoid not containing any medusa bud only central tube and disc-shaped cap	
-CLTH:0000059	medusa phase		gonozoid development	obo:UBERON_0000105				obo:UBERON_0000105
-CLTH:0000060	medusa budding	medusa phase	gonozoid development					
-CLTH:0000061	early medusa bud stage	medusa budding	budding gonozoid stage				medusa bud with visible ectoderm, endoderm and entocodon	
-CLTH:0000062	mid medusa bud stage	medusa budding	early medusa bud stage				medusa bud with forming subumbrella cavity	
-CLTH:0000063	late medusa bud stage	medusa budding	mid medusa bud stage				medusa bud with with folding umbrella	
-CLTH:0000064	medusa growth	medusa phase	medusa budding					
-CLTH:0000065	4-bulb medusa stage	medusa growth	late medusa bud stage		baby medusa stage		period of medusa growth between release medusa from gonozoid  until appearance of secondary tentacles. Only  4 tentacle bulbs present 	
-CLTH:0000066	8-bulb medusa stage	medusa growth	4-bulb medusa stage				period of medusa growth when only 8 tentacles are present 	
-CLTH:0000067	12-bulb medusa stage	medusa growth	8-bulb medusa stage		young medusa stage		period of medusa growth when only 12 tentacles are present 	
-CLTH:0000068	16-bulb immature medusa stage	medusa growth	12-bulb medusa stage				period of medusa growth when only 16 tentacles are present. No mature gametes (eg 5mm diameter) 	
-CLTH:0000069	mature adult medusa stage	medusa growth	16-bulb immature medusa stage				period of medusa growth when only 16 tentacles are present. Gonads contain mature gametes. (eg 10mm diameter)	
+CLYH:0000001	gametogenesis			obo:UBERON_0000105				
+CLYH:0000002	gametogenesis period	gametogenesis		obo:UBERON_0000105			phase of sexual reproduction in which certain cells of a female or male individual (parent) are transformed into specialized reproductive cells (gametes) that will initiate development of a progeny individual (offspring) upon fertilization.	
+CLYH:0000003	oogenesis period	gametogenesis period		obo:UBERON_0000105				
+CLYH:0000004	previtellogenic stage	oogenesis period					Entered into meiosis, DNA replicated, no yolk accumulation.	obo:UBERON_0000105
+CLYH:0000005	oocyte growth period	oogenesis period	previtellogenic stage					
+CLYH:0000006	stage I oocyte growth stage	oocyte growth period	previtellogenic stage			Amiel and Houliston Dev. Biol (2009)	Meiotic Prophase I arrest, GV in centre, diameter x	
+CLYH:0000007	stage II oocyte growth stage	oocyte growth period	stage I oocyte growth stage			Amiel and Houliston Dev. Biol (2009)	Meiotic Prophase I arrest, GV off centre, diameter x	
+CLYH:0000008	stage III oocyte growth stage	oocyte growth period	stage II oocyte growth stage			Amiel and Houliston Dev. Biol (2009)	Meiotic Prophase I arrest, GV off centre, diameter x	
+CLYH:0000009	oocyte meiotic maturation	oogenesis period	stage III oocyte growth stage			Amiel and Houliston Dev. Biol (2009)	oocyte undergoing meiosis completion from prophase I to G0  of first meiotic cycle	
+CLYH:0000010	spermatogenesis period	gametogenesis period		obo:UBERON_0000105				
+CLYH:0000011	spermatogonium stage	spermatogenesis period						
+CLYH:0000012	spermatid stage	spermatogenesis period	spermatogonium stage					
+CLYH:0000013	embryonic development		gametogenesis	obo:UBERON_0000105				obo:UBERON_0000105
+CLYH:0000014	gamete period	embryonic development	gametogenesis period	obo:UBERON_0000105				
+CLYH:0000015	unfertilized egg stage	gamete period	oocyte meiotic maturation			Amiel and Houliston Dev. Biol (2009)	matture female germ cell. not yet fertilized. Meiotic divisions complete. Spawned egg with female pronucleus.	
+CLYH:0000016	spermatozoid stage	gamete period	spermatid stage				mature male germ cell. 	
+CLYH:0000017	cleavage period	embryonic development	gamete period					obo:UBERON_0000107
+CLYH:0000018	one cell stage	cleavage period	gamete period		zygote | fertilised egg	Y. Kraus et al in preparation?	Zygote fertilized egg, zygote nucleus forms at animal pole (about 0-50 min post fertilization at 18°C).	obo:UBERON_0000106
+CLYH:0000019	2-cell stage	cleavage period	one cell stage			Y. Kraus et al in preparation?	Two cell-stage embryo. First cleaveages unipolar and start at the animal pole (about 50-80 min post fertilization at 18°C).	obo:UBERON_0007232
+CLYH:0000020	4-cell stage	cleavage period	2-cell stage				Four cell-stage embryo. Second cleaveages unipolar and start at the animal pole (about 80-110 min post fertilization at 18°C). 	obo:UBERON_0007233
+CLYH:0000021	8-cell stage	cleavage period	4-cell stage				Eight cell-stage embryo (about 2h post fertilization at 18°C).	obo:UBERON_0007236
+CLYH:0000022	16-cell stage	cleavage period	8-cell stage				Sixteen cell-stage embryo (about 2.5h post fertilization at 18°C).	
+CLYH:0000023	32-cell stage	cleavage period	16-cell stage				thirty two cell-stage embryo (about 3h post fertilization at 18°C).	
+CLYH:0000024	64-cell stage	cleavage period	32-cell stage				sixty four cell-stage embryo (about 3h post fertilization at 18°C).	
+CLYH:0000025	blastula period	embryonic development	cleavage period					obo:UBERON_0000108
+CLYH:0000026	early blastula stage	blastula period	64-cell stage				Cells rounded and loosely adhered, Nuclei central  (5-6h post fertilization at 18°C).	
+CLYH:0000027	mid blastula stage	blastula period	early blastula stage				Cell contacts extended, cells polarised, nuclei apical (8h post fertilization at 18°C).	
+CLYH:0000028	late blastula stage	blastula period	mid blastula stage				Cell polarized and columnar, nuclei apical (9- 10h post fertilization at 18°C).	
+CLYH:0000029	gastrula period	embryonic development	blastula period					obo:UBERON_0000109
+CLYH:0000030	very early gastrula stage	blastula period	very early gastrula stage				Visible pointed oral pole but no cell ingression, ciliogenesis starting (12-13h post fertilization at 18°C). 	
+CLYH:0000031	early gastrula stage	blastula period	mid gastrula stage				A few cells ingressed at pointed oral pole, swimming started  (14-16h post fertilization at 18°C).	
+CLYH:0000032	mid gastrula stage	blastula period	early gastrula stage				Ingression to fill balastotocoel half completed (17- 18h post fertilization at 18°C)	
+CLYH:0000033	late gastrula stage	blastula period	mid gastrula stage				Blastocoel full, no epithelisation of internal cells (20h post fertilization at18°C	
+CLYH:0000034	planula period	embryonic development	gastrula period	obo:UBERON_0000105	larval development			obo:UBERON:0000069
+CLYH:0000035	planula P1 stage	planula period	late gastrula stage				Epithelisation beginning at aboral pole (as seen at 24h post fertilization at 18°C)	
+CLYH:0000036	planula P2 stage	planula period	planula P1 stage				Visible central cavity (as seen at 48h post fertilization at 18°C)	
+CLYH:0000037	planula P3 stage	planula period	planula P2 stage				Competent to metamorphose as (72h post fertilization at 18°C)	
+CLYH:0000038	aged planula stage	planula period	planula P3 stage				Aged planula (> 3 days post fertilization at 18°C) but not received metamporphosis signal.	
+CLYH:0000040	metamorphosis period		planula period	obo:UBERON_0000105				obo:UBERON_0000105
+CLYH:0000041	settled planula stage	metamorphosis period	planula period				torpedo shape planula that stopped swimming	
+CLYH:0000042	blob stage	metamorphosis period	settled planula stage				irregularly shaped metamorphosing planula attached to substrate, not yet flattened	
+CLYH:0000043	disc stage	metamorphosis period	blob stage				metamorphosing planula attached to the substrate and in shape of a flattened disc	
+CLYH:0000044	sculpted disc stage	metamorphosis period	disc stage				metamorphosing planula attached to the substrate and in shape of a flattened disc with sculpted indentations	
+CLYH:0000045	primary polyp stalk extension stage	metamorphosis period	sculpted disc stage				uniform extension emerging from the sculpted disc	
+CLYH:0000046	primary polyp developing head stage	metamorphosis period	primary polyp stalk extension stage				swollen distal extremity developing into a functional primary polyp head	
+CLYH:0000047	functional primary polyp stage	metamorphosis period	primary polyp developing head stage				theca of the primary polyp open on the oral side and mouth open	
+CLYH:0000049	colony phase		metamorphosis period	obo:UBERON_0000105			colony containing  mature or developing gonozoids , gastrozoids and stolons.	obo:UBERON_0000105
+CLYH:0000050	gastrozoid development	colony phase						
+CLYH:0000051	stalk extenstion stage	gastrozoid development					uniform extension emerging from the stolon as first stage of gastrozoid development	
+CLYH:0000052	developing head stage	gastrozoid development	stalk extenstion stage				swollen distal extremity developing into a complete gastrozoid head	
+CLYH:0000053	functional gastrozoid stage	gastrozoid development	developing head stage				complete and functional gastrozoid with open hydrotheca and mouth	
+CLYH:0000054	gonozoid development	colony phase					Non feeding polyp specialized in budding medusae	
+CLYH:0000055	growing gonozoid stage	gonozoid development					growing and developing gonozoid	
+CLYH:0000056	budding gonozoid stage	gonozoid development	growing gonozoid stage				mature gonozoid budding medusae	
+CLYH:0000057	non-budding gonozoid stage	gonozoid development	growing gonozoid stage				mature gonozoid not containing any medusa bud only central tube and disc-shaped cap	
+CLYH:0000059	medusa phase		gonozoid development	obo:UBERON_0000105				obo:UBERON_0000105
+CLYH:0000060	medusa budding	medusa phase	gonozoid development					
+CLYH:0000061	early medusa bud stage	medusa budding	budding gonozoid stage				medusa bud with visible ectoderm, endoderm and entocodon	
+CLYH:0000062	mid medusa bud stage	medusa budding	early medusa bud stage				medusa bud with forming subumbrella cavity	
+CLYH:0000063	late medusa bud stage	medusa budding	mid medusa bud stage				medusa bud with with folding umbrella	
+CLYH:0000064	medusa growth	medusa phase	medusa budding					
+CLYH:0000065	4-bulb medusa stage	medusa growth	late medusa bud stage		baby medusa stage		period of medusa growth between release medusa from gonozoid  until appearance of secondary tentacles. Only  4 tentacle bulbs present 	
+CLYH:0000066	8-bulb medusa stage	medusa growth	4-bulb medusa stage				period of medusa growth when only 8 tentacles are present 	
+CLYH:0000067	12-bulb medusa stage	medusa growth	8-bulb medusa stage		young medusa stage		period of medusa growth when only 12 tentacles are present 	
+CLYH:0000068	16-bulb immature medusa stage	medusa growth	12-bulb medusa stage				period of medusa growth when only 16 tentacles are present. No mature gametes (eg 5mm diameter) 	
+CLYH:0000069	mature adult medusa stage	medusa growth	16-bulb immature medusa stage				period of medusa growth when only 16 tentacles are present. Gonads contain mature gametes. (eg 10mm diameter)	

@@ -1,7 +1,7 @@
-[![Build Status](https://travis-ci.org/obophenotype/chem.svg?branch=master)](https://travis-ci.org/obophenotype/chem)
-[![DOI](https://zenodo.org/badge/13996/obophenotype/chem.svg)](https://zenodo.org/badge/latestdoi/13996/obophenotype/chem)
+<!-- [![Build Status](https://travis-ci.org/obophenotype/chem.svg?branch=master)](https://travis-ci.org/obophenotype/chem)
+[![DOI](https://zenodo.org/badge/13996/obophenotype/chem.svg)](https://zenodo.org/badge/latestdoi/13996/obophenotype/chem) -->
 
-# chem
+# Clytia hemisphaerica Development and Anatomy Ontology (CLYH)
 
 This ontology... YOUR DESCRIPTION HERE
 
@@ -17,12 +17,12 @@ https://github.com/EBISPOT/chem_ontology/releases/download/v1.0.0/chem.owl
 
 ### Editors' version
 
-Editors of this ontology should use the edit version, [src/ontology/chem-edit.owl](src/ontology/chem-edit.owl)
+Editors of this ontology should use the edit version, [src/ontology/clyh-edit.owl](src/ontology/clyh-edit.owl)
 
 ## Contact
 
-Please use this GitHub repository's [Issue tracker](https://github.com/obophenotype/chem/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
+Please use this GitHub repository's [Issue tracker](https://github.com/EBISPOT/clyh_ontology/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
 
 ## Acknowledgements
 
-This ontology repository was created using the [ontology starter kit](https://github.com/INCATools/ontology-starter-kit)
+This ontology was created as part of the CORBEL/MARIMBA project.
