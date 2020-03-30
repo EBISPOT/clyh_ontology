@@ -11,9 +11,9 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/clyh/clyh.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/clyh/releases/2020-03-27/clyh.owl"/>
-        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ontology for the development and anatomy of Clytia hemisphaerica.</dc:description>
-        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clytia hemisphaerica Development and Anatomy Ontology (CLTH)</dc:title>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/clyh/releases/2020-03-30/clyh.owl"/>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Cytia hemisphaerica Development and Anatomy Ontology (CLYH) is to describe the anatomy, development and life cycle stages - planula, polyp, medusa/jellyfish - of the hydrozoan species, Clytia hemiphaerica, member of the phylum Cnidaria.</dc:description>
+        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clytia hemisphaerica Development and Anatomy Ontology (CLYH)</dc:title>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/3.0/"/>
         <rdfs:comment>Clytia hemisphaerica Development and Anatomy Ontology</rdfs:comment>
     </owl:Ontology>

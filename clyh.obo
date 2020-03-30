@@ -1,9 +1,9 @@
 format-version: 1.2
-data-version: clyh/releases/2020-03-27/clyh.owl
+data-version: clyh/releases/2020-03-30/clyh.owl
 remark: Clytia hemisphaerica Development and Anatomy Ontology
 ontology: clyh/clyh
-property_value: http://purl.org/dc/elements/1.1/description "An ontology for the development and anatomy of Clytia hemisphaerica." xsd:string
-property_value: http://purl.org/dc/elements/1.1/title "Clytia hemisphaerica Development and Anatomy Ontology (CLTH)" xsd:string
+property_value: http://purl.org/dc/elements/1.1/description "The Cytia hemisphaerica Development and Anatomy Ontology (CLYH) is to describe the anatomy, development and life cycle stages - planula, polyp, medusa/jellyfish - of the hydrozoan species, Clytia hemiphaerica, member of the phylum Cnidaria." xsd:string
+property_value: http://purl.org/dc/elements/1.1/title "Clytia hemisphaerica Development and Anatomy Ontology (CLYH)" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/3.0/
 
 [Term]
