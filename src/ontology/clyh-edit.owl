@@ -8,7 +8,7 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<http://purl.obolibrary.org/obo/clyh.owl>
 Annotation(rdfs:comment "Clytia hemisphaerica Development and Anatomy Ontology")
-Annotation(<http://purl.org/dc/elements/1.1/description> "The Cytia hemisphaerica Development and Anatomy Ontology (CLYH) is to describe the anatomy, development and life cycle stages - planula, polyp, medusa/jellyfish - of the hydrozoan species, Clytia hemiphaerica, member of the phylum Cnidaria."^^xsd:string)
+Annotation(<http://purl.org/dc/elements/1.1/description> "Anatomy, development and life cycle stages - planula, polyp, medusa/jellyfish - of the cnidarian hydrozoan species, Clytia hemiphaerica."^^xsd:string)
 Annotation(<http://purl.org/dc/elements/1.1/title> "Clytia hemisphaerica Development and Anatomy Ontology (CLYH)"^^xsd:string)
 Annotation(<http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/3.0/>)
 
