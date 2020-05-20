@@ -439,7 +439,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000014"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zygote fertilized egg, zygote nucleus forms at animal pole (about 0-50 min post fertilization at 18°C).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zygote fertilized egg, zygote nucleus forms at animal pole (about 0-50 min post fertilization at 18 degree celsius).</obo:IAO_0000115>
         <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Y. Kraus et al in preparation?</obo:IAO_0000301>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> fertilised egg</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">zygote </oboInOwl:hasExactSynonym>
@@ -463,7 +463,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000018"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two cell-stage embryo. First cleaveages unipolar and start at the animal pole (about 50-80 min post fertilization at 18°C).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two cell-stage embryo. First cleaveages unipolar and start at the animal pole (about 50-80 min post fertilization at 18 degree celsius).</obo:IAO_0000115>
         <obo:IAO_0000301 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Y. Kraus et al in preparation?</obo:IAO_0000301>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-cell stage</rdfs:label>
     </owl:Class>
@@ -485,7 +485,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Four cell-stage embryo. Second cleaveages unipolar and start at the animal pole (about 80-110 min post fertilization at 18°C). </obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Four cell-stage embryo. Second cleaveages unipolar and start at the animal pole (about 80-110 min post fertilization at 18 degree celsius). </obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4-cell stage</rdfs:label>
     </owl:Class>
     
@@ -506,7 +506,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000020"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eight cell-stage embryo (about 2h post fertilization at 18°C).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eight cell-stage embryo (about 2h post fertilization at 18 degree celsius).</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8-cell stage</rdfs:label>
     </owl:Class>
     
@@ -527,7 +527,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000021"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sixteen cell-stage embryo (about 2.5h post fertilization at 18°C).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sixteen cell-stage embryo (about 2.5h post fertilization at 18 degree celsius).</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16-cell stage</rdfs:label>
     </owl:Class>
     
@@ -548,7 +548,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000022"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thirty two cell-stage embryo (about 3h post fertilization at 18°C).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thirty two cell-stage embryo (about 3h post fertilization at 18 degree celsius).</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32-cell stage</rdfs:label>
     </owl:Class>
     
@@ -569,7 +569,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000023"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sixty four cell-stage embryo (about 3h post fertilization at 18°C).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sixty four cell-stage embryo (about 3h post fertilization at 18 degree celsius).</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">64-cell stage</rdfs:label>
     </owl:Class>
     
@@ -610,7 +610,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000024"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cells rounded and loosely adhered, Nuclei central  (5-6h post fertilization at 18°C).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cells rounded and loosely adhered, Nuclei central  (5-6h post fertilization at 18 degree celsius).</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">early blastula stage</rdfs:label>
     </owl:Class>
     
@@ -631,7 +631,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000026"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell contacts extended, cells polarised, nuclei apical (8h post fertilization at 18°C).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell contacts extended, cells polarised, nuclei apical (8h post fertilization at 18 degree celsius).</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mid blastula stage</rdfs:label>
     </owl:Class>
     
@@ -652,7 +652,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell polarized and columnar, nuclei apical (9- 10h post fertilization at 18°C).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell polarized and columnar, nuclei apical (9- 10h post fertilization at 18 degree celsius).</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">late blastula stage</rdfs:label>
     </owl:Class>
     
@@ -693,7 +693,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000030"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Visible pointed oral pole but no cell ingression, ciliogenesis starting (12-13h post fertilization at 18°C). </obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Visible pointed oral pole but no cell ingression, ciliogenesis starting (12-13h post fertilization at 18 degree celsius). </obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">very early gastrula stage</rdfs:label>
     </owl:Class>
     
@@ -714,7 +714,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000032"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A few cells ingressed at pointed oral pole, swimming started  (14-16h post fertilization at 18°C).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A few cells ingressed at pointed oral pole, swimming started  (14-16h post fertilization at 18 degree celsius).</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">early gastrula stage</rdfs:label>
     </owl:Class>
     
@@ -735,7 +735,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000031"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ingression to fill balastotocoel half completed (17- 18h post fertilization at 18°C)</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ingression to fill balastotocoel half completed (17- 18h post fertilization at 18 degree celsius)</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mid gastrula stage</rdfs:label>
     </owl:Class>
     
@@ -756,7 +756,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000032"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blastocoel full, no epithelisation of internal cells (20h post fertilization at18°C</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blastocoel full, no epithelisation of internal cells (20h post fertilization at18 degree celsius</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">late gastrula stage</rdfs:label>
     </owl:Class>
     
@@ -799,7 +799,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000033"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Epithelisation beginning at aboral pole (as seen at 24h post fertilization at 18°C)</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Epithelisation beginning at aboral pole (as seen at 24h post fertilization at 18 degree celsius)</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">planula P1 stage</rdfs:label>
     </owl:Class>
     
@@ -820,7 +820,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000035"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Visible central cavity (as seen at 48h post fertilization at 18°C)</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Visible central cavity (as seen at 48h post fertilization at 18 degree celsius)</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">planula P2 stage</rdfs:label>
     </owl:Class>
     
@@ -841,7 +841,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000036"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Competent to metamorphose as (72h post fertilization at 18°C)</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Competent to metamorphose as (72h post fertilization at 18 degree celsius)</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">planula P3 stage</rdfs:label>
     </owl:Class>
     
@@ -862,7 +862,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000037"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aged planula (&gt; 3 days post fertilization at 18°C) but not received metamporphosis signal.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aged planula (&gt; 3 days post fertilization at 18 degree celsius) but not received metamporphosis signal.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aged planula stage</rdfs:label>
     </owl:Class>
     
@@ -3549,7 +3549,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000008"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oocyte greater than 150µm in diameter competent to undergo meiotic maturation</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oocyte greater than 150��m in diameter competent to undergo meiotic maturation</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fully grown oocyte</rdfs:label>
     </owl:Class>
     
