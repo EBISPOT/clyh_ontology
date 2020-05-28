@@ -11,7 +11,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/clyh/clyh.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/clyh/releases/2020-05-20/clyh.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/clyh/releases/2020-05-28/clyh.owl"/>
         <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anatomy, development and life cycle stages - planula, polyp, medusa/jellyfish - of the cnidarian hydrozoan species, Clytia hemiphaerica.</dc:description>
         <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clytia hemisphaerica Development and Anatomy Ontology (CLYH)</dc:title>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/3.0/"/>
@@ -1439,6 +1439,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anatomical structure which is a primary subdivision of whole organism. The mereological sum of these is the whole organism.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organism subdivision</rdfs:label>
     </owl:Class>
     
@@ -5231,7 +5232,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medusa tentacle system comprising tentacles, tentacle bulbs and tentacle buds</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">denker et al. 2008</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medusa tentacle system</rdfs:label>
     </owl:Class>
     

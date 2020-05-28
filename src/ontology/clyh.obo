@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: clyh/releases/2020-05-20/clyh.owl
+data-version: clyh/releases/2020-05-28/clyh.owl
 remark: Clytia hemisphaerica Development and Anatomy Ontology
 ontology: clyh/clyh
 property_value: http://purl.org/dc/elements/1.1/description "Anatomy, development and life cycle stages - planula, polyp, medusa/jellyfish - of the cnidarian hydrozoan species, Clytia hemiphaerica." xsd:string
@@ -470,6 +470,7 @@ name: multicellular organism
 [Term]
 id: CLYH:1000002
 name: organism subdivision
+def: "Anatomical structure which is a primary subdivision of whole organism. The mereological sum of these is the whole organism." []
 relationship: BFO:0000050 CLYH:1000001 ! part of multicellular organism
 
 [Term]
@@ -1760,7 +1761,6 @@ relationship: RO:0002488 CLYH:0000065 ! existence starts during 4-bulb medusa st
 id: CLYH:1000168
 name: medusa tentacle system
 def: "medusa tentacle system comprising tentacles, tentacle bulbs and tentacle buds" []
-synonym: "denker et al. 2008" EXACT []
 is_a: CLYH:1000004 ! tentacle system
 relationship: BFO:0000050 CLYH:1000166 ! part of bell margin
 relationship: RO:0002202 CLYH:1000140 ! develops from medusa bud
