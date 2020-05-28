@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: clyh/releases/2020-04-15/clyh.owl
+data-version: clyh/releases/2020-05-20/clyh.owl
 remark: Clytia hemisphaerica Development and Anatomy Ontology
 ontology: clyh/clyh
 property_value: http://purl.org/dc/elements/1.1/description "Anatomy, development and life cycle stages - planula, polyp, medusa/jellyfish - of the cnidarian hydrozoan species, Clytia hemiphaerica." xsd:string
@@ -127,7 +127,7 @@ relationship: RO:0002087 CLYH:0000014 ! immediately preceded by gamete period
 [Term]
 id: CLYH:0000018
 name: one cell stage
-def: "Zygote fertilized egg, zygote nucleus forms at animal pole (about 0-50 min post fertilization at 18°C)." []
+def: "Zygote fertilized egg, zygote nucleus forms at animal pole (about 0-50 min post fertilization at 18 degree celsius)." []
 synonym: " fertilised egg" EXACT []
 synonym: "zygote " EXACT []
 relationship: BFO:0000050 CLYH:0000017 ! part of cleavage period
@@ -137,7 +137,7 @@ property_value: IAO:0000301 "Y. Kraus et al in preparation?" xsd:string
 [Term]
 id: CLYH:0000019
 name: 2-cell stage
-def: "Two cell-stage embryo. First cleaveages unipolar and start at the animal pole (about 50-80 min post fertilization at 18°C)." []
+def: "Two cell-stage embryo. First cleaveages unipolar and start at the animal pole (about 50-80 min post fertilization at 18 degree celsius)." []
 relationship: BFO:0000050 CLYH:0000017 ! part of cleavage period
 relationship: RO:0002087 CLYH:0000018 ! immediately preceded by one cell stage
 property_value: IAO:0000301 "Y. Kraus et al in preparation?" xsd:string
@@ -145,35 +145,35 @@ property_value: IAO:0000301 "Y. Kraus et al in preparation?" xsd:string
 [Term]
 id: CLYH:0000020
 name: 4-cell stage
-def: "Four cell-stage embryo. Second cleaveages unipolar and start at the animal pole (about 80-110 min post fertilization at 18°C). " []
+def: "Four cell-stage embryo. Second cleaveages unipolar and start at the animal pole (about 80-110 min post fertilization at 18 degree celsius). " []
 relationship: BFO:0000050 CLYH:0000017 ! part of cleavage period
 relationship: RO:0002087 CLYH:0000019 ! immediately preceded by 2-cell stage
 
 [Term]
 id: CLYH:0000021
 name: 8-cell stage
-def: "Eight cell-stage embryo (about 2h post fertilization at 18°C)." []
+def: "Eight cell-stage embryo (about 2h post fertilization at 18 degree celsius)." []
 relationship: BFO:0000050 CLYH:0000017 ! part of cleavage period
 relationship: RO:0002087 CLYH:0000020 ! immediately preceded by 4-cell stage
 
 [Term]
 id: CLYH:0000022
 name: 16-cell stage
-def: "Sixteen cell-stage embryo (about 2.5h post fertilization at 18°C)." []
+def: "Sixteen cell-stage embryo (about 2.5h post fertilization at 18 degree celsius)." []
 relationship: BFO:0000050 CLYH:0000017 ! part of cleavage period
 relationship: RO:0002087 CLYH:0000021 ! immediately preceded by 8-cell stage
 
 [Term]
 id: CLYH:0000023
 name: 32-cell stage
-def: "thirty two cell-stage embryo (about 3h post fertilization at 18°C)." []
+def: "thirty two cell-stage embryo (about 3h post fertilization at 18 degree celsius)." []
 relationship: BFO:0000050 CLYH:0000017 ! part of cleavage period
 relationship: RO:0002087 CLYH:0000022 ! immediately preceded by 16-cell stage
 
 [Term]
 id: CLYH:0000024
 name: 64-cell stage
-def: "sixty four cell-stage embryo (about 3h post fertilization at 18°C)." []
+def: "sixty four cell-stage embryo (about 3h post fertilization at 18 degree celsius)." []
 relationship: BFO:0000050 CLYH:0000017 ! part of cleavage period
 relationship: RO:0002087 CLYH:0000023 ! immediately preceded by 32-cell stage
 
@@ -186,21 +186,21 @@ relationship: RO:0002087 CLYH:0000017 ! immediately preceded by cleavage period
 [Term]
 id: CLYH:0000026
 name: early blastula stage
-def: "Cells rounded and loosely adhered, Nuclei central  (5-6h post fertilization at 18°C)." []
+def: "Cells rounded and loosely adhered, Nuclei central  (5-6h post fertilization at 18 degree celsius)." []
 relationship: BFO:0000050 CLYH:0000025 ! part of blastula period
 relationship: RO:0002087 CLYH:0000024 ! immediately preceded by 64-cell stage
 
 [Term]
 id: CLYH:0000027
 name: mid blastula stage
-def: "Cell contacts extended, cells polarised, nuclei apical (8h post fertilization at 18°C)." []
+def: "Cell contacts extended, cells polarised, nuclei apical (8h post fertilization at 18 degree celsius)." []
 relationship: BFO:0000050 CLYH:0000025 ! part of blastula period
 relationship: RO:0002087 CLYH:0000026 ! immediately preceded by early blastula stage
 
 [Term]
 id: CLYH:0000028
 name: late blastula stage
-def: "Cell polarized and columnar, nuclei apical (9- 10h post fertilization at 18°C)." []
+def: "Cell polarized and columnar, nuclei apical (9- 10h post fertilization at 18 degree celsius)." []
 relationship: BFO:0000050 CLYH:0000025 ! part of blastula period
 relationship: RO:0002087 CLYH:0000027 ! immediately preceded by mid blastula stage
 
@@ -213,28 +213,28 @@ relationship: RO:0002087 CLYH:0000025 ! immediately preceded by blastula period
 [Term]
 id: CLYH:0000030
 name: very early gastrula stage
-def: "Visible pointed oral pole but no cell ingression, ciliogenesis starting (12-13h post fertilization at 18°C). " []
+def: "Visible pointed oral pole but no cell ingression, ciliogenesis starting (12-13h post fertilization at 18 degree celsius). " []
 relationship: BFO:0000050 CLYH:0000025 ! part of blastula period
 relationship: RO:0002087 CLYH:0000030 ! immediately preceded by very early gastrula stage
 
 [Term]
 id: CLYH:0000031
 name: early gastrula stage
-def: "A few cells ingressed at pointed oral pole, swimming started  (14-16h post fertilization at 18°C)." []
+def: "A few cells ingressed at pointed oral pole, swimming started  (14-16h post fertilization at 18 degree celsius)." []
 relationship: BFO:0000050 CLYH:0000025 ! part of blastula period
 relationship: RO:0002087 CLYH:0000032 ! immediately preceded by mid gastrula stage
 
 [Term]
 id: CLYH:0000032
 name: mid gastrula stage
-def: "Ingression to fill balastotocoel half completed (17- 18h post fertilization at 18°C)" []
+def: "Ingression to fill balastotocoel half completed (17- 18h post fertilization at 18 degree celsius)" []
 relationship: BFO:0000050 CLYH:0000025 ! part of blastula period
 relationship: RO:0002087 CLYH:0000031 ! immediately preceded by early gastrula stage
 
 [Term]
 id: CLYH:0000033
 name: late gastrula stage
-def: "Blastocoel full, no epithelisation of internal cells (20h post fertilization at18°C" []
+def: "Blastocoel full, no epithelisation of internal cells (20h post fertilization at18 degree celsius" []
 relationship: BFO:0000050 CLYH:0000025 ! part of blastula period
 relationship: RO:0002087 CLYH:0000032 ! immediately preceded by mid gastrula stage
 
@@ -249,28 +249,28 @@ relationship: RO:0002087 CLYH:0000029 ! immediately preceded by gastrula period
 [Term]
 id: CLYH:0000035
 name: planula P1 stage
-def: "Epithelisation beginning at aboral pole (as seen at 24h post fertilization at 18°C)" []
+def: "Epithelisation beginning at aboral pole (as seen at 24h post fertilization at 18 degree celsius)" []
 relationship: BFO:0000050 CLYH:0000034 ! part of planula period
 relationship: RO:0002087 CLYH:0000033 ! immediately preceded by late gastrula stage
 
 [Term]
 id: CLYH:0000036
 name: planula P2 stage
-def: "Visible central cavity (as seen at 48h post fertilization at 18°C)" []
+def: "Visible central cavity (as seen at 48h post fertilization at 18 degree celsius)" []
 relationship: BFO:0000050 CLYH:0000034 ! part of planula period
 relationship: RO:0002087 CLYH:0000035 ! immediately preceded by planula P1 stage
 
 [Term]
 id: CLYH:0000037
 name: planula P3 stage
-def: "Competent to metamorphose as (72h post fertilization at 18°C)" []
+def: "Competent to metamorphose as (72h post fertilization at 18 degree celsius)" []
 relationship: BFO:0000050 CLYH:0000034 ! part of planula period
 relationship: RO:0002087 CLYH:0000036 ! immediately preceded by planula P2 stage
 
 [Term]
 id: CLYH:0000038
 name: aged planula stage
-def: "Aged planula (> 3 days post fertilization at 18°C) but not received metamporphosis signal." []
+def: "Aged planula (> 3 days post fertilization at 18 degree celsius) but not received metamporphosis signal." []
 relationship: BFO:0000050 CLYH:0000034 ! part of planula period
 relationship: RO:0002087 CLYH:0000037 ! immediately preceded by planula P3 stage
 
@@ -1101,7 +1101,7 @@ relationship: RO:0002488 CLYH:0000066 ! existence starts during 8-bulb medusa st
 [Term]
 id: CLYH:1000086
 name: fully grown oocyte
-def: "oocyte greater than 150µm in diameter competent to undergo meiotic maturation" []
+def: "oocyte greater than 150��m in diameter competent to undergo meiotic maturation" []
 is_a: CLYH:1000084 ! oocyte
 relationship: RO:0002202 CLYH:1000085 ! develops from growing oocyte
 relationship: RO:0002488 CLYH:0000006 ! existence starts during stage I oocyte growth stage
