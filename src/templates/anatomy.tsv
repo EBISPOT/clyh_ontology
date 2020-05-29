@@ -1,200 +1,200 @@
-	Anatomical Structure	Type (is-a)	Part of	Develops from	Starts at stage	Ends at stage	Description	Synonyms	UBERON (is-a)	UBERON (non-exact)	Cell type (is-a)	Cell type (non-exact)	Pubmed id
-ID	A rdfs:label	C %	C  'part of' some %	C  'develops from' some %	C  'existence starts during' some %	C  'existence ends during' some %	A obo:IAO_0000115	A oboInOwl:hasExactSynonym					
-CLYH:1000001	multicellular organism								UBERON:0000468				
-CLYH:1000002	organism subdivision		multicellular organism				Anatomical structure which is a primary subdivision of whole organism. The mereological sum of these is the whole organism.		UBERON:0000475				
-UBERON:0000061	anatomical structure												
-CLYH:1000003	mouth	anatomical structure											
-CLYH:1000004	tentacle system	anatomical structure											
-CLYH:1000005	tentacle		tentacle system										
-CLYH:1000006	germ layer	anatomical structure							UBERON:0000923				
-CLYH:1000007	ectoderm	germ layer						epidermis	UBERON:0000924	UBERON:0007376			
-CLYH:1000008	gastrula outer layer	ectoderm	gastrula	aboral pole of blastula	very early gastrula stage	late gastrula stage							
-CLYH:1000009	oral gastrula outer layer		gastrula outer layer	oral pole of blastula	very early gastrula stage	late gastrula stage							
-CLYH:1000010	aboral gastrula outer layer		gastrula outer layer	aboral pole of blastula	very early gastrula stage	late gastrula stage							
-CLYH:1000011	lateral gastrula outer layer		gastrula outer layer	blastula	very early gastrula stage	late gastrula stage							
-CLYH:1000012	planula ectoderm	ectoderm	planula larva	gastrula	planula P1 stage		ectoderm of the planula						
-CLYH:1000013	oral planula ectoderm	planula ectoderm	planula larva	gastrula	planula P1 stage								
-CLYH:1000014	aboral planula ectoderm	planula ectoderm	planula larva	gastrula	planula P1 stage								
-CLYH:1000015	endoderm	germ layer						gastrodermis	UBERON:0000925				
-CLYH:1000016	gastrula ingressing cells	endoderm	gastrula	oral pole of blastula	very early gastrula stage	late gastrula stage							
-CLYH:1000017	oral gastrula ingressing cells		gastrula	blastula	mid gastrula stage								
-CLYH:1000018	aboral gastrula ingressing cells	endoderm	gastrula	blastula	mid gastrula stage								
-CLYH:1000019	planula endoderm	endoderm	planula larva	gastrula	planula P1 stage		endoderm of the planula						
-CLYH:1000020	aboral planula endoderm	planula endoderm	planula larva	gastrula	planula P1 stage								
-CLYH:1000021	oral planula endoderm	planula endoderm	planula larva	gastrula	planula P1 stage								
-CLYH:1000022	fertilized egg	cell		gamete	one cell stage	one cell stage	cell formed by fusion of a mature female reproductive cell and a mature  male reproductive cell at fertilization				CL:00000365		
-CLYH:1000023	embryo	multicellular organism		fertilized egg	one cell stage	late gastrula stage	Anatomical entity that comprises the organism in the early stages of growth and differentiation that are characterized by cleavage, the laying down of fundamental tissues,		UBERON:0000922				
-CLYH:1000024	cleaving embryo	embryo		fertilized egg	one cell stage	64-cell stage	Organism at the cleavage stage		UBERON:0007010				
-CLYH:1000025	2-cell embryo	cleaving embryo		fertilized egg	2-cell stage	2-cell stage	Organism at the cleavage stage  after the first  cell division						
-CLYH:1000026	4-cell embryo	cleaving embryo		2-cell embryo	4-cell stage	4-cell stage	Organism at the cleavage stage after two division cycles						
-CLYH:1000027	8-cell embryo	cleaving embryo		4-cell embryo	8-cell stage	8-cell stage	Organism at the cleavage stage after three division cycles						
-CLYH:1000028	16-cell embryo	cleaving embryo		8-cell embryo	16-cell stage	16-cell stage	Organism at the cleavage stage after four division cycles						
-CLYH:1000029	32-cell embryo	cleaving embryo		16-cell embryo	32-cell stage	32-cell stage	Organism at the cleavage stage after five division cycles						
-CLYH:1000030	64-cell embryo	cleaving embryo		32-cell embryo	64-cell stage	64-cell stage	Organism at the cleavage stage after six division cycles						
-CLYH:1000031	blastula	embryo		64-cell embryo	early blastula stage	late blastula stage	Organism at the blastula stage - an early stage of embryonic development in animals. It is produced by cleavage of a fertilized ovum and consists of a spherical layer of around 128 cells surrounding a central fluid-filled cavity called the blastocoel.		UBERON:0000307				
-CLYH:1000032	early blastula	blastula		64-cell embryo	early blastula stage	early blastula stage	blastula stage embryo before epithelisation. 						
-CLYH:1000033	mid blastula	blastula		early blastula	mid blastula stage	mid blastula stage	blastula stage embryo with polarised epithelial cells						
-CLYH:1000034	late blasutla	blastula		mid blastula	late blastula stage	late blastula stage	blastula stage embryo with polarised and columnar epithelial cells						
-CLYH:1000035	gastrula	embryo		late blasutla	very early gastrula stage	late gastrula stage	Organism at the gastrula stage.		UBERON:0004734				
-CLYH:1000036	very early gastrula	gastrula		late blasutla	very early gastrula stage	very early gastrula stage	Visible pointed oral pole but no cell ingression, Ciliogenesis starting.						
-CLYH:1000037	early gastrula	gastrula		very early gastrula	early gastrula stage	early gastrula stage	gastrula with a few cells ingressed at pointed oral pole.  Swimming .						
-CLYH:1000038	mid gastrula	gastrula		early gastrula	mid gastrula stage	mid gastrula stage	gastrula in which blastotocoel is half filled with ingressing cells . 						
-CLYH:1000039	late gastrula	gastrula		mid gastrula	late gastrula stage	late gastrula stage	gastrula in which Blastocoel is full but no epithelisation of internal cells 						
-CLYH:1000040	planula larva	multicellular organism		late gastrula	planula P1 stage	settled planula stage	A distinct juvenile form before metamorphosis  with elongated shape and cilliated ectoderm. Ectoderm and endoderm separated by basement membrane		UBERON:0002548				
-CLYH:1000041	planula P1	planula larva		late gastrula	planula P1 stage	planula P1 stage	Planula larva showing epithelisation of gastrodermal cells at aboral pole but not orally						
-CLYH:1000042	planula P2	planula larva		planula P1	planula P2 stage	planula P2 stage	Planula larva with visible central cavity in gastrodermis, incompetent to metamorphose						
-CLYH:1000043	planula P3 	planula larva		planula P2	planula P3 stage	planula P3 stage	Planula larva with all cell types diffrerntiated and  competent to metamorphose						
-CLYH:1000044	aged planula	planula larva		planula P3 	aged planula stage	aged planula stage	elongated planula competent to metamorphose , thinner than P3 planula						
-CLYH:1000045	metamorphosing planula	multicellular organism		planula larva	settled planula stage	sculpted disc stage	planula larva that has stopped swimming and is transforming into a polyp						
-CLYH:1000046	settled planula	metamorphosing planula		planula larva	settled planula stage	settled planula stage	planula larva that has stopped swimming  and fixed to substrate						
-CLYH:1000047	blob	metamorphosing planula		settled planula	blob stage	blob stage	metamorphosing larva that has a pear shape 						
-CLYH:1000048	disc	metamorphosing planula		blob	disc stage	disc stage	transitory form of planula undergoing metamorphosis a flattened circular form attached to the substrate						
-CLYH:1000049	sculpted disc	metamorphosing planula		disc	sculpted disc stage	sculpted disc stage	transitory form of planula undergoing metamorphosis a flattened form attached to the substrate showing irregular indentations  and with small stalk emerging						
-GO:0005575	cellular component		cell								GO:0005575		
-CLYH:1000050	spindle-associated	cellular component	blastomere		2-cell stage	64-cell stage	region of the cell closely surrounding the mitotoc spindle						
-GO:0005938	cell cortex	cellular component	cell										
-CLYH:1000051	animal cortex 	cell cortex	cellular component		stage III oocyte growth stage	cleavage period	region inheriting the peripheral region of the egg around the animal pole						
-CLYH:1000052	animal cortex of oocyte	animal cortex 	oocyte										
-CLYH:1000053	animal cortex of egg cell	animal cortex 	egg cell	animal cortex of oocyte									
-CLYH:1000054	vegetal cortex	cell cortex	cellular component			cleavage period	region inheriting the peripheral region of the egg around the vegetal pole						
-CLYH:1000055	vegetal cortex of oocyte	vegetal cortex	oocyte		stage III oocyte growth stage	stage III oocyte growth stage	region of a stage III oocyte cortex close to the oocyte nucleus						
-CLYH:1000056	vegetal cortex of egg	vegetal cortex	egg cell	vegetal cortex of oocyte			egg cortex region containing the site of polar body formation						
-CLYH:1000057	cytoplasm	cellular component	cellular component										
-CLYH:1000058	animal cytoplasm	cytoplasm	cellular component										
-CLYH:1000059	animal cytoplasm of oocyte	animal cytoplasm	oocyte		stage III oocyte growth stage	stage III oocyte growth stage	region of cytoplasm in a stage III oocyte  in the same hemishere as the nucleus						
-CLYH:1000060	animal cytoplasm of egg	animal cytoplasm	egg cell	animal cytoplasm of oocyte			cytoplasm  in egg hemisphere containing site of polar body formation						
-CLYH:1000061	vegetal cytoplasm	cytoplasm	cellular component										
-CLYH:1000062	vegetal cytoplasm of oocyte	vegetal cytoplasm	oocyte		stage III oocyte growth stage	stage III oocyte growth stage							
-CLYH:1000063	vegetal cytoplasm of egg	vegetal cytoplasm	egg cell	vegetal cytoplasm of oocyte									
-CLYH:1000064	oral territory	anatomical structure	organism subdivision		2-cell stage	late gastrula stage							
-CLYH:1000065	oral pole of embryo	oral territory	embryo										
-CLYH:1000066	oral pole of planula larva	oral territory	planula larva	oral pole of embryo	planula P1 stage	settled planula stage							
-CLYH:1000067	oral pole blastomeres	oral territory	cleaving embryo		8-cell stage	64-cell stage							
-CLYH:1000068	oral pole of blastula	oral territory	blastula	oral pole blastomeres									
-CLYH:1000069	oral pole of gastrula	oral territory	gastrula										
-CLYH:1000070	aboral territory 	anatomical structure	organism subdivision		2-cell stage	late gastrula stage							
-CLYH:1000071	aboral pole of embryo	aboral territory 	embryo										
-CLYH:1000072	aboral pole of planula larva	aboral territory 	planula larva	aboral pole of embryo	planula P1 stage	settled planula stage							
-CLYH:1000073	aboral pole blastomeres	aboral territory 	cleaving embryo		8-cell stage	64-cell stage							
-CLYH:1000074	aboral pole of blastula	aboral territory 	blastula	aboral pole blastomeres									
-CLYH:1000075	aboral pole of gastrula	aboral territory 	gastrula										
-CL:0000000	cell						A material entity of anatomical origin (part of or deriving from an organism) that has as its parts a maximally connected cell compartment surrounded by a plasma membrane.				CL:0000000		
-CLYH:1000076	blastomere	cell	cleaving embryo		2-cell stage	64-cell stage	single cell of a cleavage cel embryo						
-CLYH:1000077	germ cell	cell	gonad	medusa	4-bulb medusa stage						CL:0000586		
-CLYH:1000078	male germ cell	germ cell	gonad	medusa	4-bulb medusa stage						CL:0000015		
-CLYH:1000079	spermatogonium	male germ cell	gonad	interstitial cell	4-bulb medusa stage		An undeveloped male germ cell. Spermatogonia develop into primary spermatocytes				CL:0000020		
-CLYH:1000080	spermatid	male germ cell	gonad	spermatogonium	8-bulb medusa stage		A male germ cell that develops from the haploid secondary spermatocytes. Without further division, spermatids undergo structural changes and give rise to spermatozoa.				CL:0000018		
-CLYH:1000081	spermatozoid	male germ cell	gonad	spermatid	12-bulb medusa stage		A mature male germ cell that develops from a spermatid	sperm			CL:0000019		
-CLYH:1000082	female germ cell	germ cell	gonad	medusa	4-bulb medusa stage						CL:0000021		
-CLYH:1000083	oogonium	female germ cell	gonad	medusa	4-bulb medusa stage		an undifferentiated germ cell that proliferates rapidly and gives rise to oocytes						
-CLYH:1000084	oocyte	female germ cell	gonad	oogonium	4-bulb medusa stage		A female germ cell that has entered meiosis.				CL:0000023		
-CLYH:1000085	growing oocyte	oocyte	gonad	oogonium	8-bulb medusa stage		oocyte incorporating yolk 						
-CLYH:1000086	fully grown oocyte	oocyte	gonad	growing oocyte	stage I oocyte growth stage	stage III oocyte growth stage	oocyte greater than 150µm in diameter competent to undergo meiotic maturation						
-CLYH:1000087	gamete	cell					A mature sexual reproductive cell having a single set of unpaired chromosomes.				CL:0000300		
-CLYH:1000088	egg cell	gamete		fully grown oocyte			A female gamete where meiosis is complete and is able to participate in fertilization.	female gamete	UBERON_0000475		CL:0000025		
-CLYH:1000089	blastocoel roof cell	cell	gastrula	blastula	very early gastrula stage								
-CLYH:1000090	gland cell	cell					specialized cell participating in mucus secretion 						
-CLYH:1000091	planula aboral gland cells	gland cell	planula larva		planula P1 stage								
-CLYH:1000092	endodermal gland cells	gland cell	planula larva		planula P1 stage								
-CLYH:1000093	manubrium gland cell	gland cell	manubrium	medusa bud	4-bulb medusa stage		gland cell of the manubrium						
-CLYH:1000094	gastrozoid gland cell	gland cell	gastrozoid				gland cell of the gastrozoid						
-CLYH:1000095	interstitial cell	cell											
-CLYH:1000096	stolon interstitial cell	interstitial cell	stolon	planula larva	colony phase	medusa phase	interstitial cell in the stolon						
-CLYH:1000097	embryo interstitial cell	interstitial cell											
-CLYH:1000098	planula interstical cell	interstitial cell											
-CLYH:1000099	gastrozoid interstitial cell	interstitial cell											
-CLYH:1000100	gonozoid interstitial cell	interstitial cell	gonozoid	polyp colony	colony phase	medusa phase	interstitial cell within the gonozoid						
-CLYH:1000101	manubrium interstital cell	interstitial cell	manubrium	medusa bud	4-bulb medusa stage		interstital cell of the manubrium						
-CLYH:1000102	nematoblast	cell											
-CLYH:1000103	stolon nematoblast	nematoblast	stolon	planula larva	colony phase	medusa phase	nematoblast in the stolon						
-CLYH:1000104	planula nematoblast	nematoblast											
-CLYH:1000105	tentacle bulb nemtoblast	nematoblast	nematogenic ectoderm of the bulb	medusa bud	4-bulb medusa stage		nematoblast of the tentacle bulb						
-CLYH:1000106	manubrium nematoblast	nematoblast	manubrium	medusa bud	4-bulb medusa stage		nematoblast of the manubrium						
-CLYH:1000107	nematocyte	cell					specialized cell containing one giant explosive secretory organelle called nematocyst used for prey capture and defense from predators						
-CLYH:1000108	planula nematocyte	nematocyte											
-CLYH:1000109	medusa tentacle nematocyte	nematocyte	medusa tentacle	medusa bud	4-bulb medusa stage		nematocyte of the medusa tentacle						
-CLYH:1000110	manubrium nematocyte	nematocyte	manubrium	medusa bud	4-bulb medusa stage		nematocyte located on the manubrium						
-CLYH:1000111	gastrozoid tentacle nematocyte	nematocyte	gastrozoid tentacle				nematocyte located on the tentacle						
-CLYH:1000112	neural cell	cell					a cell that is part of the nervous system				CL:0002319		
-CLYH:1000113	planula neural cell	neural cell	planula larva										
-CLYH:1000114	planula lateral neural cells	planula neural cell	planula larva	gastrula	planula P1 stage								
-CLYH:1000115	plaunula aboral ectoderm neural cells	planula neural cell	planula larva	gastrula	planula P1 stage								
-CLYH:1000116	nerve cell of the radial canal	neural cell	radial canal	medusa bud	4-bulb medusa stage		nerve cells of the radial canal						
-CLYH:1000117	nerve cell of the circular canal	neural cell	circular canal	medusa bud	4-bulb medusa stage		nerve cells of the circular canal						
-CLYH:1000118	nerve cells of the gonad ectoderm	neural cell	gonad	medusa	4-bulb medusa stage		nerve cells located in the ectoderm of hydrozoan gonad						
-CLYH:1000119	nerve cell of the tentacle bulb	neural cell	medusa tentacle bulb	medusa bud	4-bulb medusa stage		nerve cell of the medusa tentacle bulb						
-CLYH:1000120	subumbrella nervous cell	neural cell	subumbrella	medusa bud	4-bulb medusa stage		nervous cells of the subumbrella						
-CLYH:1000121	smooth muscle cell	cell											
-CLYH:1000122	smooth muscle of the velum	smooth muscle cell	velum	medusa bud	4-bulb medusa stage		smooth muscle of the velum						
-CLYH:1000123	subumbrella smooth muscle	smooth muscle cell	subumbrella	medusa bud	4-bulb medusa stage		smooth muscle of the subumbrella						
-CLYH:1000124	striated muscle cell	cell											
-CLYH:1000125	striated muscle of the velum	striated muscle cell	velum	medusa bud	4-bulb medusa stage		striated muscle of the velum						
-CLYH:1000126	subumbrella striated muscle	striated muscle cell	subumbrella	medusa bud	4-bulb medusa stage		striated muscle of the subumbrella						
-CLYH:1000127	polyp colony	multicellular organism		planula larva	colony phase	medusa phase	connected system of gastrozoid and gonozoid polyps, propagating vegetatively 						
-CLYH:1000128	stolon		polyp colony	polyp colony	colony phase	medusa phase	tubular structure  comprising endoderm and ectodermal layers adhering to the substrate , connecting the bases of the polyps						
-CLYH:1000129	stolon growth tip		stolon	polyp colony	colony phase	medusa phase	growing tip of a stolon						
-CLYH:1000130	stolon mesoglea	mesoglea	stolon	polyp colony	colony phase	medusa phase	mesoglea layer between the endoderm and ectoderm layers of the stolon						
-CLYH:1000131	stolon body		stolon	polyp colony	colony phase	medusa phase	segments of the stolon between the bases of the polyps, excluding the growing tip						
-CLYH:1000132	stolon ectoderm	ectoderm	stolon	polyp colony	colony phase	medusa phase	ectodermal layer within the stolon						
-CLYH:1000133	stolon endoderm	endoderm	stolon	polyp colony	colony phase	medusa phase	endodermal layer within the stolon						
-CLYH:1000134	gonozoid		polyp colony	stolon	colony phase	medusa phase	polyp specialised for production of medusa by budding						
-CLYH:1000135	gonozoid cap		gonozoid	polyp colony	colony phase	medusa phase	structure that closes the distal end of the gonozoid						
-CLYH:1000136	gonozoid central tube		gonozoid	polyp colony	colony phase	medusa phase	tubular structure comprising endoderm and ectodermal layers at the centre of the gonozoid						
-CLYH:1000137	gonozoid ectoderm	ectoderm	gonozoid	polyp colony	colony phase	medusa phase	ectodermal layer of the gonozoid including central tube and developing buds						
-CLYH:1000138	gonozoid endoderm	endoderm	gonozoid	polyp colony	colony phase	medusa phase	endodermal layer of the gonozoid including central tube and developing buds						
-CLYH:1000139	epithelium covering buds	ectoderm	gonozoid	polyp colony	colony phase	medusa phase	epithelial cell layer positioned between the developing medusa buds and the theca f the gonozoid						
-CLYH:1000140	medusa bud		gonozoid	polyp colony	colony phase	medusa phase	outgrowth of the gonozoid central tube, within which medusa structures develop						
-CLYH:1000141	early medusa bud	medusa bud	gonozoid	polyp colony	colony phase	medusa phase	outgrowth of the gonozoid central tube, comprising  endoderm layer, ectoderm layers and entocodon 						
-CLYH:1000142	mid medusa bud	medusa bud	gonozoid	polyp colony	colony phase	medusa phase	bud  on the side of the gonozoid central tube, in which all medusa structures are present but not yet expanded to final proportions						
-CLYH:1000143	late medusa bud	medusa bud	gonozoid	polyp colony	colony phase	medusa phase	bud on the side of the gonozoid central tube, containing medusa structures with same proportions as newlyreleased medusa						
-CLYH:1000144	entocodon		medusa bud	polyp colony	colony phase	medusa phase	group of cells between the endoderm and ectodderm of the early medusa bud						
-CLYH:1000145	developing manubrium	manubrium	medusa bud	polyp colony	colony phase	medusa phase	developing manubrium  within the medusa bud						
-CLYH:1000146	developing tentacle bulbs	medusa tentacle system	medusa bud	polyp colony	colony phase	medusa phase	developing tentacle bud within the medusa bud						
-CLYH:1000147	developing radial canal	radial canal	medusa bud	polyp colony	colony phase	medusa phase	developing radial canal within the medusa bud						
-CLYH:1000148	developing striated muscle	striated muscle cell	medusa bud	polyp colony	colony phase	medusa phase	developing striated muscle within the medusa bud						
-CLYH:1000149	developing circular canal	circular canal	medusa bud	polyp colony	colony phase	medusa phase	developing circular canal  within the medusa bud						
-CLYH:1000150	gastrozoid		polyp colony	stolon	colony phase	medusa phase	polyp specialised for catching prey and digesting	hydranth					
-CLYH:1000151	gastrozoid tentacle	tentacle	gastrozoid		colony phase	medusa phase	tentacle surrounding the polyp mouth						
-CLYH:1000152	gastrozoid mouth	mouth	gastrozoid				mouth of the gastrozoid						
-CLYH:1000153	matrix	anatomical structure							UBERON:0000061				
-CLYH:1000154	theca	matrix	polyp colony		colony phase	medusa phase	chitinous acellular layer surronding and protecting the polyps						
-CLYH:1000155	gonotheca	theca	gonozoid		colony phase	medusa phase	theca of the gonozoid						
-CLYH:1000156	stolon perisarc	theca	stolon		colony phase	medusa phase	chitinous acellular layer surronding the stolon						
-CLYH:1000157	hydrotheca	theca	gastrozoid		colony phase	medusa phase	theca of the hydrozoid						
-CLYH:1000158	mesoglea	matrix					jelly-like layer between epithelial layer. The mesoglea is mostly acellular and composed of extracellular matrix						
-CLYH:1000159	gonozoid mesoglea	mesoglea	gonozoid	polyp colony	colony phase	medusa phase	mesoglea layer between the endoderm and ectoderm layers of the gonozoid central tube						
-CLYH:1000160	medusa	multicellular organism		medusa bud	4-bulb medusa stage		swimming pelagic stage of the C. hemisphaerica life cycle						
-CLYH:1000161	umbrella		medusa	medusa bud	4-bulb medusa stage		dome-shaped part of the medusa stage						
-CLYH:1000162	exumbrella		umbrella	medusa bud	4-bulb medusa stage		outlayer of the umbrella						
-CLYH:1000163	subumbrella		umbrella	medusa bud	4-bulb medusa stage		inner layer of the umbrella						
-CLYH:1000164	subumbrella endodermal plate	endoderm	subumbrella	medusa bud	4-bulb medusa stage		endodermal plate of the subumbrella						
-CLYH:1000165	thick mesoglea layer of the umbrella	mesoglea	medusa	medusa bud	4-bulb medusa stage		thick mesoglea layer of the umbrella forming the bulk of the umbrella						
-CLYH:1000166	bell margin		umbrella	medusa bud	4-bulb medusa stage		outer border of the umbrella						
-CLYH:1000167	statocyst		bell margin	medusa bud	4-bulb medusa stage				UBERON:0006583				
-CLYH:1000168	medusa tentacle system	tentacle system	bell margin	medusa bud	4-bulb medusa stage		medusa tentacle system comprising tentacles, tentacle bulbs and tentacle buds						denker et al. 2008
-CLYH:1000169	medusa tentacle bud		medusa tentacle system	medusa bud	4-bulb medusa stage		initial stage of tentacle bulb formation						
-CLYH:1000170	medusa tentacle bulb		medusa tentacle system	medusa bud	4-bulb medusa stage		swollen structure producing the tentacle and connecting the bell margin to the tentacle						
-CLYH:1000171	nematogenic ectoderm of the bulb	ectoderm	medusa tentacle bulb	medusa bud	4-bulb medusa stage		cresent-shaped nematogenic ectodermal area of the tentacle bulb, located on the oral side of the bulb						
-CLYH:1000172	non-nematogenic ectoderm of the bulb	ectoderm	medusa tentacle bulb	medusa bud	4-bulb medusa stage		V-shaped non-nematogenic ectodermal area of the tentacle bulb, located on the aboral side of the bulb						
-CLYH:1000173	tentacle bulb endoderm	endoderm	medusa tentacle bulb	medusa bud	4-bulb medusa stage		endodermal latyer of the medusa tentacle bulb						
-CLYH:1000174	medusa tentacle		medusa tentacle system	medusa bud	4-bulb medusa stage		tentacle of the medusa not including the tentacle bulb						
-CLYH:1000175	primary medusa tentacle	medusa tentacle	medusa tentacle system	medusa bud	4-bulb medusa stage		four first medusa tentacles of the newly hatched medusa, connected to both radial and circular canals 						
-CLYH:1000176	secondary medusa tentacle	medusa tentacle	medusa tentacle system	medusa	8-bulb medusa stage		medusa tentacle generated after medusa hatching and connected to the circular but not to the radial canal						
-CLYH:1000177	medusa tentacle ectoderm	ectoderm	medusa tentacle	medusa bud	4-bulb medusa stage		ectoderm of the medusa tentacle						
-CLYH:1000178	medusa tentacle endoderm 	endoderm	medusa tentacle	medusa bud	4-bulb medusa stage		endoderm of the medusa tentacle						
-CLYH:1000179	velum		bell margin	medusa bud	4-bulb medusa stage		A muscular flap of tissue surrounding the margin of the bell						
-CLYH:1000180	inner layer of the velum		velum	medusa bud	4-bulb medusa stage		inner layer of the velum						
-CLYH:1000181	outerlater of the velum		velum	medusa bud	4-bulb medusa stage		outerlater of the velum						
-CLYH:1000182	radial canal		medusa	medusa bud	4-bulb medusa stage		endodermal canal connecting the manubrium with the bell margin						
-CLYH:1000183	circular canal		bell margin	medusa bud	4-bulb medusa stage		endodermal canoal running along the bell margin						
-CLYH:1000184	nerve ring		bell margin	medusa bud	4-bulb medusa stage		concentration of nerve cell bodies and projections running around the margin of the bell						
-CLYH:1000185	inner nerve ring		nerve ring	medusa bud	4-bulb medusa stage		nerve ring located closest to the centre of the medusa						
-CLYH:1000186	outer nerve ring		nerve ring	medusa bud	4-bulb medusa stage		nerve ring located farest to the centre of the medusa						
-CLYH:1000187	manubrium		medusa	medusa bud	4-bulb medusa stage		central structure of the medusa bearing the mouth and performing extracellular digestion						
-CLYH:1000188	medusa mouth	mouth	manubrium	medusa bud	4-bulb medusa stage		medusa mouth as part of the manubrium						
-CLYH:1000189	manubrium roof	endoderm	manubrium	medusa bud	4-bulb medusa stage		endoderm layer of the manubrium opposite to the mouth and in direct contact with the thick mesoglea layer of the medusa						
-CLYH:1000190	manubrium ectoderm	ectoderm	manubrium	medusa bud	4-bulb medusa stage		ectoderm of the manubrium						
-CLYH:1000191	manubrium endoderm	endoderm	manubrium	medusa bud	4-bulb medusa stage		endoderm of the manubrium						
-CLYH:1000192	gonad		medusa	medusa bud	4-bulb medusa stage				UBERON:0000991				
-CLYH:1000193	gonad ectoderm	ectoderm	gonad	medusa	4-bulb medusa stage		Ectodermal layer of the gonad						
-CLYH:1000194	gonad endoderm	endoderm	gonad	medusa	4-bulb medusa stage		Ectodermal layer of the gonad						
+	Anatomical Structure	Type (is-a)	Part of	Obsolete	Develops from	Starts at stage	Ends at stage	Description	Synonyms	UBERON (is-a)	UBERON (non-exact)	Cell type (is-a)	Cell type (non-exact)	Pubmed id
+ID	A rdfs:label	C %	C  'part of' some %	AT owl:deprecated^^xsd:boolean	C  'develops from' some %	C  'existence starts during' some %	C  'existence ends during' some %	A obo:IAO_0000115	A oboInOwl:hasExactSynonym					
+CLYH:1000001	multicellular organism									UBERON:0000468				
+CLYH:1000002	organism subdivision			true										
+UBERON:0000061	anatomical structure													
+CLYH:1000003	mouth	anatomical structure												
+CLYH:1000004	tentacle system	anatomical structure												
+CLYH:1000005	tentacle	anatomical structure	tentacle system											
+CLYH:1000006	tissue layer	anatomical structure								UBERON:0000923				
+CLYH:1000007	ectoderm			true										
+CLYH:1000008	gastrula outer layer	tissue layer	gastrula		aboral pole of blastula	very early gastrula stage	late gastrula stage	Outer layer of the gastrula.						
+CLYH:1000009	oral gastrula outer layer	tissue layer	gastrula outer layer		oral pole of blastula	very early gastrula stage	late gastrula stage	Oral part of the outer layer of the gastrula.						
+CLYH:1000010	aboral gastrula outer layer	tissue layer	gastrula outer layer		aboral pole of blastula	very early gastrula stage	late gastrula stage	Aboral part of the outer layer of the gastrula.						
+CLYH:1000011	lateral gastrula outer layer	tissue layer	gastrula outer layer		blastula	very early gastrula stage	late gastrula stage	Mid part of the outer layer of the gastrula.						
+CLYH:1000012	planula ectoderm	tissue layer	planula larva		gastrula	planula P1 stage		Outer layer of the planula.	planula outer layer					
+CLYH:1000013	oral planula ectoderm	tissue layer	planula ectoderm		gastrula	planula P1 stage		Oral part of the outer layer of the planula.						
+CLYH:1000014	aboral planula ectoderm	tissue layer	planula ectoderm		gastrula	planula P1 stage		Aboral part of the outer layer of the planula.						
+CLYH:1000015	endoderm			true										
+CLYH:1000016	gastrula ingressing cells	cell	gastrula		oral pole of blastula	very early gastrula stage	late gastrula stage	Cells ingressing from the outer layer of the gastrula into the blastocoel.						
+CLYH:1000017	oral gastrula ingressing cells	cell	gastrula		blastula	mid gastrula stage		Cells ingressing from the outer layer into the blastocoel on the oral side of the gastrula.						
+CLYH:1000018	aboral gastrula ingressing cells	cell	gastrula		blastula	mid gastrula stage		Cells ingressing from the outer layer into the blastocoel on the aboral side of the gastrula.						
+CLYH:1000019	planula endoderm	tissue layer	planula larva		gastrula	planula P1 stage		Inner layer of the planula.	planula inner layer					
+CLYH:1000020	aboral planula endoderm	tissue layer	planula endoderm		gastrula	planula P1 stage		Inner layer of the planula on the aboral side of the planula.						
+CLYH:1000021	oral planula endoderm	tissue layer	planula endoderm		gastrula	planula P1 stage		Inner layer of the planula on the oral side of the planula.						
+CLYH:1000022	fertilized egg	cell			gamete	one cell stage	one cell stage	Cell formed by fusion of a mature female reproductive cell and a mature male reproductive cell at fertilization.	zygote			CL:00000365		
+CLYH:1000023	embryo	multicellular organism			fertilized egg	one cell stage	late gastrula stage	Anatomical entity that comprises the organism in the early stages of growth and differentiation that are characterized by cleavage, the laying down of fundamental tissues.		UBERON:0000922				
+CLYH:1000024	cleaving embryo	embryo			fertilized egg	one cell stage	64-cell stage	Organism at the cleavage stage.		UBERON:0007010				
+CLYH:1000025	2-cell embryo	cleaving embryo			fertilized egg	2-cell stage	2-cell stage	Organism at the cleavage stage after the first cell division.						
+CLYH:1000026	4-cell embryo	cleaving embryo			2-cell embryo	4-cell stage	4-cell stage	Organism at the cleavage stage after two division cycles.						
+CLYH:1000027	8-cell embryo	cleaving embryo			4-cell embryo	8-cell stage	8-cell stage	Organism at the cleavage stage after three division cycles.						
+CLYH:1000028	16-cell embryo	cleaving embryo			8-cell embryo	16-cell stage	16-cell stage	Organism at the cleavage stage after four division cycles.						
+CLYH:1000029	32-cell embryo	cleaving embryo			16-cell embryo	32-cell stage	32-cell stage	Organism at the cleavage stage after five division cycles.						
+CLYH:1000030	64-cell embryo	cleaving embryo			32-cell embryo	64-cell stage	64-cell stage	Organism at the cleavage stage after six division cycles.						
+CLYH:1000031	blastula	embryo			64-cell embryo	early blastula stage	late blastula stage	Organism at the blastula stage - an early stage of embryonic development in animals. It is produced by cleavage of a fertilized ovum and consists of a spherical layer of around 128 cells surrounding a central fluid-filled cavity called the blastocoel.		UBERON:0000307				
+CLYH:1000032	early blastula	blastula			64-cell embryo	early blastula stage	early blastula stage	Blastula stage embryo before epithelisation. 						
+CLYH:1000033	mid blastula	blastula			early blastula	mid blastula stage	mid blastula stage	Blastula stage embryo with polarised epithelial cells.						
+CLYH:1000034	late blasutla	blastula			mid blastula	late blastula stage	late blastula stage	Blastula stage embryo with polarised and columnar epithelial cells.						
+CLYH:1000035	gastrula	embryo			late blasutla	very early gastrula stage	late gastrula stage	Organism at the gastrula stage.		UBERON:0004734				
+CLYH:1000036	very early gastrula	gastrula			late blasutla	very early gastrula stage	very early gastrula stage	Visible pointed oral pole but no cell ingression, Ciliogenesis starting.						
+CLYH:1000037	early gastrula	gastrula			very early gastrula	early gastrula stage	early gastrula stage	Gastrula with a few cells ingressed at pointed oral pole. Swimming.						
+CLYH:1000038	mid gastrula	gastrula			early gastrula	mid gastrula stage	mid gastrula stage	Gastrula in which blastotocoel is half filled with ingressing cells. 						
+CLYH:1000039	late gastrula	gastrula			mid gastrula	late gastrula stage	late gastrula stage	Gastrula in which Blastocoel is full but no epithelisation of internal cells.						
+CLYH:1000040	planula larva	multicellular organism			late gastrula	planula P1 stage	settled planula stage	A distinct juvenile form before metamorphosis with elongated shape and cilliated outer layer. Inner and outer tissue layers separated by basement membrane.		UBERON:0002548				
+CLYH:1000041	planula P1	planula larva			late gastrula	planula P1 stage	planula P1 stage	Planula larva showing epithelisation of gastrodermal cells at aboral pole but not orally.						
+CLYH:1000042	planula P2	planula larva			planula P1	planula P2 stage	planula P2 stage	Planula larva with visible central cavity in gastrodermis, incompetent to metamorphose.						
+CLYH:1000043	planula P3 	planula larva			planula P2	planula P3 stage	planula P3 stage	Planula larva with all cell types diffrerntiated and competent to metamorphose.						
+CLYH:1000044	aged planula	planula larva			planula P3 	aged planula stage	aged planula stage	Elongated planula competent to metamorphose, thinner than P3 planula.						
+CLYH:1000045	metamorphosing planula	multicellular organism			planula larva	settled planula stage	sculpted disc stage	Planula larva that has stopped swimming and is transforming into a polyp.						
+CLYH:1000046	settled planula	metamorphosing planula			planula larva	settled planula stage	settled planula stage	Planula larva that has stopped swimming and fixed to substrate.						
+CLYH:1000047	blob	metamorphosing planula			settled planula	blob stage	blob stage	Metamorphosing larva that has a pear shape.						
+CLYH:1000048	disc	metamorphosing planula			blob	disc stage	disc stage	Transitory form of planula undergoing metamorphosis a flattened circular form attached to the substrate.						
+CLYH:1000049	sculpted disc	metamorphosing planula			disc	sculpted disc stage	sculpted disc stage	Transitory form of planula undergoing metamorphosis a flattened form attached to the substrate showing irregular indentations and with small stalk emerging.						
+GO:0005575	cellular component		cell									GO:0005575		
+CLYH:1000050	spindle-associated	cellular component				2-cell stage	64-cell stage	Region of the cell closely surrounding the mitotoc spindle.						
+GO:0005938	cell cortex	cellular component	cell											
+CLYH:1000051	animal cortex 	cell cortex	cellular component			stage III oocyte growth stage	cleavage period	Region inheriting the peripheral region of the egg around the animal pole.						
+CLYH:1000052	animal cortex of oocyte	animal cortex 	oocyte											
+CLYH:1000053	animal cortex of egg cell	animal cortex 	egg cell		animal cortex of oocyte									
+CLYH:1000054	vegetal cortex	cell cortex	cellular component				cleavage period	Region inheriting the peripheral region of the egg around the vegetal pole.						
+CLYH:1000055	vegetal cortex of oocyte	vegetal cortex	oocyte			stage III oocyte growth stage	stage III oocyte growth stage	Region of a stage III oocyte cortex close to the oocyte nucleus.						
+CLYH:1000056	vegetal cortex of egg	vegetal cortex	egg cell		vegetal cortex of oocyte			Egg cortex region containing the site of polar body formation.						
+CLYH:1000057	cytoplasm	cellular component	cellular component											
+CLYH:1000058	animal cytoplasm	cytoplasm	cellular component											
+CLYH:1000059	animal cytoplasm of oocyte	animal cytoplasm	oocyte			stage III oocyte growth stage	stage III oocyte growth stage	Region of cytoplasm in a stage III oocyte in the same hemishere as the nucleus.						
+CLYH:1000060	animal cytoplasm of egg	animal cytoplasm	egg cell		animal cytoplasm of oocyte			Cytoplasm in egg hemisphere containing site of polar body formation.						
+CLYH:1000061	vegetal cytoplasm	cytoplasm	cellular component											
+CLYH:1000062	vegetal cytoplasm of oocyte	vegetal cytoplasm	oocyte			stage III oocyte growth stage	stage III oocyte growth stage							
+CLYH:1000063	vegetal cytoplasm of egg	vegetal cytoplasm	egg cell		vegetal cytoplasm of oocyte									
+CLYH:1000064	oral territory	anatomical structure				2-cell stage	late gastrula stage							
+CLYH:1000065	oral pole of embryo	oral territory	embryo											
+CLYH:1000066	oral pole of planula larva	oral territory	planula larva		oral pole of embryo	planula P1 stage	settled planula stage							
+CLYH:1000067	oral pole blastomeres	oral territory	cleaving embryo			8-cell stage	64-cell stage							
+CLYH:1000068	oral pole of blastula	oral territory	blastula		oral pole blastomeres									
+CLYH:1000069	oral pole of gastrula	oral territory	gastrula											
+CLYH:1000070	aboral territory 	anatomical structure				2-cell stage	late gastrula stage							
+CLYH:1000071	aboral pole of embryo	aboral territory 	embryo											
+CLYH:1000072	aboral pole of planula larva	aboral territory 	planula larva		aboral pole of embryo	planula P1 stage	settled planula stage							
+CLYH:1000073	aboral pole blastomeres	aboral territory 	cleaving embryo			8-cell stage	64-cell stage							
+CLYH:1000074	aboral pole of blastula	aboral territory 	blastula		aboral pole blastomeres									
+CLYH:1000075	aboral pole of gastrula	aboral territory 	gastrula											
+CL:0000000	cell							A material entity of anatomical origin (part of or deriving from an organism) that has as its parts a maximally connected cell compartment surrounded by a plasma membrane.				CL:0000000		
+CLYH:1000076	blastomere	cell	cleaving embryo			2-cell stage	64-cell stage	Single cell of a cleavage cel embryo.						
+CLYH:1000077	germ cell	cell	gonad		medusa	4-bulb medusa stage						CL:0000586		
+CLYH:1000078	male germ cell	germ cell	gonad		medusa	4-bulb medusa stage						CL:0000015		
+CLYH:1000079	spermatogonium	male germ cell	gonad		interstitial cell	4-bulb medusa stage		An undeveloped male germ cell. Spermatogonia develop into primary spermatocytes.				CL:0000020		
+CLYH:1000080	spermatid	male germ cell	gonad		spermatogonium	8-bulb medusa stage		A male germ cell that develops from the haploid secondary spermatocytes. Without further division, spermatids undergo structural changes and give rise to spermatozoa.				CL:0000018		
+CLYH:1000081	spermatozoid	male germ cell	gonad		spermatid	12-bulb medusa stage		A mature male germ cell that develops from a spermatid.	sperm			CL:0000019		
+CLYH:1000082	female germ cell	germ cell	gonad		medusa	4-bulb medusa stage						CL:0000021		
+CLYH:1000083	oogonium	female germ cell	gonad		medusa	4-bulb medusa stage		An undifferentiated germ cell that proliferates rapidly and gives rise to oocytes.						
+CLYH:1000084	oocyte	female germ cell	gonad		oogonium	4-bulb medusa stage		A female germ cell that has entered meiosis.				CL:0000023		
+CLYH:1000085	growing oocyte	oocyte	gonad		oogonium	8-bulb medusa stage		Oocyte incorporating yolk.						
+CLYH:1000086	fully grown oocyte	oocyte	gonad		growing oocyte	stage I oocyte growth stage	stage III oocyte growth stage	Oocyte greater than 150 micrometers in diameter competent to undergo meiotic maturation.						
+CLYH:1000087	gamete	cell						A mature sexual reproductive cell having a single set of unpaired chromosomes.				CL:0000300		
+CLYH:1000088	egg cell	gamete			fully grown oocyte			A female gamete where meiosis is complete and is able to participate in fertilization.	female gamete	UBERON_0000475		CL:0000025		
+CLYH:1000089	blastocoel roof cell	cell	gastrula		blastula	very early gastrula stage								
+CLYH:1000090	gland cell	cell						Specialized cell participating in mucus secretion.						
+CLYH:1000091	planula aboral gland cell	gland cell	planula larva			planula P1 stage		Gland cell located on the aboral side of the planula larva, in the outer layer.						
+CLYH:1000092	planula gland cell	gland cell	planula larva			planula P1 stage		Gland cell located in the inner layer of the planula larva.						
+CLYH:1000093	manubrium gland cell	gland cell	manubrium		medusa bud	4-bulb medusa stage		Gland cell of the manubrium.						
+CLYH:1000094	gastrozoid gland cell	gland cell	gastrozoid					Gland cell of the gastrozoid.						
+CLYH:1000095	interstitial cell	cell						Multipotent stem cell.						
+CLYH:1000096	stolon interstitial cell	interstitial cell	stolon		planula larva	colony phase	medusa phase	Interstitial cell in the stolon.						
+CLYH:1000097	embryo interstitial cell	interstitial cell	embryo					Interstitial cell in the embryo.						
+CLYH:1000098	planula interstitial cell	interstitial cell	planula  larva					Interstitial cell in the planula.						
+CLYH:1000099	gastrozoid interstitial cell	interstitial cell	gastrozoid					Interstitial cell in the feeding polyp.						
+CLYH:1000100	gonozoid interstitial cell	interstitial cell	gonozoid		polyp colony	colony phase	medusa phase	Interstitial cell within the gonozoid.						
+CLYH:1000101	manubrium interstital cell	interstitial cell	manubrium		medusa bud	4-bulb medusa stage		Interstital cell of the manubrium.						
+CLYH:1000102	nematoblast	cell						Differenciating nematocyte.						
+CLYH:1000103	stolon nematoblast	nematoblast	stolon		planula larva	colony phase	medusa phase	Nematoblast in the stolon.						
+CLYH:1000104	planula nematoblast	nematoblast	planula larva					Nematoblast in the planula.						
+CLYH:1000105	tentacle bulb nemtoblast	nematoblast	nematogenic ectoderm of the bulb		medusa bud	4-bulb medusa stage		Nematoblast of the tentacle bulb.						
+CLYH:1000106	manubrium nematoblast	nematoblast	manubrium		medusa bud	4-bulb medusa stage		Nematoblast of the manubrium.						
+CLYH:1000107	nematocyte	cell						Specialized cell containing one giant explosive secretory organelle called nematocyst used for prey capture and defense from predators.						
+CLYH:1000108	planula nematocyte	nematocyte	planula larva					Nematocyte of the planula.						
+CLYH:1000109	medusa tentacle nematocyte	nematocyte	medusa tentacle		medusa bud	4-bulb medusa stage		Nematocyte of the medusa tentacle.						
+CLYH:1000110	manubrium nematocyte	nematocyte	manubrium		medusa bud	4-bulb medusa stage		Nematocyte located on the manubrium.						
+CLYH:1000111	gastrozoid tentacle nematocyte	nematocyte	gastrozoid tentacle					Nematocyte located on the tentacle.						
+CLYH:1000112	neural cell	cell						A cell that is part of the nervous system.				CL:0002319		
+CLYH:1000113	planula neural cell	neural cell	planula larva					Neural cell in the planula.						
+CLYH:1000114	planula lateral neural cells	planula neural cell	planula larva		gastrula	planula P1 stage		Neural cell in the mid part of the planula.						
+CLYH:1000115	plaunula aboral ectoderm neural cells	planula neural cell	planula larva		gastrula	planula P1 stage		Neural cell in the aboral part of the planula.						
+CLYH:1000116	nerve cell of the radial canal	neural cell	radial canal		medusa bud	4-bulb medusa stage		Nerve cells of the radial canal.						
+CLYH:1000117	nerve cell of the circular canal	neural cell	circular canal		medusa bud	4-bulb medusa stage		Nerve cells of the circular canal.						
+CLYH:1000118	nerve cells of the gonad ectoderm	neural cell	gonad		medusa	4-bulb medusa stage		Nerve cells located in the gonad outer layer.						
+CLYH:1000119	nerve cell of the tentacle bulb	neural cell	medusa tentacle bulb		medusa bud	4-bulb medusa stage		Nerve cell of the medusa tentacle bulb.						
+CLYH:1000120	subumbrella nervous cell	neural cell	subumbrella		medusa bud	4-bulb medusa stage		Nervous cells of the subumbrella.						
+CLYH:1000121	smooth muscle cell	cell						Epithelial cell containing smooth myofibers.						
+CLYH:1000122	smooth muscle of the velum	smooth muscle cell	velum		medusa bud	4-bulb medusa stage		Smooth muscle of the velum.						
+CLYH:1000123	subumbrella smooth muscle	smooth muscle cell	subumbrella		medusa bud	4-bulb medusa stage		Smooth muscle of the subumbrella.						
+CLYH:1000124	striated muscle cell	cell						Epithelial cell containing striated myofibers.						
+CLYH:1000125	striated muscle of the velum	striated muscle cell	velum		medusa bud	4-bulb medusa stage		Striated muscle of the velum.						
+CLYH:1000126	subumbrella striated muscle	striated muscle cell	subumbrella		medusa bud	4-bulb medusa stage		Striated muscle of the subumbrella.						
+CLYH:1000127	polyp colony	multicellular organism			planula larva	colony phase	medusa phase	Connected system of gastrozoid and gonozoid polyps, propagating vegetatively.						
+CLYH:1000128	stolon		polyp colony		polyp colony	colony phase	medusa phase	Tubular structure adhering to the substrate, connecting the bases of the polyps.						
+CLYH:1000129	stolon growth tip		stolon		polyp colony	colony phase	medusa phase	Growing tip of a stolon.						
+CLYH:1000130	stolon mesoglea	mesoglea	stolon		polyp colony	colony phase	medusa phase	Mesoglea layer between the inner and outer layers of the stolon.						
+CLYH:1000131	stolon body		stolon		polyp colony	colony phase	medusa phase	Segments of the stolon between the bases of the polyps, excluding the growing tip.						
+CLYH:1000132	stolon ectoderm	tissue layer	stolon		polyp colony	colony phase	medusa phase	Outer layer within the stolon.						
+CLYH:1000133	stolon endoderm	tissue layer	stolon		polyp colony	colony phase	medusa phase	Inner layer within the stolon.						
+CLYH:1000134	gonozoid		polyp colony		stolon	colony phase	medusa phase	Polyp specialised for production of medusa by budding.						
+CLYH:1000135	gonozoid cap		gonozoid		polyp colony	colony phase	medusa phase	Structure that closes the distal end of the gonozoid.						
+CLYH:1000136	gonozoid central tube		gonozoid		polyp colony	colony phase	medusa phase	Tubular structure comprising inner and outer layers at the centre of the gonozoid.						
+CLYH:1000137	gonozoid ectoderm	tissue layer	gonozoid		polyp colony	colony phase	medusa phase	Outer layer of the gonozoid including central tube and developing buds.						
+CLYH:1000138	gonozoid endoderm	tissue layer	gonozoid		polyp colony	colony phase	medusa phase	Inner layer of the gonozoid including central tube and developing buds.						
+CLYH:1000139	epithelium covering buds	tissue layer	gonozoid		polyp colony	colony phase	medusa phase	Epithelial cell layer positioned between the developing medusa buds and the theca of the gonozoid.						
+CLYH:1000140	medusa bud		gonozoid		polyp colony	colony phase	medusa phase	Outgrowth of the gonozoid central tube, within which medusa structures develop.						
+CLYH:1000141	early medusa bud	medusa bud	gonozoid		polyp colony	colony phase	medusa phase	Outgrowth of the gonozoid central tube, comprising entocodon, endoderm and ectoderm tissue layers.						
+CLYH:1000142	mid medusa bud	medusa bud	gonozoid		polyp colony	colony phase	medusa phase	Bud on the side of the gonozoid central tube, in which all medusa structures are present but not yet expanded to final proportions.						
+CLYH:1000143	late medusa bud	medusa bud	gonozoid		polyp colony	colony phase	medusa phase	Bud on the side of the gonozoid central tube, containing medusa structures with same proportions as newly released medusa.						
+CLYH:1000144	entocodon	tissue layer	medusa bud		polyp colony	colony phase	medusa phase	Group of cells between the inner and outer layers of the early medusa bud.						
+CLYH:1000145	developing manubrium	manubrium	medusa bud		polyp colony	colony phase	medusa phase	Developing manubrium within the medusa bud.						
+CLYH:1000146	developing tentacle bulbs	medusa tentacle system	medusa bud		polyp colony	colony phase	medusa phase	Developing tentacle bud within the medusa bud.						
+CLYH:1000147	developing radial canal	radial canal	medusa bud		polyp colony	colony phase	medusa phase	Developing radial canal within the medusa bud.						
+CLYH:1000148	developing striated muscle	striated muscle cell	medusa bud		polyp colony	colony phase	medusa phase	Developing striated muscle within the medusa bud.						
+CLYH:1000149	developing circular canal	circular canal	medusa bud		polyp colony	colony phase	medusa phase	Developing circular canal within the medusa bud.						
+CLYH:1000150	gastrozoid		polyp colony		stolon	colony phase	medusa phase	Polyp specialised for catching prey and digesting.	hydranth					
+CLYH:1000151	gastrozoid tentacle	tentacle	gastrozoid			colony phase	medusa phase	Tentacle surrounding the gastrozoid mouth.						
+CLYH:1000152	gastrozoid mouth	mouth	gastrozoid					Mouth of the gastrozoid.						
+CLYH:1000153	matrix	anatomical structure								UBERON:0000061				
+CLYH:1000154	theca	matrix	polyp colony			colony phase	medusa phase	Chitinous acellular layer surronding and protecting the polyps.						
+CLYH:1000155	gonotheca	theca	gonozoid			colony phase	medusa phase	Chitinous acellular layer surronding the gonozoid.						
+CLYH:1000156	stolon perisarc	theca	stolon			colony phase	medusa phase	Chitinous acellular layer surronding the stolon.						
+CLYH:1000157	hydrotheca	theca	gastrozoid			colony phase	medusa phase	Chitinous acellular layer surronding the gastrozoid.						
+CLYH:1000158	mesoglea	matrix						Jelly-like layer between epithelial layer. The mesoglea is mostly acellular and composed of extracellular matrix.						
+CLYH:1000159	gonozoid mesoglea	mesoglea	gonozoid		polyp colony	colony phase	medusa phase	Mesoglea layer between the inner and outer tissue layers of the gonozoid central tube.						
+CLYH:1000160	medusa	multicellular organism			medusa bud	4-bulb medusa stage		Swimming pelagic stage of the Clytia hemisphaerica life cycle.						
+CLYH:1000161	umbrella	anatomical structure	medusa		medusa bud	4-bulb medusa stage		Dome-shaped part of the medusa stage.						
+CLYH:1000162	exumbrella		umbrella		medusa bud	4-bulb medusa stage		Outer layer of the umbrella.						
+CLYH:1000163	subumbrella		umbrella		medusa bud	4-bulb medusa stage		Inner layers of the umbrella.						
+CLYH:1000164	subumbrella endodermal plate	tissue layer	subumbrella		medusa bud	4-bulb medusa stage		Inner layer of the subumbrella in direct contact with the thick mesoglea layer of the medusa.						
+CLYH:1000165	thick mesoglea layer of the umbrella	mesoglea	medusa		medusa bud	4-bulb medusa stage		Thick mesoglea layer of the umbrella forming the bulk of the umbrella.						
+CLYH:1000166	bell margin	anatomical structure	umbrella		medusa bud	4-bulb medusa stage		Outer border of the umbrella.						
+CLYH:1000167	statocyst	anatomical structure	bell margin		medusa bud	4-bulb medusa stage		Sensory structure of the medusa, located on the bell margin, consisting of a sensory vesicle containing statoliths.		UBERON:0006583				
+CLYH:1000168	medusa tentacle system	tentacle system	bell margin		medusa bud	4-bulb medusa stage		Medusa tentacle system comprising tentacles, tentacle bulbs and tentacle buds.						Denker et al. 2008
+CLYH:1000169	medusa tentacle bud		medusa tentacle system		medusa bud	4-bulb medusa stage		Initial stage of tentacle bulb formation.						
+CLYH:1000170	medusa tentacle bulb		medusa tentacle system		medusa bud	4-bulb medusa stage		Swollen structure producing the tentacle and connecting the bell margin to the tentacle.						
+CLYH:1000171	nematogenic ectoderm of the bulb	tissue layer	medusa tentacle bulb		medusa bud	4-bulb medusa stage		Cresent-shaped nematogenic area of the tentacle bulb, located on the oral side of the bulb outer layer.						
+CLYH:1000172	non-nematogenic ectoderm of the bulb	tissue layer	medusa tentacle bulb		medusa bud	4-bulb medusa stage		V-shaped non-nematogenic ectodermal area of the tentacle bulb, located on the aboral side of the bulb.	non-nematogenic epidermis of the bulb					
+CLYH:1000173	tentacle bulb endoderm	tissue layer	medusa tentacle bulb		medusa bud	4-bulb medusa stage		Inner layer of the medusa tentacle bulb.	tentacle bulb gastrodermis					
+CLYH:1000174	medusa tentacle	tentacle	medusa tentacle system		medusa bud	4-bulb medusa stage		Tentacle of the medusa not including the tentacle bulb.						
+CLYH:1000175	primary medusa tentacle	medusa tentacle	medusa tentacle system		medusa bud	4-bulb medusa stage		Four first medusa tentacles of the newly hatched medusa, connected to both radial and circular canals.						
+CLYH:1000176	secondary medusa tentacle	medusa tentacle	medusa tentacle system		medusa	8-bulb medusa stage		Medusa tentacle generated after medusa hatching and connected to the circular but not to the radial canal.						
+CLYH:1000177	medusa tentacle ectoderm	tissue layer	medusa tentacle		medusa bud	4-bulb medusa stage		Outer layer of the medusa tentacle.	medusa tentacle epidermis					
+CLYH:1000178	medusa tentacle endoderm 	tissue layer	medusa tentacle		medusa bud	4-bulb medusa stage		Inner layer of the medusa tentacle.						
+CLYH:1000179	velum	anatomical structure	bell margin		medusa bud	4-bulb medusa stage		A muscular flap of tissue surrounding the margin of the bell.						
+CLYH:1000180	inner layer of the velum	tissue layer	velum		medusa bud	4-bulb medusa stage		Inner layer of the velum.						
+CLYH:1000181	outerlater of the velum	tissue layer	velum		medusa bud	4-bulb medusa stage		Outer layer of the velum.						
+CLYH:1000182	radial canal	anatomical structure	medusa		medusa bud	4-bulb medusa stage		Canal connecting the manubrium with the bell margin.						
+CLYH:1000183	circular canal	anatomical structure	bell margin		medusa bud	4-bulb medusa stage		Canal running along the bell margin.						
+CLYH:1000184	nerve ring	anatomical structure	bell margin		medusa bud	4-bulb medusa stage		Concentration of nerve cell bodies and projections running around the margin of the bell.						
+CLYH:1000185	inner nerve ring	anatomical structure	nerve ring		medusa bud	4-bulb medusa stage		Nerve ring located closest to the centre of the medusa.						
+CLYH:1000186	outer nerve ring	anatomical structure	nerve ring		medusa bud	4-bulb medusa stage		Nerve ring located farest to the centre of the medusa.						
+CLYH:1000187	manubrium	anatomical structure	medusa		medusa bud	4-bulb medusa stage		Central structure of the medusa bearing the mouth and performing extracellular digestion.						
+CLYH:1000188	medusa mouth	mouth	manubrium		medusa bud	4-bulb medusa stage		Medusa mouth as part of the manubrium.						
+CLYH:1000189	manubrium roof	tissue layer	manubrium		medusa bud	4-bulb medusa stage		Inner layer of the manubrium opposite to the mouth and in direct contact with the thick mesoglea layer of the medusa.						
+CLYH:1000190	manubrium ectoderm	tissue layer	manubrium		medusa bud	4-bulb medusa stage		Outer layer of the manubrium.	manubrium epidermis					
+CLYH:1000191	manubrium endoderm	tissue layer	manubrium		medusa bud	4-bulb medusa stage		Inner digestive layer of the manubrium.	manubrium gastrodermis					
+CLYH:1000192	gonad	anatomical structure	medusa		medusa bud	4-bulb medusa stage		Reproductive organ of the medusa.		UBERON:0000991				
+CLYH:1000193	gonad ectoderm	tissue layer	gonad		medusa	4-bulb medusa stage		Outer layer of the gonad.	gonad epidermis					
+CLYH:1000194	gonad endoderm	tissue layer	gonad		medusa	4-bulb medusa stage		Inner layer of the gonad.	gonad gastrodermis					
