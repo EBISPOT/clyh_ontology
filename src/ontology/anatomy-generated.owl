@@ -1431,6 +1431,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anatomical structure which is a primary subdivision of whole organism. The mereological sum of these is the whole organism.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organism subdivision</rdfs:label>
     </owl:Class>
     
@@ -5631,7 +5632,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medusa tentacle system comprising tentacles, tentacle bulbs and tentacle buds</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">denker et al. 2008</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medusa tentacle system</rdfs:label>
     </owl:Class>
     
