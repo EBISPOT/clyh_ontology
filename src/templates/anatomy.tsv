@@ -101,7 +101,7 @@ CLYH:1000094	gastrozoid gland cell	gland cell	gastrozoid					Gland cell of the g
 CLYH:1000095	interstitial cell	cell						Multipotent stem cell.						
 CLYH:1000096	stolon interstitial cell	interstitial cell	stolon		planula larva	colony phase	medusa phase	Interstitial cell in the stolon.						
 CLYH:1000097	embryo interstitial cell	interstitial cell	embryo					Interstitial cell in the embryo.						
-CLYH:1000098	planula interstitial cell	interstitial cell	planula  larva					Interstitial cell in the planula.						
+CLYH:1000098	planula interstitial cell	interstitial cell	planula larva					Interstitial cell in the planula.						
 CLYH:1000099	gastrozoid interstitial cell	interstitial cell	gastrozoid					Interstitial cell in the feeding polyp.						
 CLYH:1000100	gonozoid interstitial cell	interstitial cell	gonozoid		polyp colony	colony phase	medusa phase	Interstitial cell within the gonozoid.						
 CLYH:1000101	manubrium interstital cell	interstitial cell	manubrium		medusa bud	4-bulb medusa stage		Interstital cell of the manubrium.						
