@@ -1425,14 +1425,8 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000002">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anatomical structure which is a primary subdivision of whole organism. The mereological sum of these is the whole organism.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organism subdivision</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -1458,6 +1452,7 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -1473,7 +1468,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">germ layer</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tissue layer</rdfs:label>
     </owl:Class>
     
 
@@ -1481,9 +1476,8 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000007">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000006"/>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epidermis</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ectoderm</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -1491,7 +1485,7 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000008 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000008">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -1516,6 +1510,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000033"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Outer layer of the gastrula.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gastrula outer layer</rdfs:label>
     </owl:Class>
     
@@ -1524,6 +1519,7 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000009 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -1548,6 +1544,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000033"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oral part of the outer layer of the gastrula.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oral gastrula outer layer</rdfs:label>
     </owl:Class>
     
@@ -1556,6 +1553,7 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -1580,6 +1578,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000033"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aboral part of the outer layer of the gastrula.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aboral gastrula outer layer</rdfs:label>
     </owl:Class>
     
@@ -1588,6 +1587,7 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -1612,6 +1612,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000033"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mid part of the outer layer of the gastrula.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lateral gastrula outer layer</rdfs:label>
     </owl:Class>
     
@@ -1620,7 +1621,7 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000012 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000012">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -1639,7 +1640,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000035"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ectoderm of the planula</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Outer layer of the planula.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">planula outer layer</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">planula ectoderm</rdfs:label>
     </owl:Class>
     
@@ -1648,11 +1650,11 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000013 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000013">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000040"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000012"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1667,6 +1669,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000035"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oral part of the outer layer of the planula.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oral planula ectoderm</rdfs:label>
     </owl:Class>
     
@@ -1675,11 +1678,11 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000014 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000014">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000040"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000012"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1694,6 +1697,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000035"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aboral part of the outer layer of the planula.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aboral planula ectoderm</rdfs:label>
     </owl:Class>
     
@@ -1702,9 +1706,8 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000015">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000006"/>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gastrodermis</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endoderm</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -1712,7 +1715,7 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000016 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000016">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -1737,6 +1740,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000033"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cells ingressing from the outer layer of the gastrula into the blastocoel.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gastrula ingressing cells</rdfs:label>
     </owl:Class>
     
@@ -1745,6 +1749,7 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000017 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -1763,6 +1768,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000032"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cells ingressing from the outer layer into the blastocoel on the oral side of the gastrula.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oral gastrula ingressing cells</rdfs:label>
     </owl:Class>
     
@@ -1771,7 +1777,7 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000018 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000018">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -1790,6 +1796,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000032"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cells ingressing from the outer layer into the blastocoel on the aboral side of the gastrula.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aboral gastrula ingressing cells</rdfs:label>
     </owl:Class>
     
@@ -1798,7 +1805,7 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000019 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000019">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -1817,7 +1824,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000035"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endoderm of the planula</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inner layer of the planula.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">planula inner layer</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">planula endoderm</rdfs:label>
     </owl:Class>
     
@@ -1826,11 +1834,11 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000020 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000020">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000019"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000040"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1845,6 +1853,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000035"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inner layer of the planula on the aboral side of the planula.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aboral planula endoderm</rdfs:label>
     </owl:Class>
     
@@ -1853,11 +1862,11 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000021 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000021">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000019"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000040"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1872,6 +1881,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000035"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inner layer of the planula on the oral side of the planula.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oral planula endoderm</rdfs:label>
     </owl:Class>
     
@@ -1899,7 +1909,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000018"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell formed by fusion of a mature female reproductive cell and a mature  male reproductive cell at fertilization</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell formed by fusion of a mature female reproductive cell and a mature male reproductive cell at fertilization.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">zygote</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fertilized egg</rdfs:label>
     </owl:Class>
     
@@ -1927,7 +1938,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000033"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anatomical entity that comprises the organism in the early stages of growth and differentiation that are characterized by cleavage, the laying down of fundamental tissues,</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anatomical entity that comprises the organism in the early stages of growth and differentiation that are characterized by cleavage, the laying down of fundamental tissues.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">embryo</rdfs:label>
     </owl:Class>
     
@@ -1955,7 +1966,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000024"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism at the cleavage stage</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism at the cleavage stage.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cleaving embryo</rdfs:label>
     </owl:Class>
     
@@ -1983,7 +1994,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism at the cleavage stage  after the first  cell division</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism at the cleavage stage after the first cell division.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-cell embryo</rdfs:label>
     </owl:Class>
     
@@ -2011,7 +2022,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000020"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism at the cleavage stage after two division cycles</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism at the cleavage stage after two division cycles.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4-cell embryo</rdfs:label>
     </owl:Class>
     
@@ -2039,7 +2050,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000021"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism at the cleavage stage after three division cycles</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism at the cleavage stage after three division cycles.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8-cell embryo</rdfs:label>
     </owl:Class>
     
@@ -2067,7 +2078,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000022"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism at the cleavage stage after four division cycles</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism at the cleavage stage after four division cycles.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16-cell embryo</rdfs:label>
     </owl:Class>
     
@@ -2095,7 +2106,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000023"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism at the cleavage stage after five division cycles</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism at the cleavage stage after five division cycles.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32-cell embryo</rdfs:label>
     </owl:Class>
     
@@ -2123,7 +2134,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000024"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism at the cleavage stage after six division cycles</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism at the cleavage stage after six division cycles.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">64-cell embryo</rdfs:label>
     </owl:Class>
     
@@ -2179,7 +2190,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000026"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blastula stage embryo before epithelisation. </obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blastula stage embryo before epithelisation. </obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">early blastula</rdfs:label>
     </owl:Class>
     
@@ -2207,7 +2218,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blastula stage embryo with polarised epithelial cells</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blastula stage embryo with polarised epithelial cells.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mid blastula</rdfs:label>
     </owl:Class>
     
@@ -2235,7 +2246,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000028"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blastula stage embryo with polarised and columnar epithelial cells</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blastula stage embryo with polarised and columnar epithelial cells.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">late blasutla</rdfs:label>
     </owl:Class>
     
@@ -2319,7 +2330,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000031"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gastrula with a few cells ingressed at pointed oral pole.  Swimming .</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gastrula with a few cells ingressed at pointed oral pole. Swimming.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">early gastrula</rdfs:label>
     </owl:Class>
     
@@ -2347,7 +2358,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000032"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gastrula in which blastotocoel is half filled with ingressing cells . </obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gastrula in which blastotocoel is half filled with ingressing cells. </obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mid gastrula</rdfs:label>
     </owl:Class>
     
@@ -2375,7 +2386,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000033"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gastrula in which Blastocoel is full but no epithelisation of internal cells </obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gastrula in which Blastocoel is full but no epithelisation of internal cells.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">late gastrula</rdfs:label>
     </owl:Class>
     
@@ -2403,7 +2414,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000041"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A distinct juvenile form before metamorphosis  with elongated shape and cilliated ectoderm. Ectoderm and endoderm separated by basement membrane</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A distinct juvenile form before metamorphosis with elongated shape and cilliated outer layer. Inner and outer tissue layers separated by basement membrane.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">planula larva</rdfs:label>
     </owl:Class>
     
@@ -2431,7 +2442,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000035"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Planula larva showing epithelisation of gastrodermal cells at aboral pole but not orally</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Planula larva showing epithelisation of gastrodermal cells at aboral pole but not orally.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">planula P1</rdfs:label>
     </owl:Class>
     
@@ -2459,7 +2470,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000036"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Planula larva with visible central cavity in gastrodermis, incompetent to metamorphose</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Planula larva with visible central cavity in gastrodermis, incompetent to metamorphose.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">planula P2</rdfs:label>
     </owl:Class>
     
@@ -2487,7 +2498,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000037"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Planula larva with all cell types diffrerntiated and  competent to metamorphose</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Planula larva with all cell types diffrerntiated and competent to metamorphose.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">planula P3 </rdfs:label>
     </owl:Class>
     
@@ -2515,7 +2526,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000038"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">elongated planula competent to metamorphose , thinner than P3 planula</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elongated planula competent to metamorphose, thinner than P3 planula.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aged planula</rdfs:label>
     </owl:Class>
     
@@ -2543,7 +2554,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000044"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">planula larva that has stopped swimming and is transforming into a polyp</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Planula larva that has stopped swimming and is transforming into a polyp.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">metamorphosing planula</rdfs:label>
     </owl:Class>
     
@@ -2571,7 +2582,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000041"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">planula larva that has stopped swimming  and fixed to substrate</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Planula larva that has stopped swimming and fixed to substrate.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">settled planula</rdfs:label>
     </owl:Class>
     
@@ -2599,7 +2610,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000042"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">metamorphosing larva that has a pear shape </obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metamorphosing larva that has a pear shape.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blob</rdfs:label>
     </owl:Class>
     
@@ -2627,7 +2638,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000043"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transitory form of planula undergoing metamorphosis a flattened circular form attached to the substrate</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transitory form of planula undergoing metamorphosis a flattened circular form attached to the substrate.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disc</rdfs:label>
     </owl:Class>
     
@@ -2655,7 +2666,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000044"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transitory form of planula undergoing metamorphosis a flattened form attached to the substrate showing irregular indentations  and with small stalk emerging</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transitory form of planula undergoing metamorphosis a flattened form attached to the substrate showing irregular indentations and with small stalk emerging.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sculpted disc</rdfs:label>
     </owl:Class>
     
@@ -2665,12 +2676,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000050">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0005575"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000076"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
@@ -2683,7 +2688,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000024"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">region of the cell closely surrounding the mitotoc spindle</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Region of the cell closely surrounding the mitotoc spindle.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spindle-associated</rdfs:label>
     </owl:Class>
     
@@ -2711,7 +2716,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000017"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">region inheriting the peripheral region of the egg around the animal pole</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Region inheriting the peripheral region of the egg around the animal pole.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">animal cortex </rdfs:label>
     </owl:Class>
     
@@ -2769,7 +2774,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000017"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">region inheriting the peripheral region of the egg around the vegetal pole</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Region inheriting the peripheral region of the egg around the vegetal pole.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vegetal cortex</rdfs:label>
     </owl:Class>
     
@@ -2797,7 +2802,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000008"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">region of a stage III oocyte cortex close to the oocyte nucleus</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Region of a stage III oocyte cortex close to the oocyte nucleus.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vegetal cortex of oocyte</rdfs:label>
     </owl:Class>
     
@@ -2819,7 +2824,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000055"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">egg cortex region containing the site of polar body formation</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Egg cortex region containing the site of polar body formation.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vegetal cortex of egg</rdfs:label>
     </owl:Class>
     
@@ -2877,7 +2882,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000008"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">region of cytoplasm in a stage III oocyte  in the same hemishere as the nucleus</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Region of cytoplasm in a stage III oocyte in the same hemishere as the nucleus.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">animal cytoplasm of oocyte</rdfs:label>
     </owl:Class>
     
@@ -2899,7 +2904,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cytoplasm  in egg hemisphere containing site of polar body formation</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cytoplasm in egg hemisphere containing site of polar body formation.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">animal cytoplasm of egg</rdfs:label>
     </owl:Class>
     
@@ -2972,12 +2977,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000064">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000002"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
@@ -3110,12 +3109,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000070">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000002"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002488"/>
@@ -3266,7 +3259,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000024"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">single cell of a cleavage cel embryo</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Single cell of a cleavage cel embryo.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blastomere</rdfs:label>
     </owl:Class>
     
@@ -3348,7 +3341,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An undeveloped male germ cell. Spermatogonia develop into primary spermatocytes</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An undeveloped male germ cell. Spermatogonia develop into primary spermatocytes.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spermatogonium</rdfs:label>
     </owl:Class>
     
@@ -3404,7 +3397,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000067"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mature male germ cell that develops from a spermatid</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mature male germ cell that develops from a spermatid.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sperm</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spermatozoid</rdfs:label>
     </owl:Class>
@@ -3460,7 +3453,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">an undifferentiated germ cell that proliferates rapidly and gives rise to oocytes</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An undifferentiated germ cell that proliferates rapidly and gives rise to oocytes.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oogonium</rdfs:label>
     </owl:Class>
     
@@ -3516,7 +3509,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000066"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oocyte incorporating yolk </obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oocyte incorporating yolk.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">growing oocyte</rdfs:label>
     </owl:Class>
     
@@ -3550,7 +3543,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000008"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oocyte greater than 150��m in diameter competent to undergo meiotic maturation</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oocyte greater than 150 micrometers in diameter competent to undergo meiotic maturation.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fully grown oocyte</rdfs:label>
     </owl:Class>
     
@@ -3614,7 +3607,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000090">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">specialized cell participating in mucus secretion </obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specialized cell participating in mucus secretion.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gland cell</rdfs:label>
     </owl:Class>
     
@@ -3636,7 +3629,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000035"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">planula aboral gland cells</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gland cell located on the aboral side of the planula larva, in the outer layer.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">planula aboral gland cell</rdfs:label>
     </owl:Class>
     
 
@@ -3657,7 +3651,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000035"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endodermal gland cells</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gland cell located in the inner layer of the planula larva.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">planula gland cell</rdfs:label>
     </owl:Class>
     
 
@@ -3684,7 +3679,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gland cell of the manubrium</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gland cell of the manubrium.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">manubrium gland cell</rdfs:label>
     </owl:Class>
     
@@ -3700,7 +3695,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000150"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gland cell of the gastrozoid</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gland cell of the gastrozoid.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gastrozoid gland cell</rdfs:label>
     </owl:Class>
     
@@ -3710,6 +3705,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000095">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multipotent stem cell.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interstitial cell</rdfs:label>
     </owl:Class>
     
@@ -3743,7 +3739,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interstitial cell in the stolon</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interstitial cell in the stolon.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stolon interstitial cell</rdfs:label>
     </owl:Class>
     
@@ -3753,6 +3749,13 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000097">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000095"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000023"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interstitial cell in the embryo.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">embryo interstitial cell</rdfs:label>
     </owl:Class>
     
@@ -3762,7 +3765,14 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000098">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000095"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">planula interstical cell</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interstitial cell in the planula.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">planula interstitial cell</rdfs:label>
     </owl:Class>
     
 
@@ -3771,6 +3781,13 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000099">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000095"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000150"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interstitial cell in the feeding polyp.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gastrozoid interstitial cell</rdfs:label>
     </owl:Class>
     
@@ -3804,7 +3821,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interstitial cell within the gonozoid</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interstitial cell within the gonozoid.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gonozoid interstitial cell</rdfs:label>
     </owl:Class>
     
@@ -3832,7 +3849,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interstital cell of the manubrium</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interstital cell of the manubrium.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">manubrium interstital cell</rdfs:label>
     </owl:Class>
     
@@ -3842,6 +3859,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000102">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Differenciating nematocyte.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nematoblast</rdfs:label>
     </owl:Class>
     
@@ -3875,7 +3893,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nematoblast in the stolon</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nematoblast in the stolon.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stolon nematoblast</rdfs:label>
     </owl:Class>
     
@@ -3885,6 +3903,13 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000104">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000102"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nematoblast in the planula.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">planula nematoblast</rdfs:label>
     </owl:Class>
     
@@ -3912,7 +3937,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nematoblast of the tentacle bulb</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nematoblast of the tentacle bulb.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tentacle bulb nemtoblast</rdfs:label>
     </owl:Class>
     
@@ -3940,7 +3965,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nematoblast of the manubrium</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nematoblast of the manubrium.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">manubrium nematoblast</rdfs:label>
     </owl:Class>
     
@@ -3950,7 +3975,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000107">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">specialized cell containing one giant explosive secretory organelle called nematocyst used for prey capture and defense from predators</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specialized cell containing one giant explosive secretory organelle called nematocyst used for prey capture and defense from predators.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nematocyte</rdfs:label>
     </owl:Class>
     
@@ -3960,6 +3985,13 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000108">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000107"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nematocyte of the planula.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">planula nematocyte</rdfs:label>
     </owl:Class>
     
@@ -3987,7 +4019,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nematocyte of the medusa tentacle</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nematocyte of the medusa tentacle.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medusa tentacle nematocyte</rdfs:label>
     </owl:Class>
     
@@ -4015,7 +4047,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nematocyte located on the manubrium</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nematocyte located on the manubrium.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">manubrium nematocyte</rdfs:label>
     </owl:Class>
     
@@ -4031,7 +4063,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000151"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nematocyte located on the tentacle</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nematocyte located on the tentacle.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gastrozoid tentacle nematocyte</rdfs:label>
     </owl:Class>
     
@@ -4041,7 +4073,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000112">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a cell that is part of the nervous system</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cell that is part of the nervous system.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neural cell</rdfs:label>
     </owl:Class>
     
@@ -4057,6 +4089,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000040"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neural cell in the planula.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">planula neural cell</rdfs:label>
     </owl:Class>
     
@@ -4084,6 +4117,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000035"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neural cell in the mid part of the planula.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">planula lateral neural cells</rdfs:label>
     </owl:Class>
     
@@ -4111,6 +4145,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000035"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neural cell in the aboral part of the planula.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plaunula aboral ectoderm neural cells</rdfs:label>
     </owl:Class>
     
@@ -4138,7 +4173,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nerve cells of the radial canal</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nerve cells of the radial canal.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nerve cell of the radial canal</rdfs:label>
     </owl:Class>
     
@@ -4166,7 +4201,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nerve cells of the circular canal</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nerve cells of the circular canal.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nerve cell of the circular canal</rdfs:label>
     </owl:Class>
     
@@ -4194,7 +4229,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nerve cells located in the ectoderm of hydrozoan gonad</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nerve cells located in the gonad outer layer.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nerve cells of the gonad ectoderm</rdfs:label>
     </owl:Class>
     
@@ -4222,7 +4257,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nerve cell of the medusa tentacle bulb</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nerve cell of the medusa tentacle bulb.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nerve cell of the tentacle bulb</rdfs:label>
     </owl:Class>
     
@@ -4250,7 +4285,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nervous cells of the subumbrella</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nervous cells of the subumbrella.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subumbrella nervous cell</rdfs:label>
     </owl:Class>
     
@@ -4260,6 +4295,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000121">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Epithelial cell containing smooth myofibers.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">smooth muscle cell</rdfs:label>
     </owl:Class>
     
@@ -4287,7 +4323,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">smooth muscle of the velum</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Smooth muscle of the velum.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">smooth muscle of the velum</rdfs:label>
     </owl:Class>
     
@@ -4315,7 +4351,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">smooth muscle of the subumbrella</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Smooth muscle of the subumbrella.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subumbrella smooth muscle</rdfs:label>
     </owl:Class>
     
@@ -4325,6 +4361,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000124">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Epithelial cell containing striated myofibers.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">striated muscle cell</rdfs:label>
     </owl:Class>
     
@@ -4352,7 +4389,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">striated muscle of the velum</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Striated muscle of the velum.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">striated muscle of the velum</rdfs:label>
     </owl:Class>
     
@@ -4380,7 +4417,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">striated muscle of the subumbrella</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Striated muscle of the subumbrella.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subumbrella striated muscle</rdfs:label>
     </owl:Class>
     
@@ -4408,7 +4445,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">connected system of gastrozoid and gonozoid polyps, propagating vegetatively </obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connected system of gastrozoid and gonozoid polyps, propagating vegetatively.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polyp colony</rdfs:label>
     </owl:Class>
     
@@ -4441,7 +4478,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tubular structure  comprising endoderm and ectodermal layers adhering to the substrate , connecting the bases of the polyps</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tubular structure adhering to the substrate, connecting the bases of the polyps.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stolon</rdfs:label>
     </owl:Class>
     
@@ -4474,7 +4511,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">growing tip of a stolon</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Growing tip of a stolon.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stolon growth tip</rdfs:label>
     </owl:Class>
     
@@ -4508,7 +4545,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mesoglea layer between the endoderm and ectoderm layers of the stolon</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mesoglea layer between the inner and outer layers of the stolon.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stolon mesoglea</rdfs:label>
     </owl:Class>
     
@@ -4541,7 +4578,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">segments of the stolon between the bases of the polyps, excluding the growing tip</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Segments of the stolon between the bases of the polyps, excluding the growing tip.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stolon body</rdfs:label>
     </owl:Class>
     
@@ -4550,7 +4587,7 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000132 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000132">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -4575,7 +4612,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ectodermal layer within the stolon</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Outer layer within the stolon.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stolon ectoderm</rdfs:label>
     </owl:Class>
     
@@ -4584,7 +4621,7 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000133 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000133">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -4609,7 +4646,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endodermal layer within the stolon</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inner layer within the stolon.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stolon endoderm</rdfs:label>
     </owl:Class>
     
@@ -4642,7 +4679,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polyp specialised for production of medusa by budding</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polyp specialised for production of medusa by budding.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gonozoid</rdfs:label>
     </owl:Class>
     
@@ -4675,7 +4712,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">structure that closes the distal end of the gonozoid</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Structure that closes the distal end of the gonozoid.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gonozoid cap</rdfs:label>
     </owl:Class>
     
@@ -4708,7 +4745,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tubular structure comprising endoderm and ectodermal layers at the centre of the gonozoid</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tubular structure comprising inner and outer layers at the centre of the gonozoid.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gonozoid central tube</rdfs:label>
     </owl:Class>
     
@@ -4717,7 +4754,7 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000137 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000137">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -4742,7 +4779,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ectodermal layer of the gonozoid including central tube and developing buds</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Outer layer of the gonozoid including central tube and developing buds.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gonozoid ectoderm</rdfs:label>
     </owl:Class>
     
@@ -4751,7 +4788,7 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000138 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000138">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -4776,7 +4813,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endodermal layer of the gonozoid including central tube and developing buds</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inner layer of the gonozoid including central tube and developing buds.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gonozoid endoderm</rdfs:label>
     </owl:Class>
     
@@ -4785,7 +4822,7 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000139 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000139">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -4810,7 +4847,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epithelial cell layer positioned between the developing medusa buds and the theca f the gonozoid</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Epithelial cell layer positioned between the developing medusa buds and the theca of the gonozoid.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epithelium covering buds</rdfs:label>
     </owl:Class>
     
@@ -4843,7 +4880,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">outgrowth of the gonozoid central tube, within which medusa structures develop</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Outgrowth of the gonozoid central tube, within which medusa structures develop.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medusa bud</rdfs:label>
     </owl:Class>
     
@@ -4877,7 +4914,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">outgrowth of the gonozoid central tube, comprising  endoderm layer, ectoderm layers and entocodon </obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Outgrowth of the gonozoid central tube, comprising entocodon, endoderm and ectoderm tissue layers.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">early medusa bud</rdfs:label>
     </owl:Class>
     
@@ -4911,7 +4948,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bud  on the side of the gonozoid central tube, in which all medusa structures are present but not yet expanded to final proportions</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bud on the side of the gonozoid central tube, in which all medusa structures are present but not yet expanded to final proportions.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mid medusa bud</rdfs:label>
     </owl:Class>
     
@@ -4945,7 +4982,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bud on the side of the gonozoid central tube, containing medusa structures with same proportions as newlyreleased medusa</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bud on the side of the gonozoid central tube, containing medusa structures with same proportions as newly released medusa.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">late medusa bud</rdfs:label>
     </owl:Class>
     
@@ -4954,6 +4991,7 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000144 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000144">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -4978,7 +5016,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">group of cells between the endoderm and ectodderm of the early medusa bud</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Group of cells between the inner and outer layers of the early medusa bud.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">entocodon</rdfs:label>
     </owl:Class>
     
@@ -5012,7 +5050,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">developing manubrium  within the medusa bud</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Developing manubrium within the medusa bud.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">developing manubrium</rdfs:label>
     </owl:Class>
     
@@ -5046,7 +5084,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">developing tentacle bud within the medusa bud</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Developing tentacle bud within the medusa bud.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">developing tentacle bulbs</rdfs:label>
     </owl:Class>
     
@@ -5080,7 +5118,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">developing radial canal within the medusa bud</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Developing radial canal within the medusa bud.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">developing radial canal</rdfs:label>
     </owl:Class>
     
@@ -5114,7 +5152,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">developing striated muscle within the medusa bud</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Developing striated muscle within the medusa bud.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">developing striated muscle</rdfs:label>
     </owl:Class>
     
@@ -5148,7 +5186,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">developing circular canal  within the medusa bud</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Developing circular canal within the medusa bud.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">developing circular canal</rdfs:label>
     </owl:Class>
     
@@ -5181,7 +5219,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polyp specialised for catching prey and digesting</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polyp specialised for catching prey and digesting.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hydranth</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gastrozoid</rdfs:label>
     </owl:Class>
@@ -5210,7 +5248,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tentacle surrounding the polyp mouth</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tentacle surrounding the gastrozoid mouth.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gastrozoid tentacle</rdfs:label>
     </owl:Class>
     
@@ -5226,7 +5264,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000150"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mouth of the gastrozoid</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mouth of the gastrozoid.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gastrozoid mouth</rdfs:label>
     </owl:Class>
     
@@ -5263,7 +5301,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chitinous acellular layer surronding and protecting the polyps</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chitinous acellular layer surronding and protecting the polyps.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">theca</rdfs:label>
     </owl:Class>
     
@@ -5291,7 +5329,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">theca of the gonozoid</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chitinous acellular layer surronding the gonozoid.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gonotheca</rdfs:label>
     </owl:Class>
     
@@ -5319,7 +5357,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chitinous acellular layer surronding the stolon</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chitinous acellular layer surronding the stolon.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stolon perisarc</rdfs:label>
     </owl:Class>
     
@@ -5347,7 +5385,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">theca of the hydrozoid</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chitinous acellular layer surronding the gastrozoid.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hydrotheca</rdfs:label>
     </owl:Class>
     
@@ -5357,7 +5395,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000158">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000153"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jelly-like layer between epithelial layer. The mesoglea is mostly acellular and composed of extracellular matrix</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jelly-like layer between epithelial layer. The mesoglea is mostly acellular and composed of extracellular matrix.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mesoglea</rdfs:label>
     </owl:Class>
     
@@ -5391,7 +5429,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mesoglea layer between the endoderm and ectoderm layers of the gonozoid central tube</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mesoglea layer between the inner and outer tissue layers of the gonozoid central tube.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gonozoid mesoglea</rdfs:label>
     </owl:Class>
     
@@ -5413,7 +5451,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">swimming pelagic stage of the C. hemisphaerica life cycle</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Swimming pelagic stage of the Clytia hemisphaerica life cycle.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medusa</rdfs:label>
     </owl:Class>
     
@@ -5422,6 +5460,7 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000161 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000161">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -5440,7 +5479,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dome-shaped part of the medusa stage</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dome-shaped part of the medusa stage.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">umbrella</rdfs:label>
     </owl:Class>
     
@@ -5467,7 +5506,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">outlayer of the umbrella</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Outer layer of the umbrella.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">exumbrella</rdfs:label>
     </owl:Class>
     
@@ -5494,7 +5533,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inner layer of the umbrella</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inner layers of the umbrella.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subumbrella</rdfs:label>
     </owl:Class>
     
@@ -5503,7 +5542,7 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000164 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000164">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -5522,7 +5561,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endodermal plate of the subumbrella</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inner layer of the subumbrella in direct contact with the thick mesoglea layer of the medusa.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subumbrella endodermal plate</rdfs:label>
     </owl:Class>
     
@@ -5550,7 +5589,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thick mesoglea layer of the umbrella forming the bulk of the umbrella</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thick mesoglea layer of the umbrella forming the bulk of the umbrella.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thick mesoglea layer of the umbrella</rdfs:label>
     </owl:Class>
     
@@ -5559,6 +5598,7 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000166 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000166">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -5577,7 +5617,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">outer border of the umbrella</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Outer border of the umbrella.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bell margin</rdfs:label>
     </owl:Class>
     
@@ -5586,6 +5626,7 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000167 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000167">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -5604,6 +5645,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sensory structure of the medusa, located on the bell margin, consisting of a sensory vesicle containing statoliths.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">statocyst</rdfs:label>
     </owl:Class>
     
@@ -5631,7 +5673,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medusa tentacle system comprising tentacles, tentacle bulbs and tentacle buds</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medusa tentacle system comprising tentacles, tentacle bulbs and tentacle buds.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medusa tentacle system</rdfs:label>
     </owl:Class>
     
@@ -5658,7 +5700,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">initial stage of tentacle bulb formation</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Initial stage of tentacle bulb formation.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medusa tentacle bud</rdfs:label>
     </owl:Class>
     
@@ -5685,7 +5727,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">swollen structure producing the tentacle and connecting the bell margin to the tentacle</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Swollen structure producing the tentacle and connecting the bell margin to the tentacle.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medusa tentacle bulb</rdfs:label>
     </owl:Class>
     
@@ -5694,7 +5736,7 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000171 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000171">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -5713,7 +5755,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cresent-shaped nematogenic ectodermal area of the tentacle bulb, located on the oral side of the bulb</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cresent-shaped nematogenic area of the tentacle bulb, located on the oral side of the bulb outer layer.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nematogenic ectoderm of the bulb</rdfs:label>
     </owl:Class>
     
@@ -5722,7 +5764,7 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000172 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000172">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -5741,7 +5783,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">V-shaped non-nematogenic ectodermal area of the tentacle bulb, located on the aboral side of the bulb</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">V-shaped non-nematogenic ectodermal area of the tentacle bulb, located on the aboral side of the bulb.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-nematogenic epidermis of the bulb</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-nematogenic ectoderm of the bulb</rdfs:label>
     </owl:Class>
     
@@ -5750,7 +5793,7 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000173 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000173">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -5769,7 +5812,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endodermal latyer of the medusa tentacle bulb</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inner layer of the medusa tentacle bulb.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tentacle bulb gastrodermis</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tentacle bulb endoderm</rdfs:label>
     </owl:Class>
     
@@ -5778,6 +5822,7 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000174 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000174">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000005"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -5796,7 +5841,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tentacle of the medusa not including the tentacle bulb</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tentacle of the medusa not including the tentacle bulb.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medusa tentacle</rdfs:label>
     </owl:Class>
     
@@ -5824,7 +5869,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">four first medusa tentacles of the newly hatched medusa, connected to both radial and circular canals </obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Four first medusa tentacles of the newly hatched medusa, connected to both radial and circular canals.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary medusa tentacle</rdfs:label>
     </owl:Class>
     
@@ -5852,7 +5897,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000066"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medusa tentacle generated after medusa hatching and connected to the circular but not to the radial canal</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medusa tentacle generated after medusa hatching and connected to the circular but not to the radial canal.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">secondary medusa tentacle</rdfs:label>
     </owl:Class>
     
@@ -5861,7 +5906,7 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000177 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000177">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -5880,7 +5925,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ectoderm of the medusa tentacle</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Outer layer of the medusa tentacle.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medusa tentacle epidermis</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medusa tentacle ectoderm</rdfs:label>
     </owl:Class>
     
@@ -5889,7 +5935,7 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000178 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000178">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -5908,7 +5954,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endoderm of the medusa tentacle</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inner layer of the medusa tentacle.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medusa tentacle endoderm </rdfs:label>
     </owl:Class>
     
@@ -5917,6 +5963,7 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000179 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000179">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -5935,7 +5982,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A muscular flap of tissue surrounding the margin of the bell</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A muscular flap of tissue surrounding the margin of the bell.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">velum</rdfs:label>
     </owl:Class>
     
@@ -5944,6 +5991,7 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000180 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000180">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -5962,7 +6010,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inner layer of the velum</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inner layer of the velum.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inner layer of the velum</rdfs:label>
     </owl:Class>
     
@@ -5971,6 +6019,7 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000181 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000181">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -5989,7 +6038,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">outerlater of the velum</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Outer layer of the velum.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">outerlater of the velum</rdfs:label>
     </owl:Class>
     
@@ -5998,6 +6047,7 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000182 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000182">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -6016,7 +6066,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endodermal canal connecting the manubrium with the bell margin</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Canal connecting the manubrium with the bell margin.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radial canal</rdfs:label>
     </owl:Class>
     
@@ -6025,6 +6075,7 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000183 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000183">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -6043,7 +6094,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endodermal canoal running along the bell margin</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Canal running along the bell margin.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">circular canal</rdfs:label>
     </owl:Class>
     
@@ -6052,6 +6103,7 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000184 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000184">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -6070,7 +6122,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">concentration of nerve cell bodies and projections running around the margin of the bell</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Concentration of nerve cell bodies and projections running around the margin of the bell.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nerve ring</rdfs:label>
     </owl:Class>
     
@@ -6079,6 +6131,7 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000185 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000185">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -6097,7 +6150,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nerve ring located closest to the centre of the medusa</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nerve ring located closest to the centre of the medusa.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inner nerve ring</rdfs:label>
     </owl:Class>
     
@@ -6106,6 +6159,7 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000186 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000186">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -6124,7 +6178,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nerve ring located farest to the centre of the medusa</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nerve ring located farest to the centre of the medusa.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">outer nerve ring</rdfs:label>
     </owl:Class>
     
@@ -6133,6 +6187,7 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000187 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000187">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -6151,7 +6206,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">central structure of the medusa bearing the mouth and performing extracellular digestion</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Central structure of the medusa bearing the mouth and performing extracellular digestion.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">manubrium</rdfs:label>
     </owl:Class>
     
@@ -6179,7 +6234,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medusa mouth as part of the manubrium</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medusa mouth as part of the manubrium.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medusa mouth</rdfs:label>
     </owl:Class>
     
@@ -6188,7 +6243,7 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000189 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000189">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -6207,7 +6262,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endoderm layer of the manubrium opposite to the mouth and in direct contact with the thick mesoglea layer of the medusa</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inner layer of the manubrium opposite to the mouth and in direct contact with the thick mesoglea layer of the medusa.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">manubrium roof</rdfs:label>
     </owl:Class>
     
@@ -6216,7 +6271,7 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000190 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000190">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -6235,7 +6290,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ectoderm of the manubrium</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Outer layer of the manubrium.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">manubrium epidermis</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">manubrium ectoderm</rdfs:label>
     </owl:Class>
     
@@ -6244,7 +6300,7 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000191 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000191">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -6263,7 +6319,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endoderm of the manubrium</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inner digestive layer of the manubrium.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">manubrium gastrodermis</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">manubrium endoderm</rdfs:label>
     </owl:Class>
     
@@ -6272,6 +6329,7 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000192 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000192">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -6290,6 +6348,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reproductive organ of the medusa.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gonad</rdfs:label>
     </owl:Class>
     
@@ -6298,7 +6357,7 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000193 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000193">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -6317,7 +6376,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ectodermal layer of the gonad</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Outer layer of the gonad.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gonad epidermis</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gonad ectoderm</rdfs:label>
     </owl:Class>
     
@@ -6326,7 +6386,7 @@
     <!-- http://purl.obolibrary.org/obo/CLYH_1000194 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLYH_1000194">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLYH_1000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -6345,7 +6405,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLYH_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ectodermal layer of the gonad</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inner layer of the gonad.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gonad gastrodermis</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gonad endoderm</rdfs:label>
     </owl:Class>
     
